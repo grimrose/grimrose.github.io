@@ -1,0 +1,6 @@
+{
+  "globalDependencies": {
+    "highlightjs": "registry:dt/highlightjs#9.1.0+20160317120654",
+    "mithril": "registry:dt/mithril#0.0.0+20160501155657"
+  }
+}
