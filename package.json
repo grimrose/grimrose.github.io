@@ -16,7 +16,7 @@
     "build:dev": "webpack -d",
     "build:prod": "webpack -p",
     "predeploy": "npm-run-all clean cp:* build:prod",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist -b master"
   },
   "repository": {
     "type": "git",
