@@ -1,0 +1,25 @@
+general:
+  branches:
+    only:
+      - development
+
+machine:
+  timezone: Asia/Tokyo
+  node:
+    version: 5.0.0
+
+dependencies:
+  pre:
+    - npm install
+
+test:
+  override:
+    - npm run tslint
+
+deployment:
+  publish:
+    branch: master
+    commands:
+      - git config --global user.name "circleci"
+      - git config --global user.email "grimrose@users.noreply.github.com"
+      - npm run deploy
