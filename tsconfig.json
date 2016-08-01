@@ -6,10 +6,6 @@
     "module": "commonjs",
     "target": "es5"
   },
-  "files": [
-    "./typings/index.d.ts",
-    "require.d.ts"
-  ],
   "exclude": [
     "node_modules",
     "**/*.spec.ts"
