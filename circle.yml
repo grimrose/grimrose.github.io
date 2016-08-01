@@ -1,7 +1,8 @@
 general:
   branches:
-    only:
+    ignore:
       - development
+      - master
 
 machine:
   timezone: Asia/Tokyo
@@ -14,11 +15,11 @@ dependencies:
 
 test:
   override:
-    - npm run tslint
+    - exit 0
 
 deployment:
   publish:
-    branch: master
+    branch: development
     commands:
       - git config --global user.name "circleci"
       - git config --global user.email "grimrose@users.noreply.github.com"
