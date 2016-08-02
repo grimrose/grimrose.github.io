@@ -26,7 +26,7 @@ export class HeaderController implements Mithril.Controller {
 
     getToggleClassName(): string {
         const toggle = this.vm.activeToggle();
-        console.log("class:" + toggle);
+        // console.log("toggle:" + toggle);
         if (toggle) {
             return "is-active";
         }
@@ -35,7 +35,7 @@ export class HeaderController implements Mithril.Controller {
 
     onClickToggle: Function = () => {
         const toggle = this.vm.activeToggle();
-        console.log("onclick:" + toggle);
+        // console.log("onclick:" + toggle);
         if (toggle) {
             this.vm.activeToggle = m.prop(false);
         } else {
