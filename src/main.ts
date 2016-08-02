@@ -17,10 +17,10 @@ class MainController implements Mithril.Controller {
 
     constructor() {
         this.children = [
-            new ChildViewModel("Blog(2015~)", "Life and Tech log", "http://grimrose.github.io/blog/"),
+            new ChildViewModel("Blog", "Life and Tech log(2015~)", "http://grimrose.github.io/blog/"),
             new ChildViewModel("Speaker Deck", "Shared Presentations", "https://speakerdeck.com/grimrose"),
-            new ChildViewModel("Tech Log(~2015)", "Past Tech log", "http://grimrose.bitbucket.org/"),
-            new ChildViewModel("Blogger(~2015)", "Past Life log", "http://grimrose.blogspot.jp/")
+            new ChildViewModel("Tech Log", "Past Tech log(~2016)", "http://grimrose.bitbucket.org/"),
+            new ChildViewModel("Blogger", "Past Life log(~2015)", "http://grimrose.blogspot.jp/")
         ];
         this.code = new CodeViewModel("About me", "groovy", `
 import groovy.json.*
@@ -81,9 +81,19 @@ export class MainComponent implements Mithril.Component<MainController> {
                         ]),
                         m(".tile.is-parent.is-4.is-vertical", children.map((child: ChildViewModel) => {
                             return m(".tile.is-child", [
-                                m("p.title", child.title),
-                                m("p", child.description),
-                                m("a", child.url)
+                                m("h2.title", child.title),
+                                m("p", [
+                                    m("a", {
+                                        href: child.url,
+                                        target: "_blank"
+                                    }, [
+                                        child.description,
+                                        " ",
+                                        m("span.icon.is-small",
+                                            m("i.fa.fa-external-link", {"aria-hidden": true})
+                                        ),
+                                    ])
+                                ]),
                             ]);
                         })),
                     ]),
