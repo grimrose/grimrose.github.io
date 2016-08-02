@@ -1,7 +1,6 @@
 general:
   branches:
     ignore:
-      - development
       - master
 
 machine:
