@@ -6,11 +6,13 @@ import * as conf from "config";
 class HeaderViewModel {
     gitHubUrl: string;
     twitterUrl: string;
+    bitBucketUrl: string;
     activeToggle: Mithril.BasicProperty<boolean>;
 
     constructor() {
         this.gitHubUrl = `${conf.GITHUB_URL}/${conf.ACCOUNT_NAME}`;
         this.twitterUrl = `${conf.TWITTER_URL}/${conf.ACCOUNT_NAME}`;
+        this.bitBucketUrl = `${conf.BITBUCKET_URL}/${conf.ACCOUNT_NAME}`;
         this.activeToggle = m.prop<boolean>(false);
     }
 }
@@ -97,6 +99,12 @@ export class HeaderComponent implements Mithril.Component<HeaderController> {
                                             m("i.fa.fa-github")
                                         ),
                                         "GitHub"
+                                    ]),
+                                    m("a.nav-item", {href: vm.bitBucketUrl}, [
+                                        m("span.icon",
+                                            m("i.fa.fa-bitbucket")
+                                        ),
+                                        "Bitbucket"
                                     ]),
                                 ]
                             )
