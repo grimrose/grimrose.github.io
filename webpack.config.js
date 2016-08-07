@@ -1,6 +1,8 @@
 module.exports = {
+    context: __dirname + "/src",
     entry: [
-        "./src/index.ts"
+        "./index.ts",
+        "./index.html"
     ],
     output: {
         path: "dist",
@@ -49,6 +51,10 @@ module.exports = {
             {
                 test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
                 loader: "url?limit=10000&mimetype=image/svg+xml"
+            },
+            {
+                test: /\.html$/,
+                loader: "file?name=[path][name].[ext]"
             }
         ]
     },
