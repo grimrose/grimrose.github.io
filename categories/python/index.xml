@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on open build/reports/life/index.html</title>
+    <link>http://grimrose.github.io/blog/categories/python/</link>
+    <description>Recent content in Python on open build/reports/life/index.html</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Mon, 05 Sep 2016 21:11:45 +0900</lastBuildDate>
+    <atom:link href="http://grimrose.github.io/blog/categories/python/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>「独習Python入門―1日でプログラミングに強くなる！」を読み切りました</title>
+      <link>http://grimrose.github.io/blog/2016/09/self-education-python/</link>
+      <pubDate>Mon, 05 Sep 2016 21:11:45 +0900</pubDate>
+      
+      <guid>http://grimrose.github.io/blog/2016/09/self-education-python/</guid>
+      <description>
+
+&lt;h2 id=&#34;きっかけ&#34;&gt;きっかけ&lt;/h2&gt;
+
+&lt;p&gt;これまで、jupyter-notebookやfabricを使ってきたのですが、pythonそのものを使って何かを作るといったことはしてこなかったので、
+仕事で本格的にPythonを使うことになる前に、一から学べる本があればいいなと思い、電子版で出版されている中で入門にカテゴリされている本を探していました。&lt;/p&gt;
+
+&lt;p&gt;はてブなどでいろいろ探してたところ&lt;a href=&#34;http://shinyorke.hatenablog.com/entry/2016/08/05/224825&#34;&gt;「独習Python入門」は一生付き合える入門本だと334回言いたい&lt;/a&gt;の記事がみつかり、
+求めてる内容にマッチしてそうだし、&lt;a href=&#34;https://twitter.com/gothedistance&#34;&gt;ござ先輩&lt;/a&gt;は以前に、&lt;a href=&#34;http://grimrose.blogspot.jp/2012/03/vcafe.html&#34;&gt;これからの「エンジニアリング」の話をしよう に参加しました #vcafe
+&lt;/a&gt;のイベントの講師として来られていた方だったので、間違い無さそうと思い購入しました。&lt;/p&gt;
+
+&lt;h2 id=&#34;読みきってみて&#34;&gt;読みきってみて&lt;/h2&gt;
+
+&lt;p&gt;率直な感想は、「物足りない」でした。が、それは私がこの本が想定されているスキルと合ってなかったからだろうなと思います。&lt;/p&gt;
+
+&lt;p&gt;私がもしこの本を勧めるとしたら、例えば普段Excel VBAのような旧石器時代の言語でデータ分析していて、
+より現代的なプログラミング言語で楽ができる良いツールは無いかと模索している人ような隣の島にいるメンバーです。&lt;/p&gt;
+
+&lt;p&gt;そういう人は、gitやpyenvやvirtualenvといった開発環境をいれる際に躓くのが最も挫折しやすい難所なので、
+インストールは簡単にスムーズに行く方法を教える必要がありますが、解説付きで載っているので安心です。&lt;/p&gt;
+
+&lt;p&gt;ある程度、VBAとはいえプログラミング言語を知っていれば、丁寧な解説とかわいいイラストでどんどん先に進めるでしょう。&lt;/p&gt;
+
+&lt;p&gt;もちろん、プログラミング初めての人でも、躓いた箇所を読み返しつつ進めていくことが出来れば、あっという間に後半まで進めると思います。&lt;/p&gt;
+
+&lt;p&gt;9章、10章は、プログラミング言語を使うとこんなことも出来るんだよというちょっとハードルの高い章だと思いますが、ここまで読み進めた人であれば大丈夫だと思います。&lt;/p&gt;
+
+&lt;p&gt;最後の11章のしっかりと今後何をやっていったらいいのかを伝えながら背中を押す感じが、読み終えてとてもいい心地でした。&lt;/p&gt;
+
+&lt;p&gt;全部の章に練習問題と答えがあり、間違えそうな箇所はしっかり説明がされていてサポートが手厚い印象でした。&lt;/p&gt;
+
+&lt;p&gt;既にRubyやJava、JavaScriptといったプログラミング言語を使ってコードを書いている人には物足りないかもしれません。&lt;/p&gt;
+
+&lt;p&gt;そういう人向けにいい本や記事があれば、教えて頂ければ幸いです。&lt;/p&gt;
+
+&lt;h2 id=&#34;おわりに&#34;&gt;おわりに&lt;/h2&gt;
+
+&lt;p&gt;次は、ほぼ同じ時期に購入した&lt;a href=&#34;http://www.oreilly.co.jp/books/9784873117386/&#34;&gt;入門 Python 3&lt;/a&gt;を見て、
+独習Python入門でカバーされていなかった内容を補完しつつ、仕事で使うNumpy, Scipy, pandas方面に進みたいと思います。&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

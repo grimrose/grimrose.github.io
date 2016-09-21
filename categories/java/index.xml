@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Java on open build/reports/life/index.html</title>
+    <link>http://grimrose.github.io/blog/categories/java/</link>
+    <description>Recent content in Java on open build/reports/life/index.html</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Thu, 26 May 2016 00:00:00 +0900</lastBuildDate>
+    <atom:link href="http://grimrose.github.io/blog/categories/java/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>JJUG CCC 2016 Springに参加してきました #jjug_ccc #ccc_m61</title>
+      <link>http://grimrose.github.io/blog/2016/05/jjug-ccc-2016/</link>
+      <pubDate>Thu, 26 May 2016 00:00:00 +0900</pubDate>
+      
+      <guid>http://grimrose.github.io/blog/2016/05/jjug-ccc-2016/</guid>
+      <description>
+
+&lt;h2 id=&#34;発表のキッカケ&#34;&gt;発表のキッカケ&lt;/h2&gt;
+
+&lt;p&gt;ちょうど日々の業務でGradleのタスク機能を利用して、共有ディレクトリにあるExcelのデータとDBの値とチェックしたり、
+前回の作業との差分を抽出して入力ミスがないかチェックしたり、といった小さい業務タスクを自動化していたので、
+50分は無理でも新しく出来た20分枠ならイケるんではないかと思い、
+Groovy枠として選ばれたら本気でやるかといった感じで応募しました。&lt;/p&gt;
+
+&lt;p&gt;なので、&lt;a href=&#34;https://github.com/jjug-ccc/call-for-paper-2016spring/issues/35&#34;&gt;十徳ナイフとしてのGradle / @grimrose #35&lt;/a&gt;に投票して頂いた皆様には、大変感謝しております。&lt;/p&gt;
+
+&lt;h2 id=&#34;jupyter使ってる理由&#34;&gt;jupyter使ってる理由&lt;/h2&gt;
+
+&lt;p&gt;ここ最近、発表資料には&lt;a href=&#34;http://jupyter.org/&#34;&gt;jupyter&lt;/a&gt;を活用しています。理由としては以下のとおりです。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;日常的に使っている。&lt;/li&gt;
+&lt;li&gt;Markdownで書ける。
+
+&lt;ul&gt;
+&lt;li&gt;スライドの確認がし易い。&lt;/li&gt;
+&lt;li&gt;リンクや画像を埋めるのが楽。&lt;/li&gt;
+&lt;li&gt;コードのシンタックスハイライトもされる。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Docker imageにしてしまえば、&lt;code&gt;docker run&lt;/code&gt;か&lt;code&gt;docker-compose up&lt;/code&gt;ですぐに使える。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/takluyver/bash_kernel&#34;&gt;takluyver/bash_kernel&lt;/a&gt;を入れれば、jupyer-notebookからbashが使える。&lt;/li&gt;
+&lt;li&gt;GitHubへpublishすれば、&lt;a href=&#34;https://nbviewer.jupyter.org/&#34;&gt;nbviewer&lt;/a&gt;で閲覧できる。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;標準のPythonや&lt;a href=&#34;https://github.com/jupyter/docker-stacks&#34;&gt;Spark&lt;/a&gt;向けのイメージを使えば、REPL代わりに使えるし、実行結果も保存出来たり等重宝してます。&lt;/p&gt;
+
+&lt;h2 id=&#34;発表の主旨&#34;&gt;発表の主旨&lt;/h2&gt;
+
+&lt;p&gt;今回の発表で一番伝えたかったのは、「ツールは達成したい目的によって変えましょう」ということです。
+「日常業務を楽にしたい。」であれば、自分の本来やらなければならないメインの仕事に割り当てる時間を増やすというのが目的なので、
+今回は自分が使えて、すぐに解決出来る「Gradle」を採用したまでです。&lt;/p&gt;
+
+&lt;p&gt;もちろん、Excelを使うヒトとの協調が必要であれば、Excel VBAも利用します。&lt;/p&gt;
+
+&lt;p&gt;Gradleで解決したタスクもゆくゆくはシステム化を目指すのであれば、それに依存するのではなく捨てられるようにしておくのが望ましいと思います。&lt;/p&gt;
+
+&lt;p&gt;そのままシステム化しようとすると、手段が目的となってしまい、本来解決しなければならなかった課題にたどり着くことが出来ず、
+自分だけしかメンテナンス出来ない負債が残るだけです。&lt;/p&gt;
+
+&lt;h2 id=&#34;サンプルの解説&#34;&gt;サンプルの解説&lt;/h2&gt;
+
+&lt;p&gt;Gradleのタスク機能を使ったサンプルプロジェクトは、こちらです。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/grimrose/JJUG-CCC-2016-Spring&#34;&gt;grimrose/JJUG-CCC-2016-Spring&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;あるプロジェクトを一つのworkspace配下において行くような場合を想定してます。&lt;/p&gt;
+
+&lt;p&gt;そのプロジェクトを構成しているそれぞれの個別プロジェクトを、Gradleのマルチプロジェクト機能を利用して、Gradleの依存を含めること無く操作できるようにするのが目的です。&lt;/p&gt;
+
+&lt;p&gt;特にフロントエンドは、完全に趣味とトライアルに走ってみました。
+個人的に気になっている&lt;a href=&#34;http://mithril.js.org/&#34;&gt;Mithril&lt;/a&gt;と&lt;a href=&#34;https://www.typescriptlang.org/&#34;&gt;Typescript&lt;/a&gt;,
+&lt;a href=&#34;https://github.com/power-assert-js/power-assert&#34;&gt;power-assert-js&lt;/a&gt;, &lt;a href=&#34;https://webpack.github.io/&#34;&gt;webpack&lt;/a&gt;の組み合わせに挑戦してみました。&lt;/p&gt;
+
+&lt;p&gt;その他のプロジェクトも、jarを動かしたり、JRubyを使ってRubyのプロダクトを動かしたり等、Gradle WrapperとJDKが入っているだけのマシンでここまでやれたり、
+プロダクトを統括するタスクランナーとしてのGradleというのを示すことが出来たのではないかと思います。&lt;/p&gt;
+
+&lt;h2 id=&#34;参加したセッション&#34;&gt;参加したセッション&lt;/h2&gt;
+
+&lt;p&gt;今回参加したセッションは、以下のとおりです。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.java-users.jp/?page_id=2396#E-2&#34;&gt;E-2 ブラウザテストをサクサク進めるためのGeb実践入門&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.java-users.jp/?page_id=2396#GH-3&#34;&gt;GH-3 Jenkins2.0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.java-users.jp/?page_id=2396#AB-4&#34;&gt;AB-4 Introduction to JShell: The Java REPL Tool&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.java-users.jp/?page_id=2396#AB-5&#34;&gt;AB-5 Apache Apexとインメモリー最適化による超高速処理の世界&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.java-users.jp/?page_id=2396#AB-6&#34;&gt;AB-6 ビッグデータじゃなくても使えるSpark☆Streaming&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.java-users.jp/?page_id=2396#GH-7&#34;&gt;GH-7 Java Pazzler&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.java-users.jp/?page_id=2396#M-7_2&#34;&gt;M-7_2 JVM上でのストリーム処理エンジンの変遷&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;セッション数が増えたのと20分枠のおかげで、体がいくつあっても足りないという感じでしたが、
+休憩のタイミングと間隔にゆとりがあったおかげでそこまで大変では無かったと思いました。&lt;/p&gt;
+
+&lt;h2 id=&#34;反省点&#34;&gt;反省点&lt;/h2&gt;
+
+&lt;p&gt;今回、自分が予想していたよりも多くの人に来ていただいた為、終盤の立ち見で体調が優れなかったり、部屋に入れなかった方がいたのは申し訳なかったと思ってます。
+出来る限り、サンプルプロジェクトやtwitter等でサポート出来ればと思っています。&lt;/p&gt;
+
+&lt;p&gt;また、始まる前にセッションの軽い説明などをする際に他のセッションに誘導したりして、
+自分の後のセッションを担当されていた&lt;a href=&#34;http://www.java-users.jp/?page_id=2396#M-6_2&#34;&gt;松村翔子 / しょこ&lt;/a&gt;の事を考えていなかったのは、誠に申し訳ありませんでした。&lt;/p&gt;
+
+&lt;p&gt;さらに、時間配分を間違えて発表の後半も駆け足になってしまった上にオーバーしてしまって、スタッフの人にもご迷惑をお掛けしてしまいました。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;ja&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;grimroseさん、これ絶対、50分でやるやつやったｗｗ &lt;a href=&#34;https://twitter.com/hashtag/ccc_m61?src=hash&#34;&gt;#ccc_m61&lt;/a&gt;&lt;/p&gt;&amp;mdash; CERO-METAL (@cero_t) &lt;a href=&#34;https://twitter.com/cero_t/status/733934673789739008&#34;&gt;2016年5月21日&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;上記のような反省が残るJJUG CCCでした。&lt;/p&gt;
+
+&lt;h2 id=&#34;おわりに&#34;&gt;おわりに&lt;/h2&gt;
+
+&lt;p&gt;ライブレポートで有名ななかやまさんが来ていただいたみたいで、twitterにレポートを上げてくださいました。ありがとうございました。
+次回お会いする機会が有ったら直接お礼をお伝え出来ればと思っています。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;ja&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;十徳ナイフとしてのGradleを聞いたメモ。&lt;a href=&#34;https://twitter.com/hashtag/ccc_m61?src=hash&#34;&gt;#ccc_m61&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hashtag/jjug_ccc?src=hash&#34;&gt;#jjug_ccc&lt;/a&gt; &lt;a href=&#34;https://t.co/TQ4b4occ8Y&#34;&gt;pic.twitter.com/TQ4b4occ8Y&lt;/a&gt;&lt;/p&gt;&amp;mdash; なかやまさん (@nakayama_san) &lt;a href=&#34;https://twitter.com/nakayama_san/status/733936982162710528&#34;&gt;2016年5月21日&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;懇親会では、twitterなどでお世話になっていた方々にご挨拶出来てとても楽しかったです。&lt;/p&gt;
+
+&lt;p&gt;次回の秋は、2017年にリリースされるであろうJava9を見据えていろいろ動いているであろうプロダクトの話や、様々なJVM言語の話が聞けることを期待してます。&lt;/p&gt;
+
+&lt;p&gt;JJUGのスタッフの皆様、スポンサーの皆様、講演者の皆様、参加者の皆様、ありがとうございました。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Spock Frameworkに関する電子書籍たち</title>
+      <link>http://grimrose.github.io/blog/2015/12/gadvent-2015/</link>
+      <pubDate>Sat, 19 Dec 2015 00:00:00 +0900</pubDate>
+      
+      <guid>http://grimrose.github.io/blog/2015/12/gadvent-2015/</guid>
+      <description>
+
+&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
+
+&lt;p&gt;この記事は、&lt;a href=&#34;http://qiita.com/advent-calendar/2015/gastah&#34;&gt;G* Advent Calendar 2015&lt;/a&gt;の19日目のエントリです。&lt;/p&gt;
+
+&lt;h2 id=&#34;spockについて&#34;&gt;Spockについて&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/spockframework/spock&#34;&gt;Spock Framework&lt;/a&gt;は、JavaやGroovyで作られたアプリケーション向けのテスティングフレームワークです。&lt;/p&gt;
+
+&lt;p&gt;個人的に&lt;a href=&#34;https://github.com/spockframework/spock&#34;&gt;Spock Framework&lt;/a&gt;が好きな理由の一つは、&lt;strong&gt;power-assert&lt;/strong&gt;機能です。&lt;/p&gt;
+
+&lt;p&gt;power-assertが他の言語のテスティングフレームワークでも取り入れられていったのは、覚えるAPIが少ない上にテストで失敗した時の情報が分かりやすいからだと思います。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;http://togetter.com/li/435920&#34;&gt;アサーション失敗時の情報量を大幅に増やすことができるPower Assertの系譜&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;仕事では&lt;a href=&#34;http://www.scalatest.org/&#34;&gt;ScalaTest&lt;/a&gt;を使っていますが、
+power-assertのように使える&lt;a href=&#34;http://doc.scalatest.org/2.2.1/index.html#org.scalatest.DiagrammedAssertions&#34;&gt;DiagrammedAssertions&lt;/a&gt;をメインに使ってます。&lt;/p&gt;
+
+&lt;p&gt;その他にもパラメタライズドテストが書きやすかったり、Given-When-Thenと振る舞いを分かりやすく書ける機能があったりと、開発者がテストを書くのを助けてくれるのがとても好きです。&lt;/p&gt;
+
+&lt;p&gt;2015年の&lt;a href=&#34;https://github.com/spockframework/spock&#34;&gt;Spock Framework&lt;/a&gt;と言えば、なんと言ってもついに1.0がリリースされたのことでしょう。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://googledevjp.blogspot.jp/2015/04/google-code.html&#34;&gt;Google Codeが終了する&lt;/a&gt;するにあたって、さまざまな事が一気に前進したように思えます。&lt;/p&gt;
+
+&lt;p&gt;公式のリファレンスもGitHubに移動し、&lt;a href=&#34;https://spockframework.github.io/spock/docs/&#34;&gt;Spock Framework Reference Documentation&lt;/a&gt;として公開されています。&lt;/p&gt;
+
+&lt;p&gt;JUnit5がリリースされるとなるとSpockもどのように対応するのか楽しみではあります。&lt;/p&gt;
+
+&lt;h2 id=&#34;spockを題材とした電子書籍&#34;&gt;Spockを題材とした電子書籍&lt;/h2&gt;
+
+&lt;p&gt;日本でも利用されている方が増えてきたおかげか日本語の記事や情報を見かける機会が増えましたが、本格的に導入していこうとすると英語の記事を見ることになります。&lt;/p&gt;
+
+&lt;p&gt;公式のリファレンスが充実しているので困ることは少ないですが、やはり自分たちのユースケースに近いサンプルがあるのが望ましいと思います。&lt;/p&gt;
+
+&lt;p&gt;そういう場合は書籍の出番となりますが、今回は入手しやすい電子書籍を探してみました。&lt;/p&gt;
+
+&lt;p&gt;普段利用している電子書籍を購入できるサイトで、Spockに関する書籍が見つかったのは、以下のとおりです。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://shop.oreilly.com/home.do&#34;&gt;O&amp;rsquo;Reilly&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.manning.com/&#34;&gt;Manning Publications&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://leanpub.com/&#34;&gt;Leanpub&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://shop.oreilly.com/home.do&#34;&gt;O&amp;rsquo;Reilly&lt;/a&gt;は有名なので割愛するとして、&lt;a href=&#34;https://www.manning.com/&#34;&gt;Manning Publications&lt;/a&gt;は&lt;a href=&#34;https://www.manning.com/books/groovy-in-action&#34;&gt;Groovy In Action&lt;/a&gt;や
+&lt;a href=&#34;https://www.manning.com/books/grails-in-action&#34;&gt;Grails in Action&lt;/a&gt;で以前からGroovyに関する書籍を取り扱っているのは知ってました。&lt;/p&gt;
+
+&lt;p&gt;注目したいのは、&lt;a href=&#34;https://leanpub.com/&#34;&gt;Leanpub&lt;/a&gt;で以前&lt;a href=&#34;https://leanpub.com/everydayrailsrspec-jp&#34;&gt;Everyday Rails - RSpecによるRailsテスト入門&lt;/a&gt;を購入した際に利用していました。&lt;/p&gt;
+
+&lt;p&gt;Groovyについて困っている時やどう書いたらいいのか分からない時に&lt;a href=&#34;http://mrhaki.blogspot.jp/&#34;&gt;Messages from mrhaki&lt;/a&gt;で探していますが、
+その著者が&lt;a href=&#34;https://leanpub.com/&#34;&gt;Leanpub&lt;/a&gt;で&lt;a href=&#34;https://leanpub.com/groovy-goodness-notebook&#34;&gt;Groovy Goodness Notebook&lt;/a&gt;や&lt;a href=&#34;https://leanpub.com/gradle-goodness-notebook&#34;&gt;Gradle Goodness Notebook&lt;/a&gt;といった
+Groovyに関する書籍を販売しており、その一つにSpockに関するものもありました。&lt;/p&gt;
+
+&lt;h3 id=&#34;購入したもの&#34;&gt;購入したもの&lt;/h3&gt;
+
+&lt;p&gt;これまで購入したのは、以下の3冊です。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://leanpub.com/spockframeworknotebook&#34;&gt;Spocklight Notebook&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.manning.com/books/groovy-in-action-second-edition&#34;&gt;Groovy in Action, Second Edition&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://shop.oreilly.com/product/0636920038597.do&#34;&gt;Spock: Up and Running&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;まず&lt;a href=&#34;https://leanpub.com/spockframeworknotebook&#34;&gt;Spocklight Notebook&lt;/a&gt;ですが、&lt;a href=&#34;https://leanpub.com/&#34;&gt;Leanpub&lt;/a&gt;で購入できます。実はWebで全部見れてしまう上に最低価格が$0なので実質Freeなのです。
+中身もユースケース毎に細かく分かれているため、自分たちの求めている内容がきっとあると思います。&lt;/p&gt;
+
+&lt;p&gt;次に、&lt;a href=&#34;https://www.manning.com/books/groovy-in-action-second-edition&#34;&gt;Groovy in Action, Second Edition&lt;/a&gt;ですが、こちらは以前にGroovy In Actionを購入していたので、そのまま購入しました。
+新しく&lt;a href=&#34;https://github.com/spockframework/spock&#34;&gt;Spock Framework&lt;/a&gt;に関する内容なども追記されており、Groovyについてより詳しく知りたい時に役に立ちます。&lt;/p&gt;
+
+&lt;p&gt;最後に&lt;a href=&#34;http://shop.oreilly.com/product/0636920038597.do&#34;&gt;Spock: Up and Running&lt;/a&gt;ですが、現在、Early Releaseとして第3章までリリースされています。2016年の3月くらいにはPublishされるみたいです。
+今後追加されていくであろうチャプターのタイトルがどれも興味深いものばかりなので、楽しみです。&lt;/p&gt;
+
+&lt;p&gt;購入してはないものの以下の電子書籍もSpockについてのチャプターがあったり、コードが提供されているものがあります。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.manning.com/books/java-testing-with-spock&#34;&gt;Java Testing with Spock&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.manning.com/books/making-java-groovy&#34;&gt;Making Java Groovy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.manning.com/books/bdd-in-action&#34;&gt;BDD in Action&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.manning.com/books/arquillian-in-action&#34;&gt;Arquillian in Action&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.manning.com/books/grails-in-action-second-edition&#34;&gt;Grails in Action, Second Edition&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;おわりに&#34;&gt;おわりに&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://shop.oreilly.com/product/0636920038597.do&#34;&gt;Spock: Up and Running&lt;/a&gt;についてですが、&lt;a href=&#34;http://connpass.com/series/253/&#34;&gt;Yokohama.groovy&lt;/a&gt;にて読書会をやってみようと計画しており、
+正式にPublishされ次第、開催する予定です。&lt;/p&gt;
+
+&lt;p&gt;興味がある方は、&lt;a href=&#34;https://gitter.im/yokohamagroovy/support?utm_source=badge&amp;amp;utm_medium=badge&amp;amp;utm_campaign=pr-badge&#34;&gt;&lt;img src=&#34;https://badges.gitter.im/yokohamagroovy/support.svg&#34; alt=&#34;Gitter&#34; /&gt;&lt;/a&gt;で気軽に声をかけてください。&lt;/p&gt;
+
+&lt;p&gt;最後に、Javaのアプリケーションでテストコードで楽をしたい人は、是非&lt;a href=&#34;https://github.com/spockframework/spock&#34;&gt;Spock Framework&lt;/a&gt;を使ってください。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Let&amp;rsquo;s enjoy, Groovy!&lt;/strong&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>JJUG CCC 2015 Fallに参加してきました #jjug_ccc</title>
+      <link>http://grimrose.github.io/blog/2015/11/jjug-ccc-2015/</link>
+      <pubDate>Mon, 30 Nov 2015 00:00:00 +0900</pubDate>
+      
+      <guid>http://grimrose.github.io/blog/2015/11/jjug-ccc-2015/</guid>
+      <description>
+
+&lt;p&gt;&lt;a href=&#34;http://www.java-users.jp/?page_id=2056&#34;&gt;http://www.java-users.jp/?page_id=2056&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;セッション&#34;&gt;セッション&lt;/h2&gt;
+
+&lt;p&gt;今回は、以下のセッションを選択しました。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.java-users.jp/?page_id=2064#keynote-1&#34;&gt;keynote-1 基調講演1: 「Javaは守りに入らない、これが今のJavaだ」&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.java-users.jp/?page_id=2064#keynote-2&#34;&gt;keynote-2 基調講演2: Java EE 8 – Work in Progress&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.java-users.jp/?page_id=2064#AB1&#34;&gt;AB-1「jOOQ と Flyway で立ち向かう、自社サービスの保守運用」(仮)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.java-users.jp/?page_id=2064#EF-2&#34;&gt;EF-2 How to speed up your application using JCache[通訳あり]&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.java-users.jp/?page_id=2064#EF-3&#34;&gt;EF-3 Reactive Webアプリケーション – そしてSpring 5へ&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.java-users.jp/?page_id=2064#EF-4&#34;&gt;EF-4 ソラコムでのJava/AWS活用 – SIM管理やAWS Lambda Javaなど –&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.java-users.jp/?page_id=2064#AB-5&#34;&gt;AB-5 Javaエンジニアに知ってほしい PostgreSQLアンチパターン&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.java-users.jp/?page_id=2064#GH-6&#34;&gt;GH-6 Java8 Stream APIとApache SparkとAsakusa Frameworkの類似点・相違点&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.java-users.jp/?page_id=2064#GH-7&#34;&gt;GH-7 てらだよしおの赤裸々タイム&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;今回のタイムテーブルを見たら、どのセッションを見たら良いのか迷ってしまうくらい素晴らしい講演者の方々でした。
+選んだ幹事の人達も苦労されたと思います。&lt;/p&gt;
+
+&lt;p&gt;この1年、素のJavaを書くことは無くなってしまったので、選択も運用やDB等言語としてのJava以外を中心とした内容になりました。&lt;/p&gt;
+
+&lt;p&gt;どのセッションも面白かったですが、てらださんが楽しそうに活動をされている話を聞けたのが、一番印象的でした。&lt;/p&gt;
+
+&lt;p&gt;さらに懇親会や帰り道でいろいろな人とお話が出来て、その中でいろいろ解決手段などを教えていただくことが出来ました。
+ありがとうございました。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; lang=&#34;ja&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;懇親会と帰宅までの間が一番実りがある話が聞けた。&amp;#10;これがあるから止められない。&lt;/p&gt;&amp;mdash; とーます (@grimrose) &lt;a href=&#34;https://twitter.com/grimrose/status/670607861941047297&#34;&gt;2015, 11月 28&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;おわりに&#34;&gt;おわりに&lt;/h2&gt;
+
+&lt;p&gt;今回もYokohama.groovyの宣伝も兼ねたLTをしてきました。&lt;/p&gt;
+
+&lt;p&gt;pythonの勉強に使っている&lt;a href=&#34;http://jupyter.org/&#34;&gt;jupyter&lt;/a&gt;を使って、スライドを作りました。&lt;/p&gt;
+
+&lt;p&gt;Markdownでwebブラウザで再生出来るスライドに出来るので、こういう時には結構使えますね。&lt;/p&gt;
+
+&lt;p&gt;予定としては、&lt;a href=&#34;http://shop.oreilly.com/product/0636920038597.do&#34;&gt;Spock: Up and Running Writing Expressive Tests in Java and Groovy&lt;/a&gt;が出版され次第、読書会をやろうと思っています。&lt;/p&gt;
+
+&lt;p&gt;Early Releaseの内容を見る限り、難しかったり特定のコンテキストが必要な英語では無かったので、多分大丈夫だと思います。&lt;/p&gt;
+
+&lt;p&gt;また、来年の春に開催されると思いますが、引き続き楽しみにしています。&lt;/p&gt;
+
+&lt;p&gt;JJUGの幹事、スポンサーの皆様、ありがとうございました。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Seasar Conference 2015 Not 同窓会 に参加してきました #seasarcon</title>
+      <link>http://grimrose.github.io/blog/2015/09/seasarcon2015/</link>
+      <pubDate>Tue, 29 Sep 2015 01:25:47 +0900</pubDate>
+      
+      <guid>http://grimrose.github.io/blog/2015/09/seasarcon2015/</guid>
+      <description>
+
+&lt;p&gt;&lt;a href=&#34;https://event.seasarfoundation.org/sc2015/&#34;&gt;https://event.seasarfoundation.org/sc2015/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://seasar.connpass.com/event/19317/&#34;&gt;http://seasar.connpass.com/event/19317/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Seasar2はプロダクトでも使ったことがあるし、Seasar Conferenceがあったおかげで今の自分があると思っているので、参加してきました。&lt;/p&gt;
+
+&lt;h2 id=&#34;セッション&#34;&gt;セッション&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://event.seasarfoundation.org/sc2015/2015/09/17/seratch/&#34;&gt;Seasar ユーザだったプログラマが目指す OSS の世界展開&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;瀬良さんのセッションは、大学の教室ということもあり本当に歴史の授業っぽい雰囲気でした。&lt;/li&gt;
+&lt;li&gt;Skinny Frameworkは、今のプロジェクトで使っていて大変お世話になっています。&lt;/li&gt;
+&lt;li&gt;特にSkinny-ORM, ScalikeJDBCはSQLをゴリゴリ書くようなプロダクトに向いていると思います。&lt;/li&gt;
+&lt;li&gt;GitHubがデファクトとなっている現状では、日本語より英語のドキュメントを充実するほうがより使ってもらえる可能性が高いのは確かだと思います。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://event.seasarfoundation.org/sc2015/2015/09/08/tsuyoshizawa/&#34;&gt;Play Framework + Scala は Next Seasar なのか&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Next Seasarについては、既存のSeasar2を利用したプロダクトを別のフレームワークに置き換えてもそれなりに利益を生むようなものでない限り時代に取り残されて行く運命なのかも知れないと感じました。&lt;/li&gt;
+&lt;li&gt;挙げられそうなNext Seasarとしては、Spring bootやJavaのMicroframeworkやJava EE等があります。&lt;/li&gt;
+&lt;li&gt;ですが、メンテナンスする人達がJavaの進化に置いて行かれるような場合、選択すら出来ずどうすることも出来ない状態に陥るのではないかと思います。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://event.seasarfoundation.org/sc2015/2015/09/07/daisuke_m/&#34;&gt;「Single Command Deployのためのgradle-aws-plugin講座」〜自動ビルド厨はここまで大きくなりました〜&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Gradleの話を聞いてみたかったのと、AWSへのデプロイツールとしてどう使うのか興味がありました。&lt;/li&gt;
+&lt;li&gt;ドキュメントに残さなければいけない箇所を出来る限り少なくして、自動化するというのはとても参考になりました。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://event.seasarfoundation.org/sc2015/2015/09/25/cero/&#34;&gt;Spring Boot for the Seasar Developers – みんなが欲しかったアレもソレもここにある&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ライブコーディングでサクサクとSpring bootを使ったWebアプリを作っていくのは、楽しそうに見えました。&lt;/li&gt;
+&lt;li&gt;Spring bootのremote-shellは、&lt;a href=&#34;http://www.crashub.org/&#34;&gt;CRaSH&lt;/a&gt;がベースなので、単体でも使うことが出来ます。&lt;/li&gt;
+&lt;li&gt;IntelliJ IDEAであれば、&lt;a href=&#34;https://www.jetbrains.com/idea/help/using-language-injections.html#d1003694e290&#34;&gt;Using Language Injections&lt;/a&gt;を使うことで、StringのSQLに対してシンタックスハイライトを付けることが出来るようになります。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://event.seasarfoundation.org/sc2015/2015/09/25/si/&#34;&gt;SIは本当に終わったのか?&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;受託やSIの世界から遠ざかってしまったので、第三者的な視点で見てました。&lt;/li&gt;
+&lt;li&gt;元請けの視点がメインだったので、下請けからの視点が無かったのはちょっと残念だと思いました。&lt;/li&gt;
+&lt;li&gt;実際に利用するユーザのフィードバックと取り込めるような距離感が無いと、今後も厳しそうだと感じました。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;おわりに&#34;&gt;おわりに&lt;/h2&gt;
+
+&lt;p&gt;Seasar2から卒業ということで、自分が変わるキッカケになったSeasar Conferenceに久しぶりに参加できてよかったと思います。&lt;/p&gt;
+
+&lt;p&gt;一つの区切りが出来たことで、これまでSeasar2から何を得たのか振り返る事が出来ました。&lt;/p&gt;
+
+&lt;p&gt;特に、DIとAOPの基本、O/R Mapperの構成を学ぶ事が出来たのが大きいと感じました。&lt;/p&gt;
+
+&lt;p&gt;個人的に来年もし開催されるのであれば、卒業式というのが良いのではないと思っています。&lt;/p&gt;
+
+&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; lang=&#34;ja&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;来年、卒業式やるのが良いのでは &lt;a href=&#34;https://twitter.com/hashtag/seasarcon?src=hash&#34;&gt;#seasarcon&lt;/a&gt;&lt;/p&gt;&amp;mdash; とーます (@grimrose) &lt;a href=&#34;https://twitter.com/grimrose/status/647726679025037312&#34;&gt;2015, 9月 26&lt;/a&gt;&lt;/blockquote&gt;
+  &lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;主催の皆様、Speakerの皆様、参加者の皆様、ありがとうございました。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>JUnit Lambda に寄付をしました #fundJUnit</title>
+      <link>http://grimrose.github.io/blog/2015/09/junit-lambda/</link>
+      <pubDate>Sat, 19 Sep 2015 00:04:27 +0900</pubDate>
+      
+      <guid>http://grimrose.github.io/blog/2015/09/junit-lambda/</guid>
+      <description>
+
+&lt;p&gt;&lt;a href=&#34;https://twitter.com/t_wada&#34;&gt;@t_wada&lt;/a&gt; さんのツイートから知りましたが、JUnitのプロジェクトが援助を求めているそうです。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; lang=&#34;ja&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;JUnit がクラウドファンディングで援助を求めている。現在フルタイムのメンテナがおらず、 issue 解決や Java8 対応 (特にラムダ式) の余力が無い。現時点の JUnit の問題点や将来像も示されている &lt;a href=&#34;https://twitter.com/hashtag/fundJUn?src=hash&#34;&gt;#fundJUn&lt;/a&gt;… &lt;a href=&#34;http://t.co/o8ijOxTWr2&#34;&gt;http://t.co/o8ijOxTWr2&lt;/a&gt;&lt;/p&gt;&amp;mdash; Takuto Wada (@t_wada) &lt;a href=&#34;https://twitter.com/t_wada/status/644085548374605824&#34;&gt;2015, 9月 16&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://junit.org/junit-lambda.html&#34;&gt;Crowdfunding JUnit Lambda&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;日本語での詳細な内容については、&lt;a href=&#34;http://www.publickey1.jp/blog/15/junit.html&#34;&gt;JUnitの開発が資金不足で行き詰まり。クラウドファンディングで寄付金を募集中&lt;/a&gt; を見ていだくのがいいと思います。&lt;/p&gt;
+
+&lt;h2 id=&#34;junitと私&#34;&gt;JUnitと私&lt;/h2&gt;
+
+&lt;p&gt;個人的にJUnitを真面目に使い始めたのは、TDDBCで使い方を教わってからだと思います。&lt;/p&gt;
+
+&lt;p&gt;その時教えていただいた渡辺さんが書かれた&lt;a href=&#34;http://gihyo.jp/book/2012/978-4-7741-5377-3&#34;&gt;JUnit実践入門&lt;/a&gt;を読んで、Javaでユニットテストを書くにはどうしたら良いかを学ぶことが出来ました。&lt;/p&gt;
+
+&lt;p&gt;それからGroovyと出会い、&lt;a href=&#34;https://github.com/spockframework&#34;&gt;Spock Framework&lt;/a&gt;に惚れてTDDBCのGroovyのTAをやったり、アジャイルサムライのイベントで紹介をしたりしてました。&lt;/p&gt;
+
+&lt;p&gt;現在の仕事では、&lt;a href=&#34;https://phpunit.de/&#34;&gt;PHPUnit&lt;/a&gt;、&lt;a href=&#34;http://www.scalatest.org/&#34;&gt;ScalaTest&lt;/a&gt;を使っています。&lt;/p&gt;
+
+&lt;p&gt;xUnit系テスティングフレームワークは、テストを書く際に覚えることが少なくて、ユニットテストの書き方を学ぶ際に、余計なことを覚えなくても済むのがメリットだと思います。&lt;/p&gt;
+
+&lt;p&gt;あと、モダンな言語であればだいたい備わっているので、言語を覚える際にもassertionの書き方を覚えればなんとか始められます。
+それまでユニットテストを書く際の経験がそのまま言語を学ぶ際にも応用が出来るのが、xUnit系のテスティングフレームワークの良いところだと思います。&lt;/p&gt;
+
+&lt;p&gt;個人的にJUnitがもう少し頑張って欲しいのは、「パラメタライズドテストの書き方」、「失敗時のメッセージが分かりにくい」だと思います。&lt;/p&gt;
+
+&lt;p&gt;これはSpockを知ってしまってから、余計に感じるようになったと思います。&lt;/p&gt;
+
+&lt;p&gt;もちろんJavaの言語仕様として難しい部分もあると思いますが、出来れば&lt;code&gt;power-assert&lt;/code&gt;は入って欲しいと願ってます。&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;power-assert&lt;/code&gt;については、日本語では&lt;a href=&#34;http://codelunch.fm/16/&#34;&gt;The power-assert Leaves From Moratorium&lt;/a&gt;がまとまっていると思います。&lt;/p&gt;
+
+&lt;p&gt;今回のFundingでどこまで機能が盛り込まれたり、改善されるかは経過を見守る必要があると思います。&lt;/p&gt;
+
+&lt;p&gt;Java8対応で特にDateTime APIでMatcherが早急に欲しい人は、&lt;a href=&#34;http://joel-costigliola.github.io/assertj/index.html&#34;&gt;AssertJ&lt;/a&gt;を検討してみるのも良いかもしれません。&lt;/p&gt;
+
+&lt;h2 id=&#34;おわりに&#34;&gt;おわりに&lt;/h2&gt;
+
+&lt;p&gt;opensslと同様の経緯をまさかJUnitも歩んでいるとは思ってもいませんでした。&lt;/p&gt;
+
+&lt;p&gt;普段使っていたり、過去お世話になったOSSがメンテナンスされ続けるのは、誰かの犠牲や善意によって成り立っているのだと感じました。&lt;/p&gt;
+
+&lt;p&gt;また、「コードを書く」以外の事で貢献出来る何かを改めて考えさせられました。&lt;/p&gt;
+
+&lt;p&gt;もし、JUnitを使っていたり、今後も使い続ける事になるのであれば、既にゴール金額に到達していますが、寄付を考えてみてはいかがでしょうか？&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>【東京】JJUG ナイトセミナー 「Reactive Streams特集」 に参加してきました。 #jjug</title>
+      <link>http://grimrose.github.io/blog/2015/06/jjug-2015-reactive-streams/</link>
+      <pubDate>Sat, 27 Jun 2015 18:19:34 +0900</pubDate>
+      
+      <guid>http://grimrose.github.io/blog/2015/06/jjug-2015-reactive-streams/</guid>
+      <description>
+
+&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://jjug.doorkeeper.jp/events/26547&#34;&gt;https://jjug.doorkeeper.jp/events/26547&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://twitter.com/making&#34;&gt;@making&lt;/a&gt;さんから、&lt;a href=&#34;https://twitter.com/okapies&#34;&gt;@okapies&lt;/a&gt;さんと一緒に「Reactive Streams」について話してくれと頼まれましたので、参加してきました。&lt;/p&gt;
+
+&lt;p&gt;元々は、&lt;a href=&#34;https://twitter.com/cero_t&#34;&gt;@cero_t&lt;/a&gt;さんが発端らしいです。&lt;/p&gt;
+
+&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; lang=&#34;ja&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;ちなみに今日のReactive Streams勉強会の発端は、ゴールデンウィーク明けに &lt;a href=&#34;https://twitter.com/cero_t&#34;&gt;@cero_t&lt;/a&gt; さんがReactiveについてほげほげ言ってたことで、ナイトセミナーやろうぜって感じだったんだけど、当の本人は来ていないっていう&lt;/p&gt;&amp;mdash; Toshiaki Maki (@making) &lt;a href=&#34;https://twitter.com/making/status/613702257939353600&#34;&gt;2015, 6月 24&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;初めは、マイナーなネタならそんなに人集まらないだろうと思ってたのですが、キャンセル待ちが100人超えするくらいまで期待されてて正直びっくりしました。&lt;/p&gt;
+
+&lt;p&gt;当日のアンケートシステム、とても良かったので次回以降改善されるのを期待してます。&lt;/p&gt;
+
+&lt;h2 id=&#34;資料&#34;&gt;資料&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://twitter.com/okapies&#34;&gt;@okapies&lt;/a&gt;さんの資料は、こちらです。&lt;/p&gt;
+
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;df469560cc64424c98330aad22b19cda&#34; data-ratio=&#34;1.33333333333333&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;私の資料は、こちらです。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://grimrose.github.io/jjug-2015-reactive-streams/&#34;&gt;http://grimrose.github.io/jjug-2015-reactive-streams/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;利用したサンプルコードは、こちらです。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/grimrose/jjug-2015-reactive-streams&#34;&gt;https://github.com/grimrose/jjug-2015-reactive-streams&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;元々は、&lt;a href=&#34;http://vertx.io&#34;&gt;Vert.x3&lt;/a&gt;でやろうと思ってましたが、&lt;a href=&#34;http://projectreactor.io&#34;&gt;Reactor&lt;/a&gt;か&lt;a href=&#34;http://reactivex.io&#34;&gt;RxJava&lt;/a&gt;でと言われたので、使ったことがあるRxJavaを選びました。&lt;/p&gt;
+
+&lt;p&gt;確かに、当日のアンケートを見ると&lt;a href=&#34;http://vertx.io&#34;&gt;Vert.x3&lt;/a&gt;、&lt;a href=&#34;http://ratpack.io&#34;&gt;Ratpack&lt;/a&gt;の認知度が低すぎて、RxJavaを選択しておいてよかったと思いました。&lt;/p&gt;
+
+&lt;p&gt;ドキュメントの多さは、やはりRxJavaに分があるのですが、Reactorもかなり充実しています。&lt;/p&gt;
+
+&lt;p&gt;個人的には、&lt;a href=&#34;http://mongodb.github.io/mongo-java-driver-reactivestreams/&#34;&gt;MongoDB Reactive Streams Java Driver&lt;/a&gt;がチュートリアルとして、充実してると感じました。&lt;/p&gt;
+
+&lt;p&gt;初めてJavaでAkkaを使ってみたのですが、いろいろツライ印象しか受けませんでした。&lt;/p&gt;
+
+&lt;p&gt;あれなら、素直にScalaで使ったほうが分かりやすいと思います。&lt;/p&gt;
+
+&lt;h2 id=&#34;おわりに&#34;&gt;おわりに&lt;/h2&gt;
+
+&lt;p&gt;Reactive Streamsについては、それぞれのRuntimeの世界を繋ぐ為の仕様という認識が一番分かりやすいと思います。&lt;/p&gt;
+
+&lt;p&gt;実際の泥臭い部分は、Runtimeが頑張ってくれますが、何をやっているのか、どうやって実現しているのかを知っておくのは大切です。&lt;/p&gt;
+
+&lt;p&gt;どのRuntimeもReactive Streams向けに変換するライブラリがありますので、そのソースコードを読むのも勉強になると思います。&lt;/p&gt;
+
+&lt;p&gt;JDK9にどこまで採用されるか分かりませんが、データフロー制御についての共通インターフェースが採用されると、java.util.concurrentと併せて、非同期処理をもっと使いやすくなると思います。&lt;/p&gt;
+
+&lt;p&gt;JVMでデータフロー制御でお困りの方は、使ってみてはいかがでしょうか。&lt;/p&gt;
+
+&lt;p&gt;JJUGのスタッフ、参加者の皆様、&lt;a href=&#34;https://twitter.com/okapies&#34;&gt;@okapies&lt;/a&gt;さん、ありがとうございました。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>JJUG CCC 2015 Springに参加してきました。 #jjug_ccc</title>
+      <link>http://grimrose.github.io/blog/2015/04/jjug-ccc/</link>
+      <pubDate>Wed, 15 Apr 2015 23:02:31 +0900</pubDate>
+      
+      <guid>http://grimrose.github.io/blog/2015/04/jjug-ccc/</guid>
+      <description>
+
+&lt;p&gt;&lt;a href=&#34;http://www.java-users.jp/?page_id=1647&#34;&gt;http://www.java-users.jp/?page_id=1647&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;セッション&#34;&gt;セッション&lt;/h2&gt;
+
+&lt;p&gt;実は、転職して現場でJavaを書く機会がかなり減っています。&lt;/p&gt;
+
+&lt;p&gt;が、ツールやライブラリ等JVM上で動くプロダクトを使っているので、運用にまつわる事で勉強したいと思い参加しました。&lt;/p&gt;
+
+&lt;p&gt;午前は、途中から参加して、Raspberry Piのセッションから見始めました。&lt;/p&gt;
+
+&lt;p&gt;通訳まで用意するの大変だったと思います。内容もかなりリサーチされていてとても楽しい内容でした。&lt;/p&gt;
+
+&lt;p&gt;午後は、以下のセッションを選択しました。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.java-users.jp/?page_id=1661#CD-1&#34;&gt;CD-1 Javaにおけるnull。これまでとこれから&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.java-users.jp/?page_id=1661#AB-2&#34;&gt;AB-2 Web開発における最新テスト手法&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.java-users.jp/?page_id=1661#AB-3&#34;&gt;AB-3 大規模な負荷でもドキドキしない為のJava EE&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.java-users.jp/?page_id=1661#CD-4&#34;&gt;CD-4 『Embulk』に見るモダンJavaの実践的テクニック ～並列分散処理システムの実装手法～&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.java-users.jp/?page_id=1661#F-6&#34;&gt;F-6 いろんなデータをKibana4で見てみよう&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.java-users.jp/?page_id=1661#F-7&#34;&gt;F-7 JobStreamerではじめるJavaBatchクラウド分散実行&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;特に、Embulkについては、実際に利用できるか検証してることもあり、興味深く聴いていました。&lt;/p&gt;
+
+&lt;p&gt;負荷テストについても、大規模とはいかないまでもそこそこのデータ量を扱っているので、どう対応したら良いか参考になりました。&lt;/p&gt;
+
+&lt;p&gt;Kibana4も監視周りで使ってみたいと考えているので、ひとまずGitのログの監視からしてみたいと思いました。&lt;/p&gt;
+
+&lt;p&gt;その他のセッションも、登壇者のバックグラウンドが様々で、面白い内容でした。&lt;/p&gt;
+
+&lt;h2 id=&#34;おわりに&#34;&gt;おわりに&lt;/h2&gt;
+
+&lt;p&gt;Twitterでお世話になっている人が参加されていたので、探して挨拶したり、同じように休憩してる人達と雑談してました。&lt;/p&gt;
+
+&lt;p&gt;個人的には「&lt;strong&gt;Ask the Speaker&lt;/strong&gt;」みたいなコーナーが有ってもいいのではないかなと思いました。&lt;/p&gt;
+
+&lt;p&gt;初めてJJUG CCCに参加された方も多く、JJUGにも若い幹事の方が就任したりして、広がりを感じました。
+Java以外の分野から入ってきた文化や価値観もそれなりに知っておかないと、Javaだけの進化で手一杯になりそうな印象があります。&lt;/p&gt;
+
+&lt;p&gt;JJUG CCCやナイトセミナーでは、そういった題材を扱っている良い機会だと思いますので、
+まだ周りの人で参加してなくて興味がある人がいらっしゃったら、是非誘って参加してみてはいかがでしょうか。&lt;/p&gt;
+
+&lt;p&gt;JJUG、スポンサーの皆様、ありがとうございました。&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

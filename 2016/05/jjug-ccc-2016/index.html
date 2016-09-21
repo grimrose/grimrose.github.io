@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ja" prefix="og: http://ogp.me/ns#">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://grimrose.github.io/blog/2016/05/jjug-ccc-2016/" />
+<meta property="og:image" content="http://grimrose.github.io/blog/assets/images/logo.jpg" />
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:site" content="@grimrose">
+<meta name="twitter:card" content="summary">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/github.min.css">
+<link rel="stylesheet" href="http://grimrose.github.io/blog/css/normalize.css">
+<link rel="stylesheet" href="http://grimrose.github.io/blog/css/skeleton.css">
+<link rel="stylesheet" href="http://grimrose.github.io/blog/css/custom.css">
+<link rel="alternate" href="http://grimrose.github.io/blog/index.xml" type="application/rss+xml" title="open build/reports/life/index.html">
+
+<title>JJUG CCC 2016 Springに参加してきました #jjug_ccc #ccc_m61 - open build/reports/life/index.html</title>
+<meta property="og:title"  content="JJUG CCC 2016 Springに参加してきました #jjug_ccc #ccc_m61 - open build/reports/life/index.html" />
+<meta name="twitter:description" content="JJUG CCC 2016 Spring">
+</head>
+<body>
+
+<div class="container">
+
+	<header role="banner">
+		<div class="header-logo">
+			<a href="http://grimrose.github.io/blog/"><img src="http://grimrose.github.io/blog/assets/images/logo.jpg" width="60" height="60"></a>
+		</div>
+		
+	</header>
+
+
+<main role="main">
+    <article itemscope itemtype="http://schema.org/BlogPosting">
+        <h1 class="entry-title" itemprop="headline"><i class="fa fa-book"></i>&nbsp;JJUG CCC 2016 Springに参加してきました #jjug_ccc #ccc_m61</h1>
+        <span class="entry-meta">
+            <time itemprop="datePublished" datetime=" 2016-05-26">May 26, 2016</time>
+        </span>
+        <span class="entry-meta">
+          
+              
+              
+              <i class="fa fa-pencil"></i>
+              <a class="label" href="http://grimrose.github.io/blog/categories/blog">Blog</a>&nbsp;
+              
+              <i class="fa fa-pencil"></i>
+              <a class="label" href="http://grimrose.github.io/blog/categories/java">Java</a>&nbsp;
+              
+              <i class="fa fa-pencil"></i>
+              <a class="label" href="http://grimrose.github.io/blog/categories/groovy">Groovy</a>&nbsp;
+              
+              <i class="fa fa-pencil"></i>
+              <a class="label" href="http://grimrose.github.io/blog/categories/gradle">Gradle</a>&nbsp;
+              
+          
+        </span>
+        <section itemprop="entry-text">
+            
+
+<h2 id="発表のキッカケ">発表のキッカケ</h2>
+
+<p>ちょうど日々の業務でGradleのタスク機能を利用して、共有ディレクトリにあるExcelのデータとDBの値とチェックしたり、
+前回の作業との差分を抽出して入力ミスがないかチェックしたり、といった小さい業務タスクを自動化していたので、
+50分は無理でも新しく出来た20分枠ならイケるんではないかと思い、
+Groovy枠として選ばれたら本気でやるかといった感じで応募しました。</p>
+
+<p>なので、<a href="https://github.com/jjug-ccc/call-for-paper-2016spring/issues/35">十徳ナイフとしてのGradle / @grimrose #35</a>に投票して頂いた皆様には、大変感謝しております。</p>
+
+<h2 id="jupyter使ってる理由">jupyter使ってる理由</h2>
+
+<p>ここ最近、発表資料には<a href="http://jupyter.org/">jupyter</a>を活用しています。理由としては以下のとおりです。</p>
+
+<ul>
+<li>日常的に使っている。</li>
+<li>Markdownで書ける。
+
+<ul>
+<li>スライドの確認がし易い。</li>
+<li>リンクや画像を埋めるのが楽。</li>
+<li>コードのシンタックスハイライトもされる。</li>
+</ul></li>
+<li>Docker imageにしてしまえば、<code>docker run</code>か<code>docker-compose up</code>ですぐに使える。</li>
+<li><a href="https://github.com/takluyver/bash_kernel">takluyver/bash_kernel</a>を入れれば、jupyer-notebookからbashが使える。</li>
+<li>GitHubへpublishすれば、<a href="https://nbviewer.jupyter.org/">nbviewer</a>で閲覧できる。</li>
+</ul>
+
+<p>標準のPythonや<a href="https://github.com/jupyter/docker-stacks">Spark</a>向けのイメージを使えば、REPL代わりに使えるし、実行結果も保存出来たり等重宝してます。</p>
+
+<h2 id="発表の主旨">発表の主旨</h2>
+
+<p>今回の発表で一番伝えたかったのは、「ツールは達成したい目的によって変えましょう」ということです。
+「日常業務を楽にしたい。」であれば、自分の本来やらなければならないメインの仕事に割り当てる時間を増やすというのが目的なので、
+今回は自分が使えて、すぐに解決出来る「Gradle」を採用したまでです。</p>
+
+<p>もちろん、Excelを使うヒトとの協調が必要であれば、Excel VBAも利用します。</p>
+
+<p>Gradleで解決したタスクもゆくゆくはシステム化を目指すのであれば、それに依存するのではなく捨てられるようにしておくのが望ましいと思います。</p>
+
+<p>そのままシステム化しようとすると、手段が目的となってしまい、本来解決しなければならなかった課題にたどり着くことが出来ず、
+自分だけしかメンテナンス出来ない負債が残るだけです。</p>
+
+<h2 id="サンプルの解説">サンプルの解説</h2>
+
+<p>Gradleのタスク機能を使ったサンプルプロジェクトは、こちらです。</p>
+
+<p><a href="https://github.com/grimrose/JJUG-CCC-2016-Spring">grimrose/JJUG-CCC-2016-Spring</a></p>
+
+<p>あるプロジェクトを一つのworkspace配下において行くような場合を想定してます。</p>
+
+<p>そのプロジェクトを構成しているそれぞれの個別プロジェクトを、Gradleのマルチプロジェクト機能を利用して、Gradleの依存を含めること無く操作できるようにするのが目的です。</p>
+
+<p>特にフロントエンドは、完全に趣味とトライアルに走ってみました。
+個人的に気になっている<a href="http://mithril.js.org/">Mithril</a>と<a href="https://www.typescriptlang.org/">Typescript</a>,
+<a href="https://github.com/power-assert-js/power-assert">power-assert-js</a>, <a href="https://webpack.github.io/">webpack</a>の組み合わせに挑戦してみました。</p>
+
+<p>その他のプロジェクトも、jarを動かしたり、JRubyを使ってRubyのプロダクトを動かしたり等、Gradle WrapperとJDKが入っているだけのマシンでここまでやれたり、
+プロダクトを統括するタスクランナーとしてのGradleというのを示すことが出来たのではないかと思います。</p>
+
+<h2 id="参加したセッション">参加したセッション</h2>
+
+<p>今回参加したセッションは、以下のとおりです。</p>
+
+<ul>
+<li><a href="http://www.java-users.jp/?page_id=2396#E-2">E-2 ブラウザテストをサクサク進めるためのGeb実践入門</a></li>
+<li><a href="http://www.java-users.jp/?page_id=2396#GH-3">GH-3 Jenkins2.0</a></li>
+<li><a href="http://www.java-users.jp/?page_id=2396#AB-4">AB-4 Introduction to JShell: The Java REPL Tool</a></li>
+<li><a href="http://www.java-users.jp/?page_id=2396#AB-5">AB-5 Apache Apexとインメモリー最適化による超高速処理の世界</a></li>
+<li><a href="http://www.java-users.jp/?page_id=2396#AB-6">AB-6 ビッグデータじゃなくても使えるSpark☆Streaming</a></li>
+<li><a href="http://www.java-users.jp/?page_id=2396#GH-7">GH-7 Java Pazzler</a></li>
+<li><a href="http://www.java-users.jp/?page_id=2396#M-7_2">M-7_2 JVM上でのストリーム処理エンジンの変遷</a></li>
+</ul>
+
+<p>セッション数が増えたのと20分枠のおかげで、体がいくつあっても足りないという感じでしたが、
+休憩のタイミングと間隔にゆとりがあったおかげでそこまで大変では無かったと思いました。</p>
+
+<h2 id="反省点">反省点</h2>
+
+<p>今回、自分が予想していたよりも多くの人に来ていただいた為、終盤の立ち見で体調が優れなかったり、部屋に入れなかった方がいたのは申し訳なかったと思ってます。
+出来る限り、サンプルプロジェクトやtwitter等でサポート出来ればと思っています。</p>
+
+<p>また、始まる前にセッションの軽い説明などをする際に他のセッションに誘導したりして、
+自分の後のセッションを担当されていた<a href="http://www.java-users.jp/?page_id=2396#M-6_2">松村翔子 / しょこ</a>の事を考えていなかったのは、誠に申し訳ありませんでした。</p>
+
+<p>さらに、時間配分を間違えて発表の後半も駆け足になってしまった上にオーバーしてしまって、スタッフの人にもご迷惑をお掛けしてしまいました。</p>
+
+<blockquote>
+<p><blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">grimroseさん、これ絶対、50分でやるやつやったｗｗ <a href="https://twitter.com/hashtag/ccc_m61?src=hash">#ccc_m61</a></p>&mdash; CERO-METAL (@cero_t) <a href="https://twitter.com/cero_t/status/733934673789739008">2016年5月21日</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+</blockquote>
+
+<p>上記のような反省が残るJJUG CCCでした。</p>
+
+<h2 id="おわりに">おわりに</h2>
+
+<p>ライブレポートで有名ななかやまさんが来ていただいたみたいで、twitterにレポートを上げてくださいました。ありがとうございました。
+次回お会いする機会が有ったら直接お礼をお伝え出来ればと思っています。</p>
+
+<blockquote>
+<p><blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">十徳ナイフとしてのGradleを聞いたメモ。<a href="https://twitter.com/hashtag/ccc_m61?src=hash">#ccc_m61</a> <a href="https://twitter.com/hashtag/jjug_ccc?src=hash">#jjug_ccc</a> <a href="https://t.co/TQ4b4occ8Y">pic.twitter.com/TQ4b4occ8Y</a></p>&mdash; なかやまさん (@nakayama_san) <a href="https://twitter.com/nakayama_san/status/733936982162710528">2016年5月21日</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+</blockquote>
+
+<p>懇親会では、twitterなどでお世話になっていた方々にご挨拶出来てとても楽しかったです。</p>
+
+<p>次回の秋は、2017年にリリースされるであろうJava9を見据えていろいろ動いているであろうプロダクトの話や、様々なJVM言語の話が聞けることを期待してます。</p>
+
+<p>JJUGのスタッフの皆様、スポンサーの皆様、講演者の皆様、参加者の皆様、ありがとうございました。</p>
+
+        </section>
+        <div class="hr"></div>
+        <div>
+            
+            <div>
+              <a class="previous" href="http://grimrose.github.io/blog/2016/09/self-education-python/"> 「独習Python入門―1日でプログラミングに強くなる！」を読み切りました</a>
+              <i class="fa fa-arrow-left"></i>
+            </div>
+            
+            
+            <div>
+              <i class="fa fa-arrow-right"></i>
+              <a class="next" href="http://grimrose.github.io/blog/2016/02/scalamatsuri2016/"> ScalaMatsuri2016に参加してきました。 #ScalaMatsuri</a>
+            </div>
+            
+        </div>
+        <div class="hr"></div>
+<div class="post-share-buttons">
+    
+    <a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard-balloon"
+       data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img
+            src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20"
+            height="20" style="border: none;"/></a>
+    <script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8"
+            async="async"></script>
+    
+    <a class="tumblr-share-button" data-color="blue" data-notes="right" data-locale="ja_JP"
+       href="https://embed.tumblr.com/share"></a>
+    <script>!function (d, s, id) {
+        var js, ajs = d.getElementsByTagName(s)[0];
+        if (!d.getElementById(id)) {
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "https://secure.assets.tumblr.com/share-button.js";
+            ajs.parentNode.insertBefore(js, ajs);
+        }
+    }(document, "script", "tumblr-js");</script>
+    
+    <a href="https://twitter.com/share" class="twitter-share-button" data-lang="ja">ツイート</a>
+    <script>!function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+        if (!d.getElementById(id)) {
+            js = d.createElement(s);
+            js.id = id;
+            js.src = p + '://platform.twitter.com/widgets.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }
+    }(document, 'script', 'twitter-wjs');</script>
+</div>
+
+    </article>
+</main>
+
+
+	<footer role="contentinfo">
+		<div class="hr"></div>
+		<div class="footer-link">
+			
+			<i class="fa fa-twitter-square">
+				<a href="https://twitter.com/grimrose" target="_blank">Twitter</a>
+			</i>
+			
+			
+			<i class="fa fa-github-alt">
+				<a href="https://github.com/grimrose/" target="_blank">GitHub</a>
+			</i>
+			
+		</div>
+		<div class="copyright">Copyright &copy; <a href="http://grimrose.github.io/">grimrose</a> All rights reserved.</div>
+	</footer>
+
+</div>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+</body>
+</html>
+

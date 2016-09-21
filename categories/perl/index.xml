@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Perl on open build/reports/life/index.html</title>
+    <link>http://grimrose.github.io/blog/categories/perl/</link>
+    <description>Recent content in Perl on open build/reports/life/index.html</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sun, 23 Aug 2015 22:34:34 +0900</lastBuildDate>
+    <atom:link href="http://grimrose.github.io/blog/categories/perl/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>YAPC::Asia Tokyo 2015 に参加してきました。 #yapcasia</title>
+      <link>http://grimrose.github.io/blog/2015/08/yapc-asia-tokyo-2015/</link>
+      <pubDate>Sun, 23 Aug 2015 22:34:34 +0900</pubDate>
+      
+      <guid>http://grimrose.github.io/blog/2015/08/yapc-asia-tokyo-2015/</guid>
+      <description>
+
+&lt;p&gt;&lt;a href=&#34;http://yapcasia.org/2015/&#34;&gt;http://yapcasia.org/2015/&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;きっかけ&#34;&gt;きっかけ&lt;/h2&gt;
+
+&lt;p&gt;Guest Speakerにそうそうたるメンバーがいらっしゃったのと、PHPをやり始めてから気になった次のスライドがYAPC::Asia Tokyo 2014だったのが気になったので、参加してみようと思いました。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/qgRDC75f6O0R3d&#34; width=&#34;425&#34; height=&#34;355&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt; &lt;div style=&#34;margin-bottom:5px&#34;&gt; &lt;strong&gt; &lt;a href=&#34;//www.slideshare.net/junichiishida/yapc-2014-phpuzullatalk&#34; title=&#34;YAPC::Asia 2014 - 半端なPHPDisでPHPerに陰で笑われないためのPerl Monger向け最新PHP事情&#34; target=&#34;_blank&#34;&gt;YAPC::Asia 2014 - 半端なPHPDisでPHPerに陰で笑われないためのPerl Monger向け最新PHP事情&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href=&#34;//www.slideshare.net/junichiishida&#34; target=&#34;_blank&#34;&gt;Junichi Ishida&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;個人スポンサー&#34;&gt;個人スポンサー&lt;/h2&gt;
+
+&lt;p&gt;YAPC::Asia Tokyoのチケットは、非常に取りにくいということで、個人スポンサーで申し込みました。&lt;/p&gt;
+
+&lt;p&gt;Tシャツやパーカー等のノベルティも楽しみでしたが、ひとまずチケットを取れたことに安堵してました。&lt;/p&gt;
+
+&lt;p&gt;当日ノベルティとして受け取ったタンブラーは、とても使いやすくて重宝してます。&lt;/p&gt;
+
+&lt;h2 id=&#34;セッション&#34;&gt;セッション&lt;/h2&gt;
+
+&lt;p&gt;参加したセッションは、以下のとおりです。&lt;/p&gt;
+
+&lt;h3 id=&#34;前夜祭&#34;&gt;前夜祭&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://yapcasia.org/2015/talk/show/5f5cad74-004a-11e5-acf4-89c77d574c3a&#34;&gt;我々にできるOSSとそのコミュニティの育てかた&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;1日目&#34;&gt;1日目&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://yapcasia.org/2015/talk/show/a636430c-0fbf-11e5-8a02-43ec7d574c3a&#34;&gt;メリークリスマス！&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://yapcasia.org/2015/talk/show/44721562-10e4-11e5-88a0-d7f07d574c3a&#34;&gt;Effective ES6&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://yapcasia.org/2015/talk/show/cc0ec485-1879-11e5-aca1-525412004261&#34;&gt;TBD&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://yapcasia.org/2015/talk/show/a06d9970-0d7b-11e5-aaf9-67dc7d574c3a&#34;&gt;Conway&amp;rsquo;s Law of Distributed Work&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://yapcasia.org/2015/talk/show/7d66b640-0a6b-11e5-b1a0-67dc7d574c3a&#34;&gt;Electron: Building desktop apps with web technologies&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://yapcasia.org/2015/talk/show/53944d48-09ba-11e5-998a-67dc7d574c3a&#34;&gt;Perl6 on JVM: It works??&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;2日目&#34;&gt;2日目&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://yapcasia.org/2015/talk/show/86ebd212-fab3-11e4-8f5a-8ab37d574c3a&#34;&gt;ISUCONの勝ち方&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://yapcasia.org/2015/talk/show/f2816038-10ec-11e5-89bf-d7f07d574c3a&#34;&gt;我々はどのように冗長化を失敗したのか&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://yapcasia.org/2015/talk/show/0af26fe4-0b7b-11e5-a29c-67dc7d574c3a&#34;&gt;MySQLで2億件のシリアルデータと格闘したチューニングの話&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://yapcasia.org/2015/talk/show/dd8ce20e-fad2-11e4-b6e7-8ab37d574c3a&#34;&gt;データ分析基盤を支える技術&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://yapcasia.org/2015/talk/show/22f59fb8-0fad-11e5-98ef-43ec7d574c3a&#34;&gt;Parallelism, Concurrency, and Asynchrony in Perl 6&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://yapcasia.org/2015/talk/show/9e9ae188-fb20-11e4-9a97-8ab37d574c3a&#34;&gt;HTTP2 時代の Web&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;概ね見たいと思ったセッションを見ることが出来たと思います。&lt;/p&gt;
+
+&lt;p&gt;Perlのセッションもコードが出てきて分からない部分も多かったのですが、それなりに楽しむことが出来ました。&lt;/p&gt;
+
+&lt;p&gt;個人的に、グッと来たのは、以下のセッションでした。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://yapcasia.org/2015/talk/show/44721562-10e4-11e5-88a0-d7f07d574c3a&#34;&gt;Effective ES6&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;早くES6が標準で使える環境を整えていきたい。&lt;/li&gt;
+&lt;li&gt;現在使用してるtypescriptをES6に移行する手順も考えておきたい。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://yapcasia.org/2015/talk/show/86ebd212-fab3-11e4-8f5a-8ab37d574c3a&#34;&gt;ISUCONの勝ち方&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ISUCONに限らず、普段の開発に取り入れることが出来る内容もあったので、取り組みたい。&lt;/li&gt;
+&lt;li&gt;練習や準備で出来る事をカバーできる範囲を増やし、残りを突発的やブレークスルーにリソースを割り当てるのは、普段のマネジメントスキルでも必要だと思った。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://yapcasia.org/2015/talk/show/dd8ce20e-fad2-11e4-b6e7-8ab37d574c3a&#34;&gt;データ分析基盤を支える技術&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;今のチームでこれから分析領域を拡大する場合にとても参考になった。&lt;/li&gt;
+&lt;li&gt;sensitiveなデータが分析対象なので、このスライドの先の運用していくという選択肢の領域を知りたい。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;心残りがあるとすれば、仕事が押してしまって前夜祭の&lt;a href=&#34;http://yapcasia.org/2015/talk/show/621948f2-0d46-11e5-a403-67dc7d574c3a&#34;&gt;「PHP帝国は滅んでいない。新たなる希望を待ち、逆襲の機会を虎視眈々とねらっている」&lt;/a&gt;のセッションを生で見れなかったことですね。&lt;/p&gt;
+
+&lt;h2 id=&#34;おわりに&#34;&gt;おわりに&lt;/h2&gt;
+
+&lt;p&gt;幅広い分野で活躍されている方も参加されており、その方々の源流を知ることが出来たような気がします。YAPC::Asiaの懐の深さみたいなものを感じることが出来ました。&lt;/p&gt;
+
+&lt;p&gt;また、CONBUの方々の会場のネットワークを支える技術力の高さを実際に体感出来てよかったです。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; lang=&#34;ja&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;CONBU++&lt;/p&gt;&amp;mdash; とーます (@grimrose) &lt;a href=&#34;https://twitter.com/grimrose/status/635004424184696832&#34;&gt;2015, 8月 22&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;あと、スタッフに同じ会社の人がいたお陰で懇親会で&lt;a href=&#34;http://rebuild.fm/&#34;&gt;rebuild.fm&lt;/a&gt;に出演された方々とお会いできたのは、個人的にいい思い出になりました。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; lang=&#34;ja&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;rebuildfmに出てた人達とお話出来て最高だった&lt;/p&gt;&amp;mdash; とーます (@grimrose) &lt;a href=&#34;https://twitter.com/grimrose/status/634683460536238080&#34;&gt;2015, 8月 21&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;今回で終わってしまうということで、残念だと思うこともありますが、こういった懐が深いカンファレンスがまた新しいコミュニティを生み出していくと思うので、楽しみです。&lt;/p&gt;
+
+&lt;p&gt;スタッフ、Speaker、スポンサー、参加者の皆さん、ありがとうございました。&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

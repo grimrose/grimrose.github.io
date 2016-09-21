@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Life on open build/reports/life/index.html</title>
+    <link>http://grimrose.github.io/blog/categories/life/</link>
+    <description>Recent content in Life on open build/reports/life/index.html</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Thu, 31 Dec 2015 23:59:59 +0900</lastBuildDate>
+    <atom:link href="http://grimrose.github.io/blog/categories/life/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>2015年の振り返り</title>
+      <link>http://grimrose.github.io/blog/2015/12/retrospect-2015/</link>
+      <pubDate>Thu, 31 Dec 2015 23:59:59 +0900</pubDate>
+      
+      <guid>http://grimrose.github.io/blog/2015/12/retrospect-2015/</guid>
+      <description>
+
+&lt;h2 id=&#34;2015年の振り返り&#34;&gt;2015年の振り返り&lt;/h2&gt;
+
+&lt;p&gt;今年も大晦日になったので、振り返りをしてみたいと思います。&lt;/p&gt;
+
+&lt;p&gt;2014年の振り返りは、&lt;a href=&#34;http://grimrose.blogspot.jp/2014/12/2014.html&#34;&gt;こちら&lt;/a&gt;でした。&lt;/p&gt;
+
+&lt;h3 id=&#34;keep&#34;&gt;Keep&lt;/h3&gt;
+
+&lt;p&gt;今年は、以下のイベントで登壇する機会をいただけました。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://jjug.doorkeeper.jp/events/26547&#34;&gt;【東京】JJUG ナイトセミナー 「Reactive Streams特集」&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gbdaitokai.doorkeeper.jp/events/31149&#34;&gt;合同勉強会 in 大都会岡山 -2015 Winter-&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://bonenkaigi.doorkeeper.jp/events/27273&#34;&gt;忘年会議2015&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;仕事で得た知見や個人で興味を持ったことについて話す機会は、今後も増やしていければと思います。&lt;/p&gt;
+
+&lt;p&gt;アウトプットする為にも、まずコードやBlogで書き出すということをもっと積極的にやっていこうかと思います。
+特にBlogは書かなかった月が多かったので、短くても残さないとどんどん忘れていきそうなので、
+GitHubに草を生やす活動も兼ねてやっていこうかと思います。&lt;/p&gt;
+
+&lt;p&gt;ミドルウェア、インフラ周りの基礎に関しては、引き続きDockerを中心に学んで行ければと思っています。&lt;/p&gt;
+
+&lt;p&gt;特に&lt;a href=&#34;http://shop.oreilly.com/product/0636920036791.do&#34;&gt;Docker Cookbook&lt;/a&gt;を購入して
+自分たちが使えるものが無いか探したり、どのようにDockerで構成していけば良いのかを学んだりしています。&lt;/p&gt;
+
+&lt;p&gt;また、&lt;a href=&#34;https://azure.microsoft.com/ja-jp/&#34;&gt;Microsoft Azure&lt;/a&gt;のアカウントを作って、&lt;a href=&#34;https://www.tutum.co&#34;&gt;Tutum&lt;/a&gt;でデプロイしてみたりしてました。&lt;/p&gt;
+
+&lt;p&gt;Dockerを使って試せるようなサービスが出てきたので、これまで非力なローカルマシンでは試せなかった構成や、既存のサービスと組み合わせる方法を検証できるようになったのは、大きな変化だったと思います。&lt;/p&gt;
+
+&lt;h3 id=&#34;problem&#34;&gt;Problem&lt;/h3&gt;
+
+&lt;p&gt;2014年のTryだったFuelPHPのプロジェクトは、2015年中にはやれませんでした。&lt;/p&gt;
+
+&lt;p&gt;しかしながら、年明けから仕事でサプブロジェクトながらFuelPHPで始めることになりそうなので、
+front, api, batchをDockerで動かすような雛形を作ってみて検証してみたいと思います。&lt;/p&gt;
+
+&lt;p&gt;Rubotyも結局触ってみました程度で終わってしまったので、Rubyのプロダクトにがっつり関わる機会が無い環境では、
+強制的にでも使う仕組みが無いと難しいものだと感じました。&lt;/p&gt;
+
+&lt;p&gt;仕事では、チームでプロジェクトを動かしていくことの難しさを実感しました。
+特にプロダクトオーナーに現時点でリリース出来ないことを伝えることが、どれだけ不甲斐なくて悔しいことかを体験しました。&lt;/p&gt;
+
+&lt;h3 id=&#34;try&#34;&gt;Try&lt;/h3&gt;
+
+&lt;p&gt;仕事での今後やりたいことは、&lt;a href=&#34;http://grimrose.github.io/blog/2015/12/career-change/&#34;&gt;転職して１年が経ちました。&lt;/a&gt;に書いてしまったので、
+privateでやってみたい事は、OSSを一つリリースする(ライブラリ、Webサービス問わず)です。&lt;/p&gt;
+
+&lt;p&gt;仕事で使うようなライブラリを作るのが一番自分にとって勉強にもなるし、フィードバックも得やすいのではないかと思います。&lt;/p&gt;
+
+&lt;p&gt;また、本格的にScrumに関する勉強を始めて、最終的には認定スクラムマスター(CSM)も取得してみようかと思います。&lt;/p&gt;
+
+&lt;p&gt;CSMについては、横浜道場でいろいろな人が受けてたり取られたりした方の話をこれまで聴いてどんな感じなんだろと思っていました。
+Scrumのプラクティスを取り入れつつ開発を進めていましたが、行き詰まりを感じたり、他の人達はどうしているのか気になってきたので、本格的に始めます。&lt;/p&gt;
+
+&lt;h2 id=&#34;おわりに&#34;&gt;おわりに&lt;/h2&gt;
+
+&lt;p&gt;2015年は、仕事でやりたかった事が出来たのとそこで出てきた課題に取り組めた一年だったと思います。&lt;/p&gt;
+
+&lt;p&gt;2016年は、引き続きコードを書くお仕事に加えて、チームを育てていく役割も担っていくことになると思います。&lt;/p&gt;
+
+&lt;p&gt;また、いわゆる「プログラマー35年定年説」の節目の年となるので、今後の5年を見据えて伸ばすスキルを伸ばしていければと思います。&lt;/p&gt;
+
+&lt;p&gt;2016年も引き続き、よろしくお願いします。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>業務アプリケーションをElectronで作ってみた話をしてきました #gbdaitokai #忘年会議</title>
+      <link>http://grimrose.github.io/blog/2015/12/daitokai-2015/</link>
+      <pubDate>Sun, 13 Dec 2015 00:00:00 +0900</pubDate>
+      
+      <guid>http://grimrose.github.io/blog/2015/12/daitokai-2015/</guid>
+      <description>
+
+&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
+
+&lt;p&gt;このエントリーは、&lt;a href=&#34;http://qiita.com/advent-calendar/2015/electron&#34;&gt;Electron Advent Calendar 2015&lt;/a&gt;の13日目の記事です。&lt;/p&gt;
+
+&lt;h2 id=&#34;公開資料&#34;&gt;公開資料&lt;/h2&gt;
+
+&lt;p&gt;発表で利用した資料はこちらです。 -&amp;gt; &lt;strong&gt;&lt;a href=&#34;http://nbviewer.ipython.org/format/slides/github/grimrose/gbdaitokai2015/blob/4b8f0eefd0ee5cdcca1e0af072c6754b2b9b3163/Business%20applications%20written%20in%20Electron.ipynb#/&#34;&gt;スライド&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;スライドは、&lt;a href=&#34;http://jupyter.org&#34;&gt;jupyter&lt;/a&gt;に&lt;a href=&#34;https://github.com/damianavila/RISE&#34;&gt;damianavila/RISE&lt;/a&gt;の拡張を入れて作りました。&lt;/p&gt;
+
+&lt;p&gt;公開当日は、nbviewerのサイトの調子が良くなかったのかメンテナンスだったのか見えませんでしたが、現在は見えるようになりました。&lt;/p&gt;
+
+&lt;h2 id=&#34;おまえ-誰よ&#34;&gt;おまえ、誰よ&lt;/h2&gt;
+
+&lt;p&gt;普段は、PHPとScalaを使った社内BIのWebアプリケーションを開発しています。&lt;/p&gt;
+
+&lt;p&gt;ここ1年位の仕事を振り返ってみたエントリは、&lt;a href=&#34;http://grimrose.github.io/blog/2015/12/career-change&#34;&gt;こちら&lt;/a&gt;です。&lt;/p&gt;
+
+&lt;h2 id=&#34;参加した経緯&#34;&gt;参加した経緯&lt;/h2&gt;
+
+&lt;p&gt;以前から忘年会議の会場である&lt;a href=&#34;http://www.233-3959.com/ryoutei/index.html&#34;&gt;Ryotei 座・スタジアム&lt;/a&gt;に一度行ってみて喋ってみたいと思ってました。&lt;/p&gt;
+
+&lt;p&gt;今年、いいタイミングで飛行機のチケットとホテルが確保できた為、参加することにしました。&lt;/p&gt;
+
+&lt;h2 id=&#34;スライドの補足&#34;&gt;スライドの補足&lt;/h2&gt;
+
+&lt;p&gt;ここで言うスタンプラリーは、業務端末にソフトウェアのインストール際にいろいろな申請が必要であることを指します。
+その工程を開発段階から実際にオペレーションする人に強いるのは出来るだけ避けたいと考えていました。&lt;/p&gt;
+
+&lt;p&gt;もちろんがっつり開発するのであれば必要な申請はすべきですが、まだプロトタイプも出来てないし、
+どんなプロダクトになるのか不明なうちは簡単に使えるようにしておくのがベターだと思い、こういう判断をしました。&lt;/p&gt;
+
+&lt;p&gt;VBAを選択しなかった理由は、継続的にリリースするには今時のビルドパイプラインが構築しやすい言語がいいと思ったからです。
+確かに探せば手法は見つかりますが、一から構築するには手間が掛かり過ぎると思ったので、既存のWebアプリケーションのラインに間借りする事が出来るメリットを優先しました。&lt;/p&gt;
+
+&lt;p&gt;ボイラープレートからReact.jsに関する部分をMithril.jsに置き換えて、デプロイに関するgulpのタスクを追加したのをベースに開発をしました。&lt;/p&gt;
+
+&lt;p&gt;普段は、Angular + Typescript + Gruntでやっているので、Babel(ES6) + Mithril.jsの習得には、そんなかからないだろうと甘く見てましたが、
+Babel(ES6)が初だといろいろと調べながら進めることになったので、Typescriptとの違いなどでハマることが多かったように思います。&lt;/p&gt;
+
+&lt;p&gt;Mithril.jsで一番参考になったのは、&lt;a href=&#34;http://ratfactor.com/daves-guide-to-mithril-js?/shire&#34;&gt;Dave&amp;rsquo;s guide to Mithril.js Part 1&lt;/a&gt;の記事でした。
+特にイベント発火とViewModelのやり取りをどう扱って、画面にどう反映させるのかが参考になりました。&lt;/p&gt;
+
+&lt;p&gt;IndexedDBやLocalStorageを使わなかったのは、両方とも使い方を知らなかったのと、Excelから取り出したJSONが大きかったので、
+一旦ファイルに保存してから必要なデータだけをキャッシュ出来るようにしたかったためです。&lt;/p&gt;
+
+&lt;p&gt;Loki.jsであれば、IndexedDBとファイルのどちらでも利用できるので、上手く使い分けて行きたいと思っています。
+が、&lt;a href=&#34;http://qiita.com/mizchi/items/e42cdf9eb0707fe86974&#34;&gt;minimongoでIsomorphic Storage&lt;/a&gt;も気になるので試してみたいと思っています。&lt;/p&gt;
+
+&lt;p&gt;今後このシステムが発展した場合、Electronとサーバーサイドでのデータの持ち方や扱い方については、明確にしておかないと無駄が発生する可能性があるので考慮しておきたいと思っています。&lt;/p&gt;
+
+&lt;h2 id=&#34;やってみた感想&#34;&gt;やってみた感想&lt;/h2&gt;
+
+&lt;p&gt;メインがサーバーサイドのエンジニアであるため、片手間でフロントエンドをやるのはやはり厳しいと感じました。&lt;/p&gt;
+
+&lt;p&gt;今回作ったのはあくまでもプロトタイプなので、今後の方針次第によっていろいろと変化していくと思います。&lt;/p&gt;
+
+&lt;p&gt;今回は一人だけで作ったのですが、正式にチームで作り始めるとなるともう少しフレームワークの選定やデプロイまでの検証も必要になってくると思います。
+また、bowerに依存している箇所をnpmに集約したいので、gulp + bowerでやっているCSSフレームワークやfont-awesomeに関する箇所をどのように変えていけば良いのか、情報を探してみたいと思います。&lt;/p&gt;
+
+&lt;p&gt;デスクトップアプリもWebと同じように作っていけるElectronは、業務アプリケーションとしての選択肢としてあり得ると思います。
+Node.jsのライブラリがそのままWebアプリケーションから呼び出せる感覚は新鮮でした。&lt;/p&gt;
+
+&lt;h2 id=&#34;さいごに&#34;&gt;さいごに&lt;/h2&gt;
+
+&lt;p&gt;忘年会議のLTの内容が皆さんかなり尖っていて、技術方向に全振りした自分の内容は面白い要素ゼロだったので完全アウェーな気分でした。
+ですが、あの場所でLTすることが今回の最大の目的だったので、最後までやりきれて感無量でした。&lt;/p&gt;
+
+&lt;p&gt;LTの猛者でまだあの場所でLTをされてない方は、一度でもいいので体験してもらいたいと思いました。&lt;/p&gt;
+
+&lt;p&gt;次回は、&lt;a href=&#34;https://gbdaitokai.doorkeeper.jp/events/35265&#34;&gt;座駆動LT大会20160220&lt;/a&gt;らしいので、是非参加してみてはいかがでしょうか？&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>転職して１年が経ちました。</title>
+      <link>http://grimrose.github.io/blog/2015/12/career-change/</link>
+      <pubDate>Tue, 01 Dec 2015 00:00:00 +0900</pubDate>
+      
+      <guid>http://grimrose.github.io/blog/2015/12/career-change/</guid>
+      <description>
+
+&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
+
+&lt;p&gt;2014年12月に転職してから1年経ったので、振り返ってみます。&lt;/p&gt;
+
+&lt;p&gt;半年前は&lt;a href=&#34;http://grimrose.github.io/blog/2015/06/career-change&#34;&gt;こちら&lt;/a&gt;。&lt;/p&gt;
+
+&lt;p&gt;引き続き、データ分析チームのエンジニアとして働いてます。&lt;/p&gt;
+
+&lt;p&gt;開発言語もPHP, Angular, TypeScriptに加え、Scalaも使うようになりました。&lt;/p&gt;
+
+&lt;p&gt;Scalaの導入については、別の機会に書ければと思ってます。&lt;/p&gt;
+
+&lt;h2 id=&#34;これまでやってきたこと&#34;&gt;これまでやってきたこと&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;社内BIの開発チームのリーダーを任されるようになった。&lt;/li&gt;
+&lt;li&gt;バッチ処理の一部をScalaに置き換えた。&lt;/li&gt;
+&lt;li&gt;electronを導入して、VBAでやっていたのを置き換えできないか検証してた。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;フロントエンドからクラウド上での環境構築まで、自分たちで出来ることはほぼ全てやっている状況です。&lt;/p&gt;
+
+&lt;p&gt;全部自分たちでやるのが正しいかと言われると、考えさせられる部分があります。&lt;/p&gt;
+
+&lt;p&gt;とはいえ、エンジニアとしては流行りのプロダクトや手法は触っておきたいですし、スキルも得たいとも思います。&lt;/p&gt;
+
+&lt;p&gt;そこは、導入までのプレゼンで説明が必要ですし、継続的にリリースをして信頼貯金を得る必要が出てきます。&lt;/p&gt;
+
+&lt;p&gt;この1年間地道に機能をリリースしたことで、部署の中で自分が何が出来てどういったスキルを持っているのかを認知してもらうことが出来ました。&lt;/p&gt;
+
+&lt;h2 id=&#34;これからやってみたいこと&#34;&gt;これからやってみたいこと&lt;/h2&gt;
+
+&lt;p&gt;次の1年でやりたいことは、以下の内容をやってみたいと思ってます。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Akka Streamsの導入&lt;/li&gt;
+&lt;li&gt;Kubernetesを用いたDocker Clusterの導入&lt;/li&gt;
+&lt;li&gt;electronを使った業務アプリの継続的開発&lt;/li&gt;
+&lt;li&gt;pythonを使ったシステムの構築及び運用&lt;/li&gt;
+&lt;li&gt;In-memory Data Gridを活用した機能の検証&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;全部が出来るとは思ってはいませんが挑戦できる環境ではあるので、準備を怠らずいつでも始められるようにしたいと思います。&lt;/p&gt;
+
+&lt;p&gt;また、持続可能な開発体制が必要になってきているので、Scrumに関する勉強も本格的に始めてみようかと考えてます。&lt;/p&gt;
+
+&lt;p&gt;引き続き、新しいことに挑戦しつつ、日々の業務を止めないように気を引き締めて開発していきたいと思います。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>転職して半年が経ちました。</title>
+      <link>http://grimrose.github.io/blog/2015/06/career-change/</link>
+      <pubDate>Mon, 01 Jun 2015 00:08:51 +0900</pubDate>
+      
+      <guid>http://grimrose.github.io/blog/2015/06/career-change/</guid>
+      <description>
+
+&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
+
+&lt;p&gt;2014年12月に転職してから半年経ったので、振り返ってみます。&lt;/p&gt;
+
+&lt;p&gt;退職エントリは&lt;a href=&#34;http://grimrose.blogspot.jp/2014/12/blog-post.html&#34;&gt;こちら&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;所属&#34;&gt;所属&lt;/h2&gt;
+
+&lt;p&gt;今は、データ分析チームのエンジニアとして働いています。&lt;/p&gt;
+
+&lt;p&gt;転職時に希望したことが出来るチームなので、とてもやりがいがあります。&lt;/p&gt;
+
+&lt;p&gt;また、転職時にお世話になったマネージャーが、会社のエンジニアが働きやすい環境を作り上げたという話を聞いたので、足を向けて寝られません。&lt;/p&gt;
+
+&lt;p&gt;チームには分析官の方がいらっしゃるので、統計に関する知識やR言語についても学べる環境なのはありがたいです。&lt;/p&gt;
+
+&lt;p&gt;その他にも、Sparkや機械学習等新しい技術についても取り組むことが出来る環境でもあるので、積極的に学んで行こうと思います。&lt;/p&gt;
+
+&lt;p&gt;今のチームのマネージャーも理解のある人で、「分析」をどのように事業に活かすのかを真剣に考えていて、そのための武器をエンジニアと一緒に作っていこうとおっしゃってました。&lt;/p&gt;
+
+&lt;p&gt;自分が出来る事をチームに還元していければ、自ずと結果はついてくると思っているので、精一杯やっていこうと思います。&lt;/p&gt;
+
+&lt;h2 id=&#34;開発&#34;&gt;開発&lt;/h2&gt;
+
+&lt;p&gt;開発環境は自由に選べますが、私を含めほとんどの人はMBPの15インチを選んでます。&lt;/p&gt;
+
+&lt;p&gt;転職して最初の頃は、小さい社内Webサービスの引き継ぎをやってました。&lt;/p&gt;
+
+&lt;p&gt;言語は初めてのPHP、しかもPhalcon。&lt;/p&gt;
+
+&lt;p&gt;ひとまず、SQLを読むのと既存の機能の改善に注力してました。&lt;/p&gt;
+
+&lt;p&gt;今まで手作業やExcelでやっていた事を、Webサービスで置き換えていく途中だったので、実際に使われている人にとても喜ばれていました。&lt;/p&gt;
+
+&lt;p&gt;そこで社内でどのようにプロジェクトを進めていくのかなどを学べました。&lt;/p&gt;
+
+&lt;p&gt;しばらくして、別のプロジェクトの機能追加の案件も始まりました。&lt;/p&gt;
+
+&lt;p&gt;こちらは、FuelPHPでした。&lt;/p&gt;
+
+&lt;p&gt;このプロジェクトにメインで携わるとは、その時は思っていませんでした。&lt;/p&gt;
+
+&lt;p&gt;どちらもIntelliJ IDEAが無いと仕事が出来ないくらい四苦八苦してました。&lt;/p&gt;
+
+&lt;p&gt;幸い、このプロジェクトは、ユニットテストをしっかり書いて、JenkinsでCIまわして、ワンクリックでデプロイ出来るように運営されていました。&lt;/p&gt;
+
+&lt;p&gt;そのおかげもあって、なんとか求められていた機能もリリース出来て、現在も動いてます。&lt;/p&gt;
+
+&lt;p&gt;このプロジェクトの他の特徴としては、フロント周りにはAngularJS + TypeScriptを採用したりしています。&lt;/p&gt;
+
+&lt;p&gt;また、今後バッチ処理をScalaに置き換える為に、いろいろ検証や準備をしているところです。&lt;/p&gt;
+
+&lt;h2 id=&#34;おわりに&#34;&gt;おわりに&lt;/h2&gt;
+
+&lt;p&gt;自分のスキル足りなくてチームや顧客に迷惑をかける事があり、歯がゆい思いをすることもありました。&lt;/p&gt;
+
+&lt;p&gt;まだまだやりたいことも勉強しなければいけないことも沢山ありますが、エンジニアとしてやりたいことが出来る環境で仕事が出来るということが、どれほど楽しいことかを実感した半年でした。&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

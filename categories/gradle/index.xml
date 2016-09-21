@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gradle on open build/reports/life/index.html</title>
+    <link>http://grimrose.github.io/blog/categories/gradle/</link>
+    <description>Recent content in Gradle on open build/reports/life/index.html</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Thu, 26 May 2016 00:00:00 +0900</lastBuildDate>
+    <atom:link href="http://grimrose.github.io/blog/categories/gradle/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>JJUG CCC 2016 Springに参加してきました #jjug_ccc #ccc_m61</title>
+      <link>http://grimrose.github.io/blog/2016/05/jjug-ccc-2016/</link>
+      <pubDate>Thu, 26 May 2016 00:00:00 +0900</pubDate>
+      
+      <guid>http://grimrose.github.io/blog/2016/05/jjug-ccc-2016/</guid>
+      <description>
+
+&lt;h2 id=&#34;発表のキッカケ&#34;&gt;発表のキッカケ&lt;/h2&gt;
+
+&lt;p&gt;ちょうど日々の業務でGradleのタスク機能を利用して、共有ディレクトリにあるExcelのデータとDBの値とチェックしたり、
+前回の作業との差分を抽出して入力ミスがないかチェックしたり、といった小さい業務タスクを自動化していたので、
+50分は無理でも新しく出来た20分枠ならイケるんではないかと思い、
+Groovy枠として選ばれたら本気でやるかといった感じで応募しました。&lt;/p&gt;
+
+&lt;p&gt;なので、&lt;a href=&#34;https://github.com/jjug-ccc/call-for-paper-2016spring/issues/35&#34;&gt;十徳ナイフとしてのGradle / @grimrose #35&lt;/a&gt;に投票して頂いた皆様には、大変感謝しております。&lt;/p&gt;
+
+&lt;h2 id=&#34;jupyter使ってる理由&#34;&gt;jupyter使ってる理由&lt;/h2&gt;
+
+&lt;p&gt;ここ最近、発表資料には&lt;a href=&#34;http://jupyter.org/&#34;&gt;jupyter&lt;/a&gt;を活用しています。理由としては以下のとおりです。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;日常的に使っている。&lt;/li&gt;
+&lt;li&gt;Markdownで書ける。
+
+&lt;ul&gt;
+&lt;li&gt;スライドの確認がし易い。&lt;/li&gt;
+&lt;li&gt;リンクや画像を埋めるのが楽。&lt;/li&gt;
+&lt;li&gt;コードのシンタックスハイライトもされる。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Docker imageにしてしまえば、&lt;code&gt;docker run&lt;/code&gt;か&lt;code&gt;docker-compose up&lt;/code&gt;ですぐに使える。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/takluyver/bash_kernel&#34;&gt;takluyver/bash_kernel&lt;/a&gt;を入れれば、jupyer-notebookからbashが使える。&lt;/li&gt;
+&lt;li&gt;GitHubへpublishすれば、&lt;a href=&#34;https://nbviewer.jupyter.org/&#34;&gt;nbviewer&lt;/a&gt;で閲覧できる。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;標準のPythonや&lt;a href=&#34;https://github.com/jupyter/docker-stacks&#34;&gt;Spark&lt;/a&gt;向けのイメージを使えば、REPL代わりに使えるし、実行結果も保存出来たり等重宝してます。&lt;/p&gt;
+
+&lt;h2 id=&#34;発表の主旨&#34;&gt;発表の主旨&lt;/h2&gt;
+
+&lt;p&gt;今回の発表で一番伝えたかったのは、「ツールは達成したい目的によって変えましょう」ということです。
+「日常業務を楽にしたい。」であれば、自分の本来やらなければならないメインの仕事に割り当てる時間を増やすというのが目的なので、
+今回は自分が使えて、すぐに解決出来る「Gradle」を採用したまでです。&lt;/p&gt;
+
+&lt;p&gt;もちろん、Excelを使うヒトとの協調が必要であれば、Excel VBAも利用します。&lt;/p&gt;
+
+&lt;p&gt;Gradleで解決したタスクもゆくゆくはシステム化を目指すのであれば、それに依存するのではなく捨てられるようにしておくのが望ましいと思います。&lt;/p&gt;
+
+&lt;p&gt;そのままシステム化しようとすると、手段が目的となってしまい、本来解決しなければならなかった課題にたどり着くことが出来ず、
+自分だけしかメンテナンス出来ない負債が残るだけです。&lt;/p&gt;
+
+&lt;h2 id=&#34;サンプルの解説&#34;&gt;サンプルの解説&lt;/h2&gt;
+
+&lt;p&gt;Gradleのタスク機能を使ったサンプルプロジェクトは、こちらです。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/grimrose/JJUG-CCC-2016-Spring&#34;&gt;grimrose/JJUG-CCC-2016-Spring&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;あるプロジェクトを一つのworkspace配下において行くような場合を想定してます。&lt;/p&gt;
+
+&lt;p&gt;そのプロジェクトを構成しているそれぞれの個別プロジェクトを、Gradleのマルチプロジェクト機能を利用して、Gradleの依存を含めること無く操作できるようにするのが目的です。&lt;/p&gt;
+
+&lt;p&gt;特にフロントエンドは、完全に趣味とトライアルに走ってみました。
+個人的に気になっている&lt;a href=&#34;http://mithril.js.org/&#34;&gt;Mithril&lt;/a&gt;と&lt;a href=&#34;https://www.typescriptlang.org/&#34;&gt;Typescript&lt;/a&gt;,
+&lt;a href=&#34;https://github.com/power-assert-js/power-assert&#34;&gt;power-assert-js&lt;/a&gt;, &lt;a href=&#34;https://webpack.github.io/&#34;&gt;webpack&lt;/a&gt;の組み合わせに挑戦してみました。&lt;/p&gt;
+
+&lt;p&gt;その他のプロジェクトも、jarを動かしたり、JRubyを使ってRubyのプロダクトを動かしたり等、Gradle WrapperとJDKが入っているだけのマシンでここまでやれたり、
+プロダクトを統括するタスクランナーとしてのGradleというのを示すことが出来たのではないかと思います。&lt;/p&gt;
+
+&lt;h2 id=&#34;参加したセッション&#34;&gt;参加したセッション&lt;/h2&gt;
+
+&lt;p&gt;今回参加したセッションは、以下のとおりです。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.java-users.jp/?page_id=2396#E-2&#34;&gt;E-2 ブラウザテストをサクサク進めるためのGeb実践入門&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.java-users.jp/?page_id=2396#GH-3&#34;&gt;GH-3 Jenkins2.0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.java-users.jp/?page_id=2396#AB-4&#34;&gt;AB-4 Introduction to JShell: The Java REPL Tool&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.java-users.jp/?page_id=2396#AB-5&#34;&gt;AB-5 Apache Apexとインメモリー最適化による超高速処理の世界&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.java-users.jp/?page_id=2396#AB-6&#34;&gt;AB-6 ビッグデータじゃなくても使えるSpark☆Streaming&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.java-users.jp/?page_id=2396#GH-7&#34;&gt;GH-7 Java Pazzler&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.java-users.jp/?page_id=2396#M-7_2&#34;&gt;M-7_2 JVM上でのストリーム処理エンジンの変遷&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;セッション数が増えたのと20分枠のおかげで、体がいくつあっても足りないという感じでしたが、
+休憩のタイミングと間隔にゆとりがあったおかげでそこまで大変では無かったと思いました。&lt;/p&gt;
+
+&lt;h2 id=&#34;反省点&#34;&gt;反省点&lt;/h2&gt;
+
+&lt;p&gt;今回、自分が予想していたよりも多くの人に来ていただいた為、終盤の立ち見で体調が優れなかったり、部屋に入れなかった方がいたのは申し訳なかったと思ってます。
+出来る限り、サンプルプロジェクトやtwitter等でサポート出来ればと思っています。&lt;/p&gt;
+
+&lt;p&gt;また、始まる前にセッションの軽い説明などをする際に他のセッションに誘導したりして、
+自分の後のセッションを担当されていた&lt;a href=&#34;http://www.java-users.jp/?page_id=2396#M-6_2&#34;&gt;松村翔子 / しょこ&lt;/a&gt;の事を考えていなかったのは、誠に申し訳ありませんでした。&lt;/p&gt;
+
+&lt;p&gt;さらに、時間配分を間違えて発表の後半も駆け足になってしまった上にオーバーしてしまって、スタッフの人にもご迷惑をお掛けしてしまいました。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;ja&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;grimroseさん、これ絶対、50分でやるやつやったｗｗ &lt;a href=&#34;https://twitter.com/hashtag/ccc_m61?src=hash&#34;&gt;#ccc_m61&lt;/a&gt;&lt;/p&gt;&amp;mdash; CERO-METAL (@cero_t) &lt;a href=&#34;https://twitter.com/cero_t/status/733934673789739008&#34;&gt;2016年5月21日&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;上記のような反省が残るJJUG CCCでした。&lt;/p&gt;
+
+&lt;h2 id=&#34;おわりに&#34;&gt;おわりに&lt;/h2&gt;
+
+&lt;p&gt;ライブレポートで有名ななかやまさんが来ていただいたみたいで、twitterにレポートを上げてくださいました。ありがとうございました。
+次回お会いする機会が有ったら直接お礼をお伝え出来ればと思っています。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;ja&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;十徳ナイフとしてのGradleを聞いたメモ。&lt;a href=&#34;https://twitter.com/hashtag/ccc_m61?src=hash&#34;&gt;#ccc_m61&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hashtag/jjug_ccc?src=hash&#34;&gt;#jjug_ccc&lt;/a&gt; &lt;a href=&#34;https://t.co/TQ4b4occ8Y&#34;&gt;pic.twitter.com/TQ4b4occ8Y&lt;/a&gt;&lt;/p&gt;&amp;mdash; なかやまさん (@nakayama_san) &lt;a href=&#34;https://twitter.com/nakayama_san/status/733936982162710528&#34;&gt;2016年5月21日&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;懇親会では、twitterなどでお世話になっていた方々にご挨拶出来てとても楽しかったです。&lt;/p&gt;
+
+&lt;p&gt;次回の秋は、2017年にリリースされるであろうJava9を見据えていろいろ動いているであろうプロダクトの話や、様々なJVM言語の話が聞けることを期待してます。&lt;/p&gt;
+
+&lt;p&gt;JJUGのスタッフの皆様、スポンサーの皆様、講演者の皆様、参加者の皆様、ありがとうございました。&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

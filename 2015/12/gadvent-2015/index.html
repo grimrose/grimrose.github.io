@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ja" prefix="og: http://ogp.me/ns#">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://grimrose.github.io/blog/2015/12/gadvent-2015/" />
+<meta property="og:image" content="http://grimrose.github.io/blog/assets/images/logo.jpg" />
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:site" content="@grimrose">
+<meta name="twitter:card" content="summary">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/github.min.css">
+<link rel="stylesheet" href="http://grimrose.github.io/blog/css/normalize.css">
+<link rel="stylesheet" href="http://grimrose.github.io/blog/css/skeleton.css">
+<link rel="stylesheet" href="http://grimrose.github.io/blog/css/custom.css">
+<link rel="alternate" href="http://grimrose.github.io/blog/index.xml" type="application/rss+xml" title="open build/reports/life/index.html">
+
+<title>Spock Frameworkに関する電子書籍たち - open build/reports/life/index.html</title>
+<meta property="og:title"  content="Spock Frameworkに関する電子書籍たち - open build/reports/life/index.html" />
+<meta name="twitter:description" content="digital book about spock framework">
+</head>
+<body>
+
+<div class="container">
+
+	<header role="banner">
+		<div class="header-logo">
+			<a href="http://grimrose.github.io/blog/"><img src="http://grimrose.github.io/blog/assets/images/logo.jpg" width="60" height="60"></a>
+		</div>
+		
+	</header>
+
+
+<main role="main">
+    <article itemscope itemtype="http://schema.org/BlogPosting">
+        <h1 class="entry-title" itemprop="headline"><i class="fa fa-book"></i>&nbsp;Spock Frameworkに関する電子書籍たち</h1>
+        <span class="entry-meta">
+            <time itemprop="datePublished" datetime=" 2015-12-19">December 19, 2015</time>
+        </span>
+        <span class="entry-meta">
+          
+              
+              
+              <i class="fa fa-pencil"></i>
+              <a class="label" href="http://grimrose.github.io/blog/categories/blog">Blog</a>&nbsp;
+              
+              <i class="fa fa-pencil"></i>
+              <a class="label" href="http://grimrose.github.io/blog/categories/java">Java</a>&nbsp;
+              
+              <i class="fa fa-pencil"></i>
+              <a class="label" href="http://grimrose.github.io/blog/categories/groovy">Groovy</a>&nbsp;
+              
+              <i class="fa fa-pencil"></i>
+              <a class="label" href="http://grimrose.github.io/blog/categories/spock">Spock</a>&nbsp;
+              
+          
+        </span>
+        <section itemprop="entry-text">
+            
+
+<h2 id="はじめに">はじめに</h2>
+
+<p>この記事は、<a href="http://qiita.com/advent-calendar/2015/gastah">G* Advent Calendar 2015</a>の19日目のエントリです。</p>
+
+<h2 id="spockについて">Spockについて</h2>
+
+<p><a href="https://github.com/spockframework/spock">Spock Framework</a>は、JavaやGroovyで作られたアプリケーション向けのテスティングフレームワークです。</p>
+
+<p>個人的に<a href="https://github.com/spockframework/spock">Spock Framework</a>が好きな理由の一つは、<strong>power-assert</strong>機能です。</p>
+
+<p>power-assertが他の言語のテスティングフレームワークでも取り入れられていったのは、覚えるAPIが少ない上にテストで失敗した時の情報が分かりやすいからだと思います。</p>
+
+<blockquote>
+<p><a href="http://togetter.com/li/435920">アサーション失敗時の情報量を大幅に増やすことができるPower Assertの系譜</a></p>
+</blockquote>
+
+<p>仕事では<a href="http://www.scalatest.org/">ScalaTest</a>を使っていますが、
+power-assertのように使える<a href="http://doc.scalatest.org/2.2.1/index.html#org.scalatest.DiagrammedAssertions">DiagrammedAssertions</a>をメインに使ってます。</p>
+
+<p>その他にもパラメタライズドテストが書きやすかったり、Given-When-Thenと振る舞いを分かりやすく書ける機能があったりと、開発者がテストを書くのを助けてくれるのがとても好きです。</p>
+
+<p>2015年の<a href="https://github.com/spockframework/spock">Spock Framework</a>と言えば、なんと言ってもついに1.0がリリースされたのことでしょう。</p>
+
+<p><a href="http://googledevjp.blogspot.jp/2015/04/google-code.html">Google Codeが終了する</a>するにあたって、さまざまな事が一気に前進したように思えます。</p>
+
+<p>公式のリファレンスもGitHubに移動し、<a href="https://spockframework.github.io/spock/docs/">Spock Framework Reference Documentation</a>として公開されています。</p>
+
+<p>JUnit5がリリースされるとなるとSpockもどのように対応するのか楽しみではあります。</p>
+
+<h2 id="spockを題材とした電子書籍">Spockを題材とした電子書籍</h2>
+
+<p>日本でも利用されている方が増えてきたおかげか日本語の記事や情報を見かける機会が増えましたが、本格的に導入していこうとすると英語の記事を見ることになります。</p>
+
+<p>公式のリファレンスが充実しているので困ることは少ないですが、やはり自分たちのユースケースに近いサンプルがあるのが望ましいと思います。</p>
+
+<p>そういう場合は書籍の出番となりますが、今回は入手しやすい電子書籍を探してみました。</p>
+
+<p>普段利用している電子書籍を購入できるサイトで、Spockに関する書籍が見つかったのは、以下のとおりです。</p>
+
+<ul>
+<li><a href="http://shop.oreilly.com/home.do">O&rsquo;Reilly</a></li>
+<li><a href="https://www.manning.com/">Manning Publications</a></li>
+<li><a href="https://leanpub.com/">Leanpub</a></li>
+</ul>
+
+<p><a href="http://shop.oreilly.com/home.do">O&rsquo;Reilly</a>は有名なので割愛するとして、<a href="https://www.manning.com/">Manning Publications</a>は<a href="https://www.manning.com/books/groovy-in-action">Groovy In Action</a>や
+<a href="https://www.manning.com/books/grails-in-action">Grails in Action</a>で以前からGroovyに関する書籍を取り扱っているのは知ってました。</p>
+
+<p>注目したいのは、<a href="https://leanpub.com/">Leanpub</a>で以前<a href="https://leanpub.com/everydayrailsrspec-jp">Everyday Rails - RSpecによるRailsテスト入門</a>を購入した際に利用していました。</p>
+
+<p>Groovyについて困っている時やどう書いたらいいのか分からない時に<a href="http://mrhaki.blogspot.jp/">Messages from mrhaki</a>で探していますが、
+その著者が<a href="https://leanpub.com/">Leanpub</a>で<a href="https://leanpub.com/groovy-goodness-notebook">Groovy Goodness Notebook</a>や<a href="https://leanpub.com/gradle-goodness-notebook">Gradle Goodness Notebook</a>といった
+Groovyに関する書籍を販売しており、その一つにSpockに関するものもありました。</p>
+
+<h3 id="購入したもの">購入したもの</h3>
+
+<p>これまで購入したのは、以下の3冊です。</p>
+
+<ul>
+<li><a href="https://leanpub.com/spockframeworknotebook">Spocklight Notebook</a></li>
+<li><a href="https://www.manning.com/books/groovy-in-action-second-edition">Groovy in Action, Second Edition</a></li>
+<li><a href="http://shop.oreilly.com/product/0636920038597.do">Spock: Up and Running</a></li>
+</ul>
+
+<p>まず<a href="https://leanpub.com/spockframeworknotebook">Spocklight Notebook</a>ですが、<a href="https://leanpub.com/">Leanpub</a>で購入できます。実はWebで全部見れてしまう上に最低価格が$0なので実質Freeなのです。
+中身もユースケース毎に細かく分かれているため、自分たちの求めている内容がきっとあると思います。</p>
+
+<p>次に、<a href="https://www.manning.com/books/groovy-in-action-second-edition">Groovy in Action, Second Edition</a>ですが、こちらは以前にGroovy In Actionを購入していたので、そのまま購入しました。
+新しく<a href="https://github.com/spockframework/spock">Spock Framework</a>に関する内容なども追記されており、Groovyについてより詳しく知りたい時に役に立ちます。</p>
+
+<p>最後に<a href="http://shop.oreilly.com/product/0636920038597.do">Spock: Up and Running</a>ですが、現在、Early Releaseとして第3章までリリースされています。2016年の3月くらいにはPublishされるみたいです。
+今後追加されていくであろうチャプターのタイトルがどれも興味深いものばかりなので、楽しみです。</p>
+
+<p>購入してはないものの以下の電子書籍もSpockについてのチャプターがあったり、コードが提供されているものがあります。</p>
+
+<ul>
+<li><a href="https://www.manning.com/books/java-testing-with-spock">Java Testing with Spock</a></li>
+<li><a href="https://www.manning.com/books/making-java-groovy">Making Java Groovy</a></li>
+<li><a href="https://www.manning.com/books/bdd-in-action">BDD in Action</a></li>
+<li><a href="https://www.manning.com/books/arquillian-in-action">Arquillian in Action</a></li>
+<li><a href="https://www.manning.com/books/grails-in-action-second-edition">Grails in Action, Second Edition</a></li>
+</ul>
+
+<h2 id="おわりに">おわりに</h2>
+
+<p><a href="http://shop.oreilly.com/product/0636920038597.do">Spock: Up and Running</a>についてですが、<a href="http://connpass.com/series/253/">Yokohama.groovy</a>にて読書会をやってみようと計画しており、
+正式にPublishされ次第、開催する予定です。</p>
+
+<p>興味がある方は、<a href="https://gitter.im/yokohamagroovy/support?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge"><img src="https://badges.gitter.im/yokohamagroovy/support.svg" alt="Gitter" /></a>で気軽に声をかけてください。</p>
+
+<p>最後に、Javaのアプリケーションでテストコードで楽をしたい人は、是非<a href="https://github.com/spockframework/spock">Spock Framework</a>を使ってください。</p>
+
+<p><strong>Let&rsquo;s enjoy, Groovy!</strong></p>
+
+        </section>
+        <div class="hr"></div>
+        <div>
+            
+            <div>
+              <a class="previous" href="http://grimrose.github.io/blog/2015/12/retrospect-2015/"> 2015年の振り返り</a>
+              <i class="fa fa-arrow-left"></i>
+            </div>
+            
+            
+            <div>
+              <i class="fa fa-arrow-right"></i>
+              <a class="next" href="http://grimrose.github.io/blog/2015/12/jc-ws-2015/"> Clojure ワークショップ(仮)に参加してきました #jc_ws</a>
+            </div>
+            
+        </div>
+        <div class="hr"></div>
+<div class="post-share-buttons">
+    
+    <a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard-balloon"
+       data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img
+            src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20"
+            height="20" style="border: none;"/></a>
+    <script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8"
+            async="async"></script>
+    
+    <a class="tumblr-share-button" data-color="blue" data-notes="right" data-locale="ja_JP"
+       href="https://embed.tumblr.com/share"></a>
+    <script>!function (d, s, id) {
+        var js, ajs = d.getElementsByTagName(s)[0];
+        if (!d.getElementById(id)) {
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "https://secure.assets.tumblr.com/share-button.js";
+            ajs.parentNode.insertBefore(js, ajs);
+        }
+    }(document, "script", "tumblr-js");</script>
+    
+    <a href="https://twitter.com/share" class="twitter-share-button" data-lang="ja">ツイート</a>
+    <script>!function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+        if (!d.getElementById(id)) {
+            js = d.createElement(s);
+            js.id = id;
+            js.src = p + '://platform.twitter.com/widgets.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }
+    }(document, 'script', 'twitter-wjs');</script>
+</div>
+
+    </article>
+</main>
+
+
+	<footer role="contentinfo">
+		<div class="hr"></div>
+		<div class="footer-link">
+			
+			<i class="fa fa-twitter-square">
+				<a href="https://twitter.com/grimrose" target="_blank">Twitter</a>
+			</i>
+			
+			
+			<i class="fa fa-github-alt">
+				<a href="https://github.com/grimrose/" target="_blank">GitHub</a>
+			</i>
+			
+		</div>
+		<div class="copyright">Copyright &copy; <a href="http://grimrose.github.io/">grimrose</a> All rights reserved.</div>
+	</footer>
+
+</div>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+</body>
+</html>
+

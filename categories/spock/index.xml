@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Spock on open build/reports/life/index.html</title>
+    <link>http://grimrose.github.io/blog/categories/spock/</link>
+    <description>Recent content in Spock on open build/reports/life/index.html</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sat, 19 Dec 2015 00:00:00 +0900</lastBuildDate>
+    <atom:link href="http://grimrose.github.io/blog/categories/spock/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Spock Frameworkに関する電子書籍たち</title>
+      <link>http://grimrose.github.io/blog/2015/12/gadvent-2015/</link>
+      <pubDate>Sat, 19 Dec 2015 00:00:00 +0900</pubDate>
+      
+      <guid>http://grimrose.github.io/blog/2015/12/gadvent-2015/</guid>
+      <description>
+
+&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
+
+&lt;p&gt;この記事は、&lt;a href=&#34;http://qiita.com/advent-calendar/2015/gastah&#34;&gt;G* Advent Calendar 2015&lt;/a&gt;の19日目のエントリです。&lt;/p&gt;
+
+&lt;h2 id=&#34;spockについて&#34;&gt;Spockについて&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/spockframework/spock&#34;&gt;Spock Framework&lt;/a&gt;は、JavaやGroovyで作られたアプリケーション向けのテスティングフレームワークです。&lt;/p&gt;
+
+&lt;p&gt;個人的に&lt;a href=&#34;https://github.com/spockframework/spock&#34;&gt;Spock Framework&lt;/a&gt;が好きな理由の一つは、&lt;strong&gt;power-assert&lt;/strong&gt;機能です。&lt;/p&gt;
+
+&lt;p&gt;power-assertが他の言語のテスティングフレームワークでも取り入れられていったのは、覚えるAPIが少ない上にテストで失敗した時の情報が分かりやすいからだと思います。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;http://togetter.com/li/435920&#34;&gt;アサーション失敗時の情報量を大幅に増やすことができるPower Assertの系譜&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;仕事では&lt;a href=&#34;http://www.scalatest.org/&#34;&gt;ScalaTest&lt;/a&gt;を使っていますが、
+power-assertのように使える&lt;a href=&#34;http://doc.scalatest.org/2.2.1/index.html#org.scalatest.DiagrammedAssertions&#34;&gt;DiagrammedAssertions&lt;/a&gt;をメインに使ってます。&lt;/p&gt;
+
+&lt;p&gt;その他にもパラメタライズドテストが書きやすかったり、Given-When-Thenと振る舞いを分かりやすく書ける機能があったりと、開発者がテストを書くのを助けてくれるのがとても好きです。&lt;/p&gt;
+
+&lt;p&gt;2015年の&lt;a href=&#34;https://github.com/spockframework/spock&#34;&gt;Spock Framework&lt;/a&gt;と言えば、なんと言ってもついに1.0がリリースされたのことでしょう。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://googledevjp.blogspot.jp/2015/04/google-code.html&#34;&gt;Google Codeが終了する&lt;/a&gt;するにあたって、さまざまな事が一気に前進したように思えます。&lt;/p&gt;
+
+&lt;p&gt;公式のリファレンスもGitHubに移動し、&lt;a href=&#34;https://spockframework.github.io/spock/docs/&#34;&gt;Spock Framework Reference Documentation&lt;/a&gt;として公開されています。&lt;/p&gt;
+
+&lt;p&gt;JUnit5がリリースされるとなるとSpockもどのように対応するのか楽しみではあります。&lt;/p&gt;
+
+&lt;h2 id=&#34;spockを題材とした電子書籍&#34;&gt;Spockを題材とした電子書籍&lt;/h2&gt;
+
+&lt;p&gt;日本でも利用されている方が増えてきたおかげか日本語の記事や情報を見かける機会が増えましたが、本格的に導入していこうとすると英語の記事を見ることになります。&lt;/p&gt;
+
+&lt;p&gt;公式のリファレンスが充実しているので困ることは少ないですが、やはり自分たちのユースケースに近いサンプルがあるのが望ましいと思います。&lt;/p&gt;
+
+&lt;p&gt;そういう場合は書籍の出番となりますが、今回は入手しやすい電子書籍を探してみました。&lt;/p&gt;
+
+&lt;p&gt;普段利用している電子書籍を購入できるサイトで、Spockに関する書籍が見つかったのは、以下のとおりです。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://shop.oreilly.com/home.do&#34;&gt;O&amp;rsquo;Reilly&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.manning.com/&#34;&gt;Manning Publications&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://leanpub.com/&#34;&gt;Leanpub&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://shop.oreilly.com/home.do&#34;&gt;O&amp;rsquo;Reilly&lt;/a&gt;は有名なので割愛するとして、&lt;a href=&#34;https://www.manning.com/&#34;&gt;Manning Publications&lt;/a&gt;は&lt;a href=&#34;https://www.manning.com/books/groovy-in-action&#34;&gt;Groovy In Action&lt;/a&gt;や
+&lt;a href=&#34;https://www.manning.com/books/grails-in-action&#34;&gt;Grails in Action&lt;/a&gt;で以前からGroovyに関する書籍を取り扱っているのは知ってました。&lt;/p&gt;
+
+&lt;p&gt;注目したいのは、&lt;a href=&#34;https://leanpub.com/&#34;&gt;Leanpub&lt;/a&gt;で以前&lt;a href=&#34;https://leanpub.com/everydayrailsrspec-jp&#34;&gt;Everyday Rails - RSpecによるRailsテスト入門&lt;/a&gt;を購入した際に利用していました。&lt;/p&gt;
+
+&lt;p&gt;Groovyについて困っている時やどう書いたらいいのか分からない時に&lt;a href=&#34;http://mrhaki.blogspot.jp/&#34;&gt;Messages from mrhaki&lt;/a&gt;で探していますが、
+その著者が&lt;a href=&#34;https://leanpub.com/&#34;&gt;Leanpub&lt;/a&gt;で&lt;a href=&#34;https://leanpub.com/groovy-goodness-notebook&#34;&gt;Groovy Goodness Notebook&lt;/a&gt;や&lt;a href=&#34;https://leanpub.com/gradle-goodness-notebook&#34;&gt;Gradle Goodness Notebook&lt;/a&gt;といった
+Groovyに関する書籍を販売しており、その一つにSpockに関するものもありました。&lt;/p&gt;
+
+&lt;h3 id=&#34;購入したもの&#34;&gt;購入したもの&lt;/h3&gt;
+
+&lt;p&gt;これまで購入したのは、以下の3冊です。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://leanpub.com/spockframeworknotebook&#34;&gt;Spocklight Notebook&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.manning.com/books/groovy-in-action-second-edition&#34;&gt;Groovy in Action, Second Edition&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://shop.oreilly.com/product/0636920038597.do&#34;&gt;Spock: Up and Running&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;まず&lt;a href=&#34;https://leanpub.com/spockframeworknotebook&#34;&gt;Spocklight Notebook&lt;/a&gt;ですが、&lt;a href=&#34;https://leanpub.com/&#34;&gt;Leanpub&lt;/a&gt;で購入できます。実はWebで全部見れてしまう上に最低価格が$0なので実質Freeなのです。
+中身もユースケース毎に細かく分かれているため、自分たちの求めている内容がきっとあると思います。&lt;/p&gt;
+
+&lt;p&gt;次に、&lt;a href=&#34;https://www.manning.com/books/groovy-in-action-second-edition&#34;&gt;Groovy in Action, Second Edition&lt;/a&gt;ですが、こちらは以前にGroovy In Actionを購入していたので、そのまま購入しました。
+新しく&lt;a href=&#34;https://github.com/spockframework/spock&#34;&gt;Spock Framework&lt;/a&gt;に関する内容なども追記されており、Groovyについてより詳しく知りたい時に役に立ちます。&lt;/p&gt;
+
+&lt;p&gt;最後に&lt;a href=&#34;http://shop.oreilly.com/product/0636920038597.do&#34;&gt;Spock: Up and Running&lt;/a&gt;ですが、現在、Early Releaseとして第3章までリリースされています。2016年の3月くらいにはPublishされるみたいです。
+今後追加されていくであろうチャプターのタイトルがどれも興味深いものばかりなので、楽しみです。&lt;/p&gt;
+
+&lt;p&gt;購入してはないものの以下の電子書籍もSpockについてのチャプターがあったり、コードが提供されているものがあります。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.manning.com/books/java-testing-with-spock&#34;&gt;Java Testing with Spock&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.manning.com/books/making-java-groovy&#34;&gt;Making Java Groovy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.manning.com/books/bdd-in-action&#34;&gt;BDD in Action&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.manning.com/books/arquillian-in-action&#34;&gt;Arquillian in Action&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.manning.com/books/grails-in-action-second-edition&#34;&gt;Grails in Action, Second Edition&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;おわりに&#34;&gt;おわりに&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://shop.oreilly.com/product/0636920038597.do&#34;&gt;Spock: Up and Running&lt;/a&gt;についてですが、&lt;a href=&#34;http://connpass.com/series/253/&#34;&gt;Yokohama.groovy&lt;/a&gt;にて読書会をやってみようと計画しており、
+正式にPublishされ次第、開催する予定です。&lt;/p&gt;
+
+&lt;p&gt;興味がある方は、&lt;a href=&#34;https://gitter.im/yokohamagroovy/support?utm_source=badge&amp;amp;utm_medium=badge&amp;amp;utm_campaign=pr-badge&#34;&gt;&lt;img src=&#34;https://badges.gitter.im/yokohamagroovy/support.svg&#34; alt=&#34;Gitter&#34; /&gt;&lt;/a&gt;で気軽に声をかけてください。&lt;/p&gt;
+
+&lt;p&gt;最後に、Javaのアプリケーションでテストコードで楽をしたい人は、是非&lt;a href=&#34;https://github.com/spockframework/spock&#34;&gt;Spock Framework&lt;/a&gt;を使ってください。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Let&amp;rsquo;s enjoy, Groovy!&lt;/strong&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nodeschool on open build/reports/life/index.html</title>
+    <link>http://grimrose.github.io/blog/categories/nodeschool/</link>
+    <description>Recent content in Nodeschool on open build/reports/life/index.html</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sat, 18 Apr 2015 01:00:10 +0900</lastBuildDate>
+    <atom:link href="http://grimrose.github.io/blog/categories/nodeschool/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>nodeschool tokyo (東京Node学園 入学式) に参加してきました。 #nodeschool_tokyo</title>
+      <link>http://grimrose.github.io/blog/2015/04/node-school/</link>
+      <pubDate>Sat, 18 Apr 2015 01:00:10 +0900</pubDate>
+      
+      <guid>http://grimrose.github.io/blog/2015/04/node-school/</guid>
+      <description>
+
+&lt;p&gt;&lt;a href=&#34;http://nodejs.connpass.com/event/13182/&#34;&gt;http://nodejs.connpass.com/event/13182/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;node.jsを体系だって学ぶ機会がこれまで無かったので、参加してきました。&lt;/p&gt;
+
+&lt;h2 id=&#34;nodeschool&#34;&gt;nodeschool&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://nodeschool.io/index.html&#34;&gt;http://nodeschool.io/index.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://nodeschool.io/tokyo/&#34;&gt;http://nodeschool.io/tokyo/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;世界中で開催されているワークショップらしいです。&lt;/p&gt;
+
+&lt;p&gt;ワークショッパーを利用してステップアップしながら学んでいくスタイルでした。&lt;/p&gt;
+
+&lt;p&gt;参加者も様々なスキルレベルの人がいらっしゃったみたいです。&lt;/p&gt;
+
+&lt;h2 id=&#34;learnyounode&#34;&gt;learnyounode&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/rvagg/learnyounode&#34;&gt;https://github.com/rvagg/learnyounode&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;ワークショッパーのお陰で、詰まりながらも進める事が出来ました。&lt;/p&gt;
+
+&lt;p&gt;とは言え、Javascriptのスキルが低く、&lt;em&gt;Make it modular&lt;/em&gt; までしか出来ませんでした。&lt;/p&gt;
+
+&lt;p&gt;GitHubのレポジトリには、日本語のドキュメントもあるので続きをやってみたいと思います。&lt;/p&gt;
+
+&lt;h2 id=&#34;lt&#34;&gt;LT&lt;/h2&gt;
+
+&lt;p&gt;興味深かったのは、&lt;a href=&#34;https://hexi.pics/&#34;&gt;https://hexi.pics/&lt;/a&gt; についてのLTでした。&lt;/p&gt;
+
+&lt;p&gt;今回頂いたステッカーを作ったサービスらしく、どのように進めていったのか、苦労したのかというのがとても興味深かったです。&lt;/p&gt;
+
+&lt;h2 id=&#34;international-day&#34;&gt;International Day&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://nodeschool.io/international-day/&#34;&gt;http://nodeschool.io/international-day/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;2015年5月23日にまた開催される予定らしいです。&lt;/p&gt;
+
+&lt;p&gt;期待して待ってみましょう。&lt;/p&gt;
+
+&lt;p&gt;メンター、参加者の皆様、会場を提供して下さったサイバーエージェント様、ありがとうございました。&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

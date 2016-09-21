@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Seasar on open build/reports/life/index.html</title>
+    <link>http://grimrose.github.io/blog/categories/seasar/</link>
+    <description>Recent content in Seasar on open build/reports/life/index.html</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Tue, 29 Sep 2015 01:25:47 +0900</lastBuildDate>
+    <atom:link href="http://grimrose.github.io/blog/categories/seasar/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Seasar Conference 2015 Not 同窓会 に参加してきました #seasarcon</title>
+      <link>http://grimrose.github.io/blog/2015/09/seasarcon2015/</link>
+      <pubDate>Tue, 29 Sep 2015 01:25:47 +0900</pubDate>
+      
+      <guid>http://grimrose.github.io/blog/2015/09/seasarcon2015/</guid>
+      <description>
+
+&lt;p&gt;&lt;a href=&#34;https://event.seasarfoundation.org/sc2015/&#34;&gt;https://event.seasarfoundation.org/sc2015/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://seasar.connpass.com/event/19317/&#34;&gt;http://seasar.connpass.com/event/19317/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Seasar2はプロダクトでも使ったことがあるし、Seasar Conferenceがあったおかげで今の自分があると思っているので、参加してきました。&lt;/p&gt;
+
+&lt;h2 id=&#34;セッション&#34;&gt;セッション&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://event.seasarfoundation.org/sc2015/2015/09/17/seratch/&#34;&gt;Seasar ユーザだったプログラマが目指す OSS の世界展開&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;瀬良さんのセッションは、大学の教室ということもあり本当に歴史の授業っぽい雰囲気でした。&lt;/li&gt;
+&lt;li&gt;Skinny Frameworkは、今のプロジェクトで使っていて大変お世話になっています。&lt;/li&gt;
+&lt;li&gt;特にSkinny-ORM, ScalikeJDBCはSQLをゴリゴリ書くようなプロダクトに向いていると思います。&lt;/li&gt;
+&lt;li&gt;GitHubがデファクトとなっている現状では、日本語より英語のドキュメントを充実するほうがより使ってもらえる可能性が高いのは確かだと思います。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://event.seasarfoundation.org/sc2015/2015/09/08/tsuyoshizawa/&#34;&gt;Play Framework + Scala は Next Seasar なのか&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Next Seasarについては、既存のSeasar2を利用したプロダクトを別のフレームワークに置き換えてもそれなりに利益を生むようなものでない限り時代に取り残されて行く運命なのかも知れないと感じました。&lt;/li&gt;
+&lt;li&gt;挙げられそうなNext Seasarとしては、Spring bootやJavaのMicroframeworkやJava EE等があります。&lt;/li&gt;
+&lt;li&gt;ですが、メンテナンスする人達がJavaの進化に置いて行かれるような場合、選択すら出来ずどうすることも出来ない状態に陥るのではないかと思います。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://event.seasarfoundation.org/sc2015/2015/09/07/daisuke_m/&#34;&gt;「Single Command Deployのためのgradle-aws-plugin講座」〜自動ビルド厨はここまで大きくなりました〜&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Gradleの話を聞いてみたかったのと、AWSへのデプロイツールとしてどう使うのか興味がありました。&lt;/li&gt;
+&lt;li&gt;ドキュメントに残さなければいけない箇所を出来る限り少なくして、自動化するというのはとても参考になりました。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://event.seasarfoundation.org/sc2015/2015/09/25/cero/&#34;&gt;Spring Boot for the Seasar Developers – みんなが欲しかったアレもソレもここにある&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ライブコーディングでサクサクとSpring bootを使ったWebアプリを作っていくのは、楽しそうに見えました。&lt;/li&gt;
+&lt;li&gt;Spring bootのremote-shellは、&lt;a href=&#34;http://www.crashub.org/&#34;&gt;CRaSH&lt;/a&gt;がベースなので、単体でも使うことが出来ます。&lt;/li&gt;
+&lt;li&gt;IntelliJ IDEAであれば、&lt;a href=&#34;https://www.jetbrains.com/idea/help/using-language-injections.html#d1003694e290&#34;&gt;Using Language Injections&lt;/a&gt;を使うことで、StringのSQLに対してシンタックスハイライトを付けることが出来るようになります。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://event.seasarfoundation.org/sc2015/2015/09/25/si/&#34;&gt;SIは本当に終わったのか?&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;受託やSIの世界から遠ざかってしまったので、第三者的な視点で見てました。&lt;/li&gt;
+&lt;li&gt;元請けの視点がメインだったので、下請けからの視点が無かったのはちょっと残念だと思いました。&lt;/li&gt;
+&lt;li&gt;実際に利用するユーザのフィードバックと取り込めるような距離感が無いと、今後も厳しそうだと感じました。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;おわりに&#34;&gt;おわりに&lt;/h2&gt;
+
+&lt;p&gt;Seasar2から卒業ということで、自分が変わるキッカケになったSeasar Conferenceに久しぶりに参加できてよかったと思います。&lt;/p&gt;
+
+&lt;p&gt;一つの区切りが出来たことで、これまでSeasar2から何を得たのか振り返る事が出来ました。&lt;/p&gt;
+
+&lt;p&gt;特に、DIとAOPの基本、O/R Mapperの構成を学ぶ事が出来たのが大きいと感じました。&lt;/p&gt;
+
+&lt;p&gt;個人的に来年もし開催されるのであれば、卒業式というのが良いのではないと思っています。&lt;/p&gt;
+
+&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; lang=&#34;ja&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;来年、卒業式やるのが良いのでは &lt;a href=&#34;https://twitter.com/hashtag/seasarcon?src=hash&#34;&gt;#seasarcon&lt;/a&gt;&lt;/p&gt;&amp;mdash; とーます (@grimrose) &lt;a href=&#34;https://twitter.com/grimrose/status/647726679025037312&#34;&gt;2015, 9月 26&lt;/a&gt;&lt;/blockquote&gt;
+  &lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;主催の皆様、Speakerの皆様、参加者の皆様、ありがとうございました。&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ja" prefix="og: http://ogp.me/ns#">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://grimrose.github.io/blog/2015/12/jc-ws-2015/" />
+<meta property="og:image" content="http://grimrose.github.io/blog/assets/images/logo.jpg" />
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:site" content="@grimrose">
+<meta name="twitter:card" content="summary">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/github.min.css">
+<link rel="stylesheet" href="http://grimrose.github.io/blog/css/normalize.css">
+<link rel="stylesheet" href="http://grimrose.github.io/blog/css/skeleton.css">
+<link rel="stylesheet" href="http://grimrose.github.io/blog/css/custom.css">
+<link rel="alternate" href="http://grimrose.github.io/blog/index.xml" type="application/rss+xml" title="open build/reports/life/index.html">
+
+<title>Clojure ワークショップ(仮)に参加してきました #jc_ws - open build/reports/life/index.html</title>
+<meta property="og:title"  content="Clojure ワークショップ(仮)に参加してきました #jc_ws - open build/reports/life/index.html" />
+<meta name="twitter:description" content="Clojure workshop">
+</head>
+<body>
+
+<div class="container">
+
+	<header role="banner">
+		<div class="header-logo">
+			<a href="http://grimrose.github.io/blog/"><img src="http://grimrose.github.io/blog/assets/images/logo.jpg" width="60" height="60"></a>
+		</div>
+		
+	</header>
+
+
+<main role="main">
+    <article itemscope itemtype="http://schema.org/BlogPosting">
+        <h1 class="entry-title" itemprop="headline"><i class="fa fa-book"></i>&nbsp;Clojure ワークショップ(仮)に参加してきました #jc_ws</h1>
+        <span class="entry-meta">
+            <time itemprop="datePublished" datetime=" 2015-12-14">December 14, 2015</time>
+        </span>
+        <span class="entry-meta">
+          
+              
+              
+              <i class="fa fa-pencil"></i>
+              <a class="label" href="http://grimrose.github.io/blog/categories/blog">Blog</a>&nbsp;
+              
+              <i class="fa fa-pencil"></i>
+              <a class="label" href="http://grimrose.github.io/blog/categories/clojure">Clojure</a>&nbsp;
+              
+          
+        </span>
+        <section itemprop="entry-text">
+            
+
+<h2 id="はじめに">はじめに</h2>
+
+<p><a href="https://japanclojurians.doorkeeper.jp/events/34090">【参加者募集】 Clojure ワークショップ(仮)</a>に参加してきました。</p>
+
+<p>きっかけは、以前に<a href="http://connpass.com/event/10849/">しょぼちむにデータモデル設計について教えてくださいの会 #syoboben</a>で<a href="https://twitter.com/kawasima">@kawasima</a>さんが
+以下のプレゼンをした時にでてきた<a href="http://www.datomic.com">Datomic</a>が気になったからです。</p>
+
+<blockquote>
+<p><iframe src="//www.slideshare.net/slideshow/embed_code/key/wUFig8EBkhNZVN?startSlide=15" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/kawasima/ss-44958468" title="イミュータブルデータモデル(世代編)" target="_blank">イミュータブルデータモデル(世代編)</a> </strong> from <strong><a href="//www.slideshare.net/kawasima" target="_blank">Yoshitka Kawashima</a></strong> </div></p>
+</blockquote>
+
+<p>その後、<a href="https://twitter.com/kawasima">@kawasima</a>さんがリリースした<a href="http://job-streamer.readthedocs.org/ja/latest/">JobStreamer</a>がDatomicが使われていたので、
+どうやって使ったらいいのかを知りたい、せめてClojureが読めるようになりたいと思ってました。</p>
+
+<p>その後の渋谷Javaなどで<a href="https://twitter.com/kawasima">@kawasima</a>さんがClojureの話をされていたので、無意識に刷り込まれていたのかもしれません。</p>
+
+<p><a href="http://ayato.hateblo.jp">あやぴー</a>さんが開催されるとのことだったので、楽しみにしてました。</p>
+
+<h2 id="キメるclojure">キメるClojure</h2>
+
+<blockquote>
+<p><iframe src="//www.slideshare.net/slideshow/embed_code/key/1QwijworIvvfQK" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/kawasima/clojure-56071919" title="キメるClojure" target="_blank">キメるClojure</a> </strong> from <strong><a href="//www.slideshare.net/kawasima" target="_blank">Yoshitka Kawashima</a></strong> </div></p>
+</blockquote>
+
+<p>タイトルは「Rubyをキメると気持ちいい」から来てるとおもいますが、挙げられているClojureのコードを後から見なおしてみるとすっきりしていて分かりやすかったです。</p>
+
+<blockquote>
+<p><blockquote class="twitter-tweet" lang="ja"><p lang="ja" dir="ltr"><a href="https://twitter.com/hashtag/jc_ws?src=hash">#jc_ws</a> だいたい色んなライブラリ読むけど、確かに小さいことが多いし、作りきられていることが多くて変更が少ないのも良い</p>&mdash; あやぴー (@_ayato_p) <a href="https://twitter.com/_ayato_p/status/675496113114230786">2015, 12月 12</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+</blockquote>
+
+<p>こういう思想で作られていると使いやすいのではないかと思いました。</p>
+
+<h2 id="ワークショップ">ワークショップ</h2>
+
+<p>あやぴーさんが用意して下さった<a href="https://github.com/japan-clojurians/curriculum">japan-clojurians/curriculum</a>のチートシートをまず読んでました。</p>
+
+<p>はじめは、jupyterでもできないかなと思い、Clojureの<a href="https://github.com/roryk/clojupyter">roryk/clojupyter</a>を入れてやろうとしてましたが、
+ZeroMQとの連携が上手く行っていないのかエラーがでて使えませんでした。
+Clojureでは<a href="http://gorilla-repl.org/index.html">Gorilla REPL</a>を使うのが良いらしいので、今度使ってみようと思います。</p>
+
+<p>仕方ないので、前日に用意していたIntelliJ IDEAとCursive pluginでやることにしました。</p>
+
+<p>その後は、紹介されていた<a href="http://clojurekoans.com/">Clojure koans</a>をずっとやってました。</p>
+
+<p>穴埋めで、1問づつ答えていく形式なので、困ったときはREPLで確かめながらやってました。</p>
+
+<p>普段は、スニペットの確認はREPLではなくテストコードでやっているので、ClojureのREPLがここまで便利だとは思ってませんでした。</p>
+
+<h2 id="おわりに">おわりに</h2>
+
+<p>togetterはこちら -&gt; <a href="http://togetter.com/li/911893">Clojure ワークショップでした！</a>。</p>
+
+<p>これでClojureを読める手段を手に入れることが出来たので、JobStreamerのコードを読んで行こうと思います。</p>
+
+<p>いずれは、イミュータブルデータモデルとDatomicを使った何かを作ってみたいと思います。
+あとAltJSの一つとしてClojureScriptも興味が出てきたので、watchしていこうと思います。</p>
+
+<p>あやぴーさん、TAの皆様、会場を提供して下さったサイボウズスタートアップス株式会社様、ありがとうございました。</p>
+
+        </section>
+        <div class="hr"></div>
+        <div>
+            
+            <div>
+              <a class="previous" href="http://grimrose.github.io/blog/2015/12/gadvent-2015/"> Spock Frameworkに関する電子書籍たち</a>
+              <i class="fa fa-arrow-left"></i>
+            </div>
+            
+            
+            <div>
+              <i class="fa fa-arrow-right"></i>
+              <a class="next" href="http://grimrose.github.io/blog/2015/12/daitokai-2015/"> 業務アプリケーションをElectronで作ってみた話をしてきました #gbdaitokai #忘年会議</a>
+            </div>
+            
+        </div>
+        <div class="hr"></div>
+<div class="post-share-buttons">
+    
+    <a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard-balloon"
+       data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img
+            src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20"
+            height="20" style="border: none;"/></a>
+    <script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8"
+            async="async"></script>
+    
+    <a class="tumblr-share-button" data-color="blue" data-notes="right" data-locale="ja_JP"
+       href="https://embed.tumblr.com/share"></a>
+    <script>!function (d, s, id) {
+        var js, ajs = d.getElementsByTagName(s)[0];
+        if (!d.getElementById(id)) {
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "https://secure.assets.tumblr.com/share-button.js";
+            ajs.parentNode.insertBefore(js, ajs);
+        }
+    }(document, "script", "tumblr-js");</script>
+    
+    <a href="https://twitter.com/share" class="twitter-share-button" data-lang="ja">ツイート</a>
+    <script>!function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+        if (!d.getElementById(id)) {
+            js = d.createElement(s);
+            js.id = id;
+            js.src = p + '://platform.twitter.com/widgets.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }
+    }(document, 'script', 'twitter-wjs');</script>
+</div>
+
+    </article>
+</main>
+
+
+	<footer role="contentinfo">
+		<div class="hr"></div>
+		<div class="footer-link">
+			
+			<i class="fa fa-twitter-square">
+				<a href="https://twitter.com/grimrose" target="_blank">Twitter</a>
+			</i>
+			
+			
+			<i class="fa fa-github-alt">
+				<a href="https://github.com/grimrose/" target="_blank">GitHub</a>
+			</i>
+			
+		</div>
+		<div class="copyright">Copyright &copy; <a href="http://grimrose.github.io/">grimrose</a> All rights reserved.</div>
+	</footer>
+
+</div>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+</body>
+</html>
+

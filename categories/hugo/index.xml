@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on open build/reports/life/index.html</title>
+    <link>http://grimrose.github.io/blog/categories/hugo/</link>
+    <description>Recent content in Hugo on open build/reports/life/index.html</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Mon, 13 Apr 2015 00:25:58 +0900</lastBuildDate>
+    <atom:link href="http://grimrose.github.io/blog/categories/hugo/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Hugoを使ってみます。</title>
+      <link>http://grimrose.github.io/blog/2015/04/start-with-hugo/</link>
+      <pubDate>Mon, 13 Apr 2015 00:25:58 +0900</pubDate>
+      
+      <guid>http://grimrose.github.io/blog/2015/04/start-with-hugo/</guid>
+      <description>&lt;p&gt;これまでは、&lt;a href=&#34;http://grimrose.blogspot.jp/&#34;&gt;Blogger&lt;/a&gt;で書いていました。&lt;/p&gt;
+
+&lt;p&gt;ですが、下書きから公開まで全てがブラウザに依存しているため、書こうと思ってから書く気力がだんだん落ちて、
+下書きが溜まって、最終的に公開しないままいく一方でした。&lt;/p&gt;
+
+&lt;p&gt;テキスト書くときは、&lt;a href=&#34;https://atom.io/&#34;&gt;Atom&lt;/a&gt;と&lt;a href=&#34;https://www.jetbrains.com/idea/&#34;&gt;IntelliJ IDEA&lt;/a&gt;使っているのですが、
+どちらもコマンドエディタからコンソールまでほぼ完結しているので、blogも何とか出来ないかなと思ってました。&lt;/p&gt;
+
+&lt;p&gt;仕事で使うドキュメントの生成ツールの検証も兼ねて、Markdownで書ける静的サイトを作れるツールでいろいろと探していたところ、&lt;a href=&#34;http://gohugo.io/&#34;&gt;Hugo&lt;/a&gt;がとても印象的でした。&lt;/p&gt;
+
+&lt;p&gt;Goで書かれているためか動作が早く、ドキュメントもひと通り揃ってました。&lt;/p&gt;
+
+&lt;p&gt;今後は、この&lt;a href=&#34;http://gohugo.io/&#34;&gt;Hugo&lt;/a&gt;を使って行きたいと思います。&lt;/p&gt;
+
+&lt;p&gt;テーマは、シンプルな&lt;a href=&#34;https://github.com/rakuishi/hugo-zen&#34;&gt;Hugo Zen&lt;/a&gt;を使うことにしました。&lt;/p&gt;
+
+&lt;p&gt;今後はこのテーマをベースにカスタマイズしていく予定です。&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

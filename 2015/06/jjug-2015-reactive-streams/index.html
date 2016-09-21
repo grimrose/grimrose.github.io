@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ja" prefix="og: http://ogp.me/ns#">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://grimrose.github.io/blog/2015/06/jjug-2015-reactive-streams/" />
+<meta property="og:image" content="http://grimrose.github.io/blog/assets/images/logo.jpg" />
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:site" content="@grimrose">
+<meta name="twitter:card" content="summary">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/github.min.css">
+<link rel="stylesheet" href="http://grimrose.github.io/blog/css/normalize.css">
+<link rel="stylesheet" href="http://grimrose.github.io/blog/css/skeleton.css">
+<link rel="stylesheet" href="http://grimrose.github.io/blog/css/custom.css">
+<link rel="alternate" href="http://grimrose.github.io/blog/index.xml" type="application/rss+xml" title="open build/reports/life/index.html">
+
+<title>【東京】JJUG ナイトセミナー 「Reactive Streams特集」 に参加してきました。 #jjug - open build/reports/life/index.html</title>
+<meta property="og:title"  content="【東京】JJUG ナイトセミナー 「Reactive Streams特集」 に参加してきました。 #jjug - open build/reports/life/index.html" />
+<meta name="twitter:description" content="Reactive Streams JJUG 2015 06">
+</head>
+<body>
+
+<div class="container">
+
+	<header role="banner">
+		<div class="header-logo">
+			<a href="http://grimrose.github.io/blog/"><img src="http://grimrose.github.io/blog/assets/images/logo.jpg" width="60" height="60"></a>
+		</div>
+		
+	</header>
+
+
+<main role="main">
+    <article itemscope itemtype="http://schema.org/BlogPosting">
+        <h1 class="entry-title" itemprop="headline"><i class="fa fa-book"></i>&nbsp;【東京】JJUG ナイトセミナー 「Reactive Streams特集」 に参加してきました。 #jjug</h1>
+        <span class="entry-meta">
+            <time itemprop="datePublished" datetime=" 2015-06-27">June 27, 2015</time>
+        </span>
+        <span class="entry-meta">
+          
+              
+              
+              <i class="fa fa-pencil"></i>
+              <a class="label" href="http://grimrose.github.io/blog/categories/blog">Blog</a>&nbsp;
+              
+              <i class="fa fa-pencil"></i>
+              <a class="label" href="http://grimrose.github.io/blog/categories/java">java</a>&nbsp;
+              
+              <i class="fa fa-pencil"></i>
+              <a class="label" href="http://grimrose.github.io/blog/categories/jjug">JJUG</a>&nbsp;
+              
+          
+        </span>
+        <section itemprop="entry-text">
+            
+
+<h2 id="はじめに">はじめに</h2>
+
+<p><a href="https://jjug.doorkeeper.jp/events/26547">https://jjug.doorkeeper.jp/events/26547</a></p>
+
+<p><a href="https://twitter.com/making">@making</a>さんから、<a href="https://twitter.com/okapies">@okapies</a>さんと一緒に「Reactive Streams」について話してくれと頼まれましたので、参加してきました。</p>
+
+<p>元々は、<a href="https://twitter.com/cero_t">@cero_t</a>さんが発端らしいです。</p>
+
+<p><blockquote class="twitter-tweet" lang="ja"><p lang="ja" dir="ltr">ちなみに今日のReactive Streams勉強会の発端は、ゴールデンウィーク明けに <a href="https://twitter.com/cero_t">@cero_t</a> さんがReactiveについてほげほげ言ってたことで、ナイトセミナーやろうぜって感じだったんだけど、当の本人は来ていないっていう</p>&mdash; Toshiaki Maki (@making) <a href="https://twitter.com/making/status/613702257939353600">2015, 6月 24</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+
+<p>初めは、マイナーなネタならそんなに人集まらないだろうと思ってたのですが、キャンセル待ちが100人超えするくらいまで期待されてて正直びっくりしました。</p>
+
+<p>当日のアンケートシステム、とても良かったので次回以降改善されるのを期待してます。</p>
+
+<h2 id="資料">資料</h2>
+
+<p><a href="https://twitter.com/okapies">@okapies</a>さんの資料は、こちらです。</p>
+
+<script async class="speakerdeck-embed" data-id="df469560cc64424c98330aad22b19cda" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
+
+<p>私の資料は、こちらです。</p>
+
+<p><a href="http://grimrose.github.io/jjug-2015-reactive-streams/">http://grimrose.github.io/jjug-2015-reactive-streams/</a></p>
+
+<p>利用したサンプルコードは、こちらです。</p>
+
+<p><a href="https://github.com/grimrose/jjug-2015-reactive-streams">https://github.com/grimrose/jjug-2015-reactive-streams</a></p>
+
+<p>元々は、<a href="http://vertx.io">Vert.x3</a>でやろうと思ってましたが、<a href="http://projectreactor.io">Reactor</a>か<a href="http://reactivex.io">RxJava</a>でと言われたので、使ったことがあるRxJavaを選びました。</p>
+
+<p>確かに、当日のアンケートを見ると<a href="http://vertx.io">Vert.x3</a>、<a href="http://ratpack.io">Ratpack</a>の認知度が低すぎて、RxJavaを選択しておいてよかったと思いました。</p>
+
+<p>ドキュメントの多さは、やはりRxJavaに分があるのですが、Reactorもかなり充実しています。</p>
+
+<p>個人的には、<a href="http://mongodb.github.io/mongo-java-driver-reactivestreams/">MongoDB Reactive Streams Java Driver</a>がチュートリアルとして、充実してると感じました。</p>
+
+<p>初めてJavaでAkkaを使ってみたのですが、いろいろツライ印象しか受けませんでした。</p>
+
+<p>あれなら、素直にScalaで使ったほうが分かりやすいと思います。</p>
+
+<h2 id="おわりに">おわりに</h2>
+
+<p>Reactive Streamsについては、それぞれのRuntimeの世界を繋ぐ為の仕様という認識が一番分かりやすいと思います。</p>
+
+<p>実際の泥臭い部分は、Runtimeが頑張ってくれますが、何をやっているのか、どうやって実現しているのかを知っておくのは大切です。</p>
+
+<p>どのRuntimeもReactive Streams向けに変換するライブラリがありますので、そのソースコードを読むのも勉強になると思います。</p>
+
+<p>JDK9にどこまで採用されるか分かりませんが、データフロー制御についての共通インターフェースが採用されると、java.util.concurrentと併せて、非同期処理をもっと使いやすくなると思います。</p>
+
+<p>JVMでデータフロー制御でお困りの方は、使ってみてはいかがでしょうか。</p>
+
+<p>JJUGのスタッフ、参加者の皆様、<a href="https://twitter.com/okapies">@okapies</a>さん、ありがとうございました。</p>
+
+        </section>
+        <div class="hr"></div>
+        <div>
+            
+            <div>
+              <a class="previous" href="http://grimrose.github.io/blog/2015/08/yapc-asia-tokyo-2015/"> YAPC::Asia Tokyo 2015 に参加してきました。 #yapcasia</a>
+              <i class="fa fa-arrow-left"></i>
+            </div>
+            
+            
+            <div>
+              <i class="fa fa-arrow-right"></i>
+              <a class="next" href="http://grimrose.github.io/blog/2015/06/career-change/"> 転職して半年が経ちました。</a>
+            </div>
+            
+        </div>
+        <div class="hr"></div>
+<div class="post-share-buttons">
+    
+    <a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard-balloon"
+       data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img
+            src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20"
+            height="20" style="border: none;"/></a>
+    <script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8"
+            async="async"></script>
+    
+    <a class="tumblr-share-button" data-color="blue" data-notes="right" data-locale="ja_JP"
+       href="https://embed.tumblr.com/share"></a>
+    <script>!function (d, s, id) {
+        var js, ajs = d.getElementsByTagName(s)[0];
+        if (!d.getElementById(id)) {
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "https://secure.assets.tumblr.com/share-button.js";
+            ajs.parentNode.insertBefore(js, ajs);
+        }
+    }(document, "script", "tumblr-js");</script>
+    
+    <a href="https://twitter.com/share" class="twitter-share-button" data-lang="ja">ツイート</a>
+    <script>!function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+        if (!d.getElementById(id)) {
+            js = d.createElement(s);
+            js.id = id;
+            js.src = p + '://platform.twitter.com/widgets.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }
+    }(document, 'script', 'twitter-wjs');</script>
+</div>
+
+    </article>
+</main>
+
+
+	<footer role="contentinfo">
+		<div class="hr"></div>
+		<div class="footer-link">
+			
+			<i class="fa fa-twitter-square">
+				<a href="https://twitter.com/grimrose" target="_blank">Twitter</a>
+			</i>
+			
+			
+			<i class="fa fa-github-alt">
+				<a href="https://github.com/grimrose/" target="_blank">GitHub</a>
+			</i>
+			
+		</div>
+		<div class="copyright">Copyright &copy; <a href="http://grimrose.github.io/">grimrose</a> All rights reserved.</div>
+	</footer>
+
+</div>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+</body>
+</html>
+

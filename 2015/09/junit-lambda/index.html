@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ja" prefix="og: http://ogp.me/ns#">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://grimrose.github.io/blog/2015/09/junit-lambda/" />
+<meta property="og:image" content="http://grimrose.github.io/blog/assets/images/logo.jpg" />
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:site" content="@grimrose">
+<meta name="twitter:card" content="summary">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/github.min.css">
+<link rel="stylesheet" href="http://grimrose.github.io/blog/css/normalize.css">
+<link rel="stylesheet" href="http://grimrose.github.io/blog/css/skeleton.css">
+<link rel="stylesheet" href="http://grimrose.github.io/blog/css/custom.css">
+<link rel="alternate" href="http://grimrose.github.io/blog/index.xml" type="application/rss+xml" title="open build/reports/life/index.html">
+
+<title>JUnit Lambda に寄付をしました #fundJUnit - open build/reports/life/index.html</title>
+<meta property="og:title"  content="JUnit Lambda に寄付をしました #fundJUnit - open build/reports/life/index.html" />
+<meta name="twitter:description" content="crowdfunding JUnit Lambda">
+</head>
+<body>
+
+<div class="container">
+
+	<header role="banner">
+		<div class="header-logo">
+			<a href="http://grimrose.github.io/blog/"><img src="http://grimrose.github.io/blog/assets/images/logo.jpg" width="60" height="60"></a>
+		</div>
+		
+	</header>
+
+
+<main role="main">
+    <article itemscope itemtype="http://schema.org/BlogPosting">
+        <h1 class="entry-title" itemprop="headline"><i class="fa fa-book"></i>&nbsp;JUnit Lambda に寄付をしました #fundJUnit</h1>
+        <span class="entry-meta">
+            <time itemprop="datePublished" datetime=" 2015-09-19">September 19, 2015</time>
+        </span>
+        <span class="entry-meta">
+          
+              
+              
+              <i class="fa fa-pencil"></i>
+              <a class="label" href="http://grimrose.github.io/blog/categories/blog">Blog</a>&nbsp;
+              
+              <i class="fa fa-pencil"></i>
+              <a class="label" href="http://grimrose.github.io/blog/categories/java">Java</a>&nbsp;
+              
+              <i class="fa fa-pencil"></i>
+              <a class="label" href="http://grimrose.github.io/blog/categories/junit">JUnit</a>&nbsp;
+              
+          
+        </span>
+        <section itemprop="entry-text">
+            
+
+<p><a href="https://twitter.com/t_wada">@t_wada</a> さんのツイートから知りましたが、JUnitのプロジェクトが援助を求めているそうです。</p>
+
+<blockquote>
+<p><blockquote class="twitter-tweet" lang="ja"><p lang="ja" dir="ltr">JUnit がクラウドファンディングで援助を求めている。現在フルタイムのメンテナがおらず、 issue 解決や Java8 対応 (特にラムダ式) の余力が無い。現時点の JUnit の問題点や将来像も示されている <a href="https://twitter.com/hashtag/fundJUn?src=hash">#fundJUn</a>… <a href="http://t.co/o8ijOxTWr2">http://t.co/o8ijOxTWr2</a></p>&mdash; Takuto Wada (@t_wada) <a href="https://twitter.com/t_wada/status/644085548374605824">2015, 9月 16</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+</blockquote>
+
+<p><a href="http://junit.org/junit-lambda.html">Crowdfunding JUnit Lambda</a></p>
+
+<p>日本語での詳細な内容については、<a href="http://www.publickey1.jp/blog/15/junit.html">JUnitの開発が資金不足で行き詰まり。クラウドファンディングで寄付金を募集中</a> を見ていだくのがいいと思います。</p>
+
+<h2 id="junitと私">JUnitと私</h2>
+
+<p>個人的にJUnitを真面目に使い始めたのは、TDDBCで使い方を教わってからだと思います。</p>
+
+<p>その時教えていただいた渡辺さんが書かれた<a href="http://gihyo.jp/book/2012/978-4-7741-5377-3">JUnit実践入門</a>を読んで、Javaでユニットテストを書くにはどうしたら良いかを学ぶことが出来ました。</p>
+
+<p>それからGroovyと出会い、<a href="https://github.com/spockframework">Spock Framework</a>に惚れてTDDBCのGroovyのTAをやったり、アジャイルサムライのイベントで紹介をしたりしてました。</p>
+
+<p>現在の仕事では、<a href="https://phpunit.de/">PHPUnit</a>、<a href="http://www.scalatest.org/">ScalaTest</a>を使っています。</p>
+
+<p>xUnit系テスティングフレームワークは、テストを書く際に覚えることが少なくて、ユニットテストの書き方を学ぶ際に、余計なことを覚えなくても済むのがメリットだと思います。</p>
+
+<p>あと、モダンな言語であればだいたい備わっているので、言語を覚える際にもassertionの書き方を覚えればなんとか始められます。
+それまでユニットテストを書く際の経験がそのまま言語を学ぶ際にも応用が出来るのが、xUnit系のテスティングフレームワークの良いところだと思います。</p>
+
+<p>個人的にJUnitがもう少し頑張って欲しいのは、「パラメタライズドテストの書き方」、「失敗時のメッセージが分かりにくい」だと思います。</p>
+
+<p>これはSpockを知ってしまってから、余計に感じるようになったと思います。</p>
+
+<p>もちろんJavaの言語仕様として難しい部分もあると思いますが、出来れば<code>power-assert</code>は入って欲しいと願ってます。</p>
+
+<p><code>power-assert</code>については、日本語では<a href="http://codelunch.fm/16/">The power-assert Leaves From Moratorium</a>がまとまっていると思います。</p>
+
+<p>今回のFundingでどこまで機能が盛り込まれたり、改善されるかは経過を見守る必要があると思います。</p>
+
+<p>Java8対応で特にDateTime APIでMatcherが早急に欲しい人は、<a href="http://joel-costigliola.github.io/assertj/index.html">AssertJ</a>を検討してみるのも良いかもしれません。</p>
+
+<h2 id="おわりに">おわりに</h2>
+
+<p>opensslと同様の経緯をまさかJUnitも歩んでいるとは思ってもいませんでした。</p>
+
+<p>普段使っていたり、過去お世話になったOSSがメンテナンスされ続けるのは、誰かの犠牲や善意によって成り立っているのだと感じました。</p>
+
+<p>また、「コードを書く」以外の事で貢献出来る何かを改めて考えさせられました。</p>
+
+<p>もし、JUnitを使っていたり、今後も使い続ける事になるのであれば、既にゴール金額に到達していますが、寄付を考えてみてはいかがでしょうか？</p>
+
+        </section>
+        <div class="hr"></div>
+        <div>
+            
+            <div>
+              <a class="previous" href="http://grimrose.github.io/blog/2015/09/seasarcon2015/"> Seasar Conference 2015 Not 同窓会 に参加してきました #seasarcon</a>
+              <i class="fa fa-arrow-left"></i>
+            </div>
+            
+            
+            <div>
+              <i class="fa fa-arrow-right"></i>
+              <a class="next" href="http://grimrose.github.io/blog/2015/08/yapc-asia-tokyo-2015/"> YAPC::Asia Tokyo 2015 に参加してきました。 #yapcasia</a>
+            </div>
+            
+        </div>
+        <div class="hr"></div>
+<div class="post-share-buttons">
+    
+    <a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard-balloon"
+       data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img
+            src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20"
+            height="20" style="border: none;"/></a>
+    <script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8"
+            async="async"></script>
+    
+    <a class="tumblr-share-button" data-color="blue" data-notes="right" data-locale="ja_JP"
+       href="https://embed.tumblr.com/share"></a>
+    <script>!function (d, s, id) {
+        var js, ajs = d.getElementsByTagName(s)[0];
+        if (!d.getElementById(id)) {
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "https://secure.assets.tumblr.com/share-button.js";
+            ajs.parentNode.insertBefore(js, ajs);
+        }
+    }(document, "script", "tumblr-js");</script>
+    
+    <a href="https://twitter.com/share" class="twitter-share-button" data-lang="ja">ツイート</a>
+    <script>!function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+        if (!d.getElementById(id)) {
+            js = d.createElement(s);
+            js.id = id;
+            js.src = p + '://platform.twitter.com/widgets.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }
+    }(document, 'script', 'twitter-wjs');</script>
+</div>
+
+    </article>
+</main>
+
+
+	<footer role="contentinfo">
+		<div class="hr"></div>
+		<div class="footer-link">
+			
+			<i class="fa fa-twitter-square">
+				<a href="https://twitter.com/grimrose" target="_blank">Twitter</a>
+			</i>
+			
+			
+			<i class="fa fa-github-alt">
+				<a href="https://github.com/grimrose/" target="_blank">GitHub</a>
+			</i>
+			
+		</div>
+		<div class="copyright">Copyright &copy; <a href="http://grimrose.github.io/">grimrose</a> All rights reserved.</div>
+	</footer>
+
+</div>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+</body>
+</html>
+

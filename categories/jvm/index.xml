@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jvm on open build/reports/life/index.html</title>
+    <link>http://grimrose.github.io/blog/categories/jvm/</link>
+    <description>Recent content in Jvm on open build/reports/life/index.html</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Tue, 21 Apr 2015 00:05:36 +0900</lastBuildDate>
+    <atom:link href="http://grimrose.github.io/blog/categories/jvm/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>渋谷JVMに参加してきました。 #渋谷JVM</title>
+      <link>http://grimrose.github.io/blog/2015/04/shibuya-jvm/</link>
+      <pubDate>Tue, 21 Apr 2015 00:05:36 +0900</pubDate>
+      
+      <guid>http://grimrose.github.io/blog/2015/04/shibuya-jvm/</guid>
+      <description>
+
+&lt;p&gt;&lt;a href=&#34;http://d-cube.connpass.com/event/13257/&#34;&gt;http://d-cube.connpass.com/event/13257/&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;jvm言語の集い&#34;&gt;JVM言語の集い&lt;/h2&gt;
+
+&lt;p&gt;初めは、JVMについてのイベントだと思ってました。&lt;/p&gt;
+
+&lt;p&gt;そうではなく、JVM上で動く言語の中でも代表的な言語(Java, Scala, Clojure, Groovy)のエキスパートと呼ばれる人たちが一堂に会する機会が設けられたということで、参加してきました。&lt;/p&gt;
+
+&lt;p&gt;特に印象的だったのは、この時でした。&lt;/p&gt;
+
+&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; lang=&#34;ja&#34;&gt;&lt;p&gt;竹添さんが「Javaに熱気がない時期だった。新しいものが出てこないし」と言った瞬間、Javaのダイアログが開いて「アップデートがあるよ」とか出てきたｗ &lt;a href=&#34;https://twitter.com/hashtag/%E6%B8%8B%E8%B0%B7JVM?src=hash&#34;&gt;#渋谷JVM&lt;/a&gt;&lt;/p&gt;&amp;mdash; きしだﬗ (@kis) &lt;a href=&#34;https://twitter.com/kis/status/589290166465925120&#34;&gt;2015, 4月 18&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;個人的には、Java8になったことによって、ライブラリのコアとなる部分が置き換わって、新陳代謝が起こって欲しいなと思いました。&lt;/p&gt;
+
+&lt;h2 id=&#34;パネルディスカッション&#34;&gt;パネルディスカッション&lt;/h2&gt;
+
+&lt;p&gt;川島さんがJJUG CCCで話されていたJobStreamerに興味を持ってから、Clojureに興味が出てきました。&lt;/p&gt;
+
+&lt;p&gt;Clojureについて知らなかったところが多く、とても勉強になりました。特に思想や哲学に関する部分は、惹かれました。&lt;/p&gt;
+
+&lt;p&gt;それぞれのエキスパートの方々の話も大変面白く、ファシリテーターの&lt;a href=&#34;https://twitter.com/jflute&#34;&gt;@jflute&lt;/a&gt;さんの質問もとても興味深いものばかりでした。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://twitter.com/jflute&#34;&gt;@jflute&lt;/a&gt;さん、お疲れ様でした。&lt;/p&gt;
+
+&lt;h2 id=&#34;おわりに&#34;&gt;おわりに&lt;/h2&gt;
+
+&lt;p&gt;懇親会のLTもバラエティ豊かで、読書会の告知しか用意してなかった自分がちょっと恥ずかしかったです。&lt;/p&gt;
+
+&lt;p&gt;全体的にJJUG CCCとは違った雰囲気があって、楽しかったです。
+登壇者、参加者の皆様、会場を提供して下さった株式会社ビズリーチ様、ありがとうございました。&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

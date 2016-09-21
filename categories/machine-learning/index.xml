@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Machine Learning on open build/reports/life/index.html</title>
+    <link>http://grimrose.github.io/blog/categories/machine-learning/</link>
+    <description>Recent content in Machine Learning on open build/reports/life/index.html</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Mon, 04 May 2015 11:49:15 +0900</lastBuildDate>
+    <atom:link href="http://grimrose.github.io/blog/categories/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Machine Learning Casual Talks #3 に参加してきました。 #MCLT</title>
+      <link>http://grimrose.github.io/blog/2015/05/mclt03/</link>
+      <pubDate>Mon, 04 May 2015 11:49:15 +0900</pubDate>
+      
+      <guid>http://grimrose.github.io/blog/2015/05/mclt03/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://mlct.connpass.com/event/13995/&#34;&gt;http://mlct.connpass.com/event/13995/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;チームの分析官の人が喋ってる内容を実際に運用している話が聞けそうなので、申し込んでみたところ運良く抽選に当たったので、参加してきました。&lt;/p&gt;
+
+&lt;p&gt;ある程度予習をして参加しましたが、やはり勉強不足であることは否めませんでした。&lt;/p&gt;
+
+&lt;p&gt;ただ、分析官がやりたいことがどういったことなのか、実現するとどうなるのかを知ることが出来ました。&lt;/p&gt;
+
+&lt;p&gt;まずは、機械学習の基本となる部分を勉強しておく必要があると感じました。&lt;/p&gt;
+
+&lt;p&gt;その為にも分析官が利用しているR言語を習得し、実現したいことがどういったものか理解してみたいと思いました。&lt;/p&gt;
+
+&lt;p&gt;参加者、発表者の皆様、主催の&lt;a href=&#34;https://twitter.com/chezou&#34;&gt;@chezou&lt;/a&gt;さん、会場を提供して下さったクックパッド株式会社様ありがとうございました。&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

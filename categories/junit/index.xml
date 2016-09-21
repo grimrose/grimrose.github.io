@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Junit on open build/reports/life/index.html</title>
+    <link>http://grimrose.github.io/blog/categories/junit/</link>
+    <description>Recent content in Junit on open build/reports/life/index.html</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sat, 19 Sep 2015 00:04:27 +0900</lastBuildDate>
+    <atom:link href="http://grimrose.github.io/blog/categories/junit/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>JUnit Lambda に寄付をしました #fundJUnit</title>
+      <link>http://grimrose.github.io/blog/2015/09/junit-lambda/</link>
+      <pubDate>Sat, 19 Sep 2015 00:04:27 +0900</pubDate>
+      
+      <guid>http://grimrose.github.io/blog/2015/09/junit-lambda/</guid>
+      <description>
+
+&lt;p&gt;&lt;a href=&#34;https://twitter.com/t_wada&#34;&gt;@t_wada&lt;/a&gt; さんのツイートから知りましたが、JUnitのプロジェクトが援助を求めているそうです。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; lang=&#34;ja&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;JUnit がクラウドファンディングで援助を求めている。現在フルタイムのメンテナがおらず、 issue 解決や Java8 対応 (特にラムダ式) の余力が無い。現時点の JUnit の問題点や将来像も示されている &lt;a href=&#34;https://twitter.com/hashtag/fundJUn?src=hash&#34;&gt;#fundJUn&lt;/a&gt;… &lt;a href=&#34;http://t.co/o8ijOxTWr2&#34;&gt;http://t.co/o8ijOxTWr2&lt;/a&gt;&lt;/p&gt;&amp;mdash; Takuto Wada (@t_wada) &lt;a href=&#34;https://twitter.com/t_wada/status/644085548374605824&#34;&gt;2015, 9月 16&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://junit.org/junit-lambda.html&#34;&gt;Crowdfunding JUnit Lambda&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;日本語での詳細な内容については、&lt;a href=&#34;http://www.publickey1.jp/blog/15/junit.html&#34;&gt;JUnitの開発が資金不足で行き詰まり。クラウドファンディングで寄付金を募集中&lt;/a&gt; を見ていだくのがいいと思います。&lt;/p&gt;
+
+&lt;h2 id=&#34;junitと私&#34;&gt;JUnitと私&lt;/h2&gt;
+
+&lt;p&gt;個人的にJUnitを真面目に使い始めたのは、TDDBCで使い方を教わってからだと思います。&lt;/p&gt;
+
+&lt;p&gt;その時教えていただいた渡辺さんが書かれた&lt;a href=&#34;http://gihyo.jp/book/2012/978-4-7741-5377-3&#34;&gt;JUnit実践入門&lt;/a&gt;を読んで、Javaでユニットテストを書くにはどうしたら良いかを学ぶことが出来ました。&lt;/p&gt;
+
+&lt;p&gt;それからGroovyと出会い、&lt;a href=&#34;https://github.com/spockframework&#34;&gt;Spock Framework&lt;/a&gt;に惚れてTDDBCのGroovyのTAをやったり、アジャイルサムライのイベントで紹介をしたりしてました。&lt;/p&gt;
+
+&lt;p&gt;現在の仕事では、&lt;a href=&#34;https://phpunit.de/&#34;&gt;PHPUnit&lt;/a&gt;、&lt;a href=&#34;http://www.scalatest.org/&#34;&gt;ScalaTest&lt;/a&gt;を使っています。&lt;/p&gt;
+
+&lt;p&gt;xUnit系テスティングフレームワークは、テストを書く際に覚えることが少なくて、ユニットテストの書き方を学ぶ際に、余計なことを覚えなくても済むのがメリットだと思います。&lt;/p&gt;
+
+&lt;p&gt;あと、モダンな言語であればだいたい備わっているので、言語を覚える際にもassertionの書き方を覚えればなんとか始められます。
+それまでユニットテストを書く際の経験がそのまま言語を学ぶ際にも応用が出来るのが、xUnit系のテスティングフレームワークの良いところだと思います。&lt;/p&gt;
+
+&lt;p&gt;個人的にJUnitがもう少し頑張って欲しいのは、「パラメタライズドテストの書き方」、「失敗時のメッセージが分かりにくい」だと思います。&lt;/p&gt;
+
+&lt;p&gt;これはSpockを知ってしまってから、余計に感じるようになったと思います。&lt;/p&gt;
+
+&lt;p&gt;もちろんJavaの言語仕様として難しい部分もあると思いますが、出来れば&lt;code&gt;power-assert&lt;/code&gt;は入って欲しいと願ってます。&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;power-assert&lt;/code&gt;については、日本語では&lt;a href=&#34;http://codelunch.fm/16/&#34;&gt;The power-assert Leaves From Moratorium&lt;/a&gt;がまとまっていると思います。&lt;/p&gt;
+
+&lt;p&gt;今回のFundingでどこまで機能が盛り込まれたり、改善されるかは経過を見守る必要があると思います。&lt;/p&gt;
+
+&lt;p&gt;Java8対応で特にDateTime APIでMatcherが早急に欲しい人は、&lt;a href=&#34;http://joel-costigliola.github.io/assertj/index.html&#34;&gt;AssertJ&lt;/a&gt;を検討してみるのも良いかもしれません。&lt;/p&gt;
+
+&lt;h2 id=&#34;おわりに&#34;&gt;おわりに&lt;/h2&gt;
+
+&lt;p&gt;opensslと同様の経緯をまさかJUnitも歩んでいるとは思ってもいませんでした。&lt;/p&gt;
+
+&lt;p&gt;普段使っていたり、過去お世話になったOSSがメンテナンスされ続けるのは、誰かの犠牲や善意によって成り立っているのだと感じました。&lt;/p&gt;
+
+&lt;p&gt;また、「コードを書く」以外の事で貢献出来る何かを改めて考えさせられました。&lt;/p&gt;
+
+&lt;p&gt;もし、JUnitを使っていたり、今後も使い続ける事になるのであれば、既にゴール金額に到達していますが、寄付を考えてみてはいかがでしょうか？&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

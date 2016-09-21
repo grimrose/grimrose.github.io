@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jjug on open build/reports/life/index.html</title>
+    <link>http://grimrose.github.io/blog/categories/jjug/</link>
+    <description>Recent content in Jjug on open build/reports/life/index.html</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Mon, 30 Nov 2015 00:00:00 +0900</lastBuildDate>
+    <atom:link href="http://grimrose.github.io/blog/categories/jjug/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>JJUG CCC 2015 Fallに参加してきました #jjug_ccc</title>
+      <link>http://grimrose.github.io/blog/2015/11/jjug-ccc-2015/</link>
+      <pubDate>Mon, 30 Nov 2015 00:00:00 +0900</pubDate>
+      
+      <guid>http://grimrose.github.io/blog/2015/11/jjug-ccc-2015/</guid>
+      <description>
+
+&lt;p&gt;&lt;a href=&#34;http://www.java-users.jp/?page_id=2056&#34;&gt;http://www.java-users.jp/?page_id=2056&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;セッション&#34;&gt;セッション&lt;/h2&gt;
+
+&lt;p&gt;今回は、以下のセッションを選択しました。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.java-users.jp/?page_id=2064#keynote-1&#34;&gt;keynote-1 基調講演1: 「Javaは守りに入らない、これが今のJavaだ」&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.java-users.jp/?page_id=2064#keynote-2&#34;&gt;keynote-2 基調講演2: Java EE 8 – Work in Progress&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.java-users.jp/?page_id=2064#AB1&#34;&gt;AB-1「jOOQ と Flyway で立ち向かう、自社サービスの保守運用」(仮)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.java-users.jp/?page_id=2064#EF-2&#34;&gt;EF-2 How to speed up your application using JCache[通訳あり]&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.java-users.jp/?page_id=2064#EF-3&#34;&gt;EF-3 Reactive Webアプリケーション – そしてSpring 5へ&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.java-users.jp/?page_id=2064#EF-4&#34;&gt;EF-4 ソラコムでのJava/AWS活用 – SIM管理やAWS Lambda Javaなど –&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.java-users.jp/?page_id=2064#AB-5&#34;&gt;AB-5 Javaエンジニアに知ってほしい PostgreSQLアンチパターン&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.java-users.jp/?page_id=2064#GH-6&#34;&gt;GH-6 Java8 Stream APIとApache SparkとAsakusa Frameworkの類似点・相違点&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.java-users.jp/?page_id=2064#GH-7&#34;&gt;GH-7 てらだよしおの赤裸々タイム&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;今回のタイムテーブルを見たら、どのセッションを見たら良いのか迷ってしまうくらい素晴らしい講演者の方々でした。
+選んだ幹事の人達も苦労されたと思います。&lt;/p&gt;
+
+&lt;p&gt;この1年、素のJavaを書くことは無くなってしまったので、選択も運用やDB等言語としてのJava以外を中心とした内容になりました。&lt;/p&gt;
+
+&lt;p&gt;どのセッションも面白かったですが、てらださんが楽しそうに活動をされている話を聞けたのが、一番印象的でした。&lt;/p&gt;
+
+&lt;p&gt;さらに懇親会や帰り道でいろいろな人とお話が出来て、その中でいろいろ解決手段などを教えていただくことが出来ました。
+ありがとうございました。&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; lang=&#34;ja&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;懇親会と帰宅までの間が一番実りがある話が聞けた。&amp;#10;これがあるから止められない。&lt;/p&gt;&amp;mdash; とーます (@grimrose) &lt;a href=&#34;https://twitter.com/grimrose/status/670607861941047297&#34;&gt;2015, 11月 28&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;おわりに&#34;&gt;おわりに&lt;/h2&gt;
+
+&lt;p&gt;今回もYokohama.groovyの宣伝も兼ねたLTをしてきました。&lt;/p&gt;
+
+&lt;p&gt;pythonの勉強に使っている&lt;a href=&#34;http://jupyter.org/&#34;&gt;jupyter&lt;/a&gt;を使って、スライドを作りました。&lt;/p&gt;
+
+&lt;p&gt;Markdownでwebブラウザで再生出来るスライドに出来るので、こういう時には結構使えますね。&lt;/p&gt;
+
+&lt;p&gt;予定としては、&lt;a href=&#34;http://shop.oreilly.com/product/0636920038597.do&#34;&gt;Spock: Up and Running Writing Expressive Tests in Java and Groovy&lt;/a&gt;が出版され次第、読書会をやろうと思っています。&lt;/p&gt;
+
+&lt;p&gt;Early Releaseの内容を見る限り、難しかったり特定のコンテキストが必要な英語では無かったので、多分大丈夫だと思います。&lt;/p&gt;
+
+&lt;p&gt;また、来年の春に開催されると思いますが、引き続き楽しみにしています。&lt;/p&gt;
+
+&lt;p&gt;JJUGの幹事、スポンサーの皆様、ありがとうございました。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>【東京】JJUG ナイトセミナー 「Reactive Streams特集」 に参加してきました。 #jjug</title>
+      <link>http://grimrose.github.io/blog/2015/06/jjug-2015-reactive-streams/</link>
+      <pubDate>Sat, 27 Jun 2015 18:19:34 +0900</pubDate>
+      
+      <guid>http://grimrose.github.io/blog/2015/06/jjug-2015-reactive-streams/</guid>
+      <description>
+
+&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://jjug.doorkeeper.jp/events/26547&#34;&gt;https://jjug.doorkeeper.jp/events/26547&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://twitter.com/making&#34;&gt;@making&lt;/a&gt;さんから、&lt;a href=&#34;https://twitter.com/okapies&#34;&gt;@okapies&lt;/a&gt;さんと一緒に「Reactive Streams」について話してくれと頼まれましたので、参加してきました。&lt;/p&gt;
+
+&lt;p&gt;元々は、&lt;a href=&#34;https://twitter.com/cero_t&#34;&gt;@cero_t&lt;/a&gt;さんが発端らしいです。&lt;/p&gt;
+
+&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; lang=&#34;ja&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;ちなみに今日のReactive Streams勉強会の発端は、ゴールデンウィーク明けに &lt;a href=&#34;https://twitter.com/cero_t&#34;&gt;@cero_t&lt;/a&gt; さんがReactiveについてほげほげ言ってたことで、ナイトセミナーやろうぜって感じだったんだけど、当の本人は来ていないっていう&lt;/p&gt;&amp;mdash; Toshiaki Maki (@making) &lt;a href=&#34;https://twitter.com/making/status/613702257939353600&#34;&gt;2015, 6月 24&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;初めは、マイナーなネタならそんなに人集まらないだろうと思ってたのですが、キャンセル待ちが100人超えするくらいまで期待されてて正直びっくりしました。&lt;/p&gt;
+
+&lt;p&gt;当日のアンケートシステム、とても良かったので次回以降改善されるのを期待してます。&lt;/p&gt;
+
+&lt;h2 id=&#34;資料&#34;&gt;資料&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://twitter.com/okapies&#34;&gt;@okapies&lt;/a&gt;さんの資料は、こちらです。&lt;/p&gt;
+
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;df469560cc64424c98330aad22b19cda&#34; data-ratio=&#34;1.33333333333333&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;私の資料は、こちらです。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://grimrose.github.io/jjug-2015-reactive-streams/&#34;&gt;http://grimrose.github.io/jjug-2015-reactive-streams/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;利用したサンプルコードは、こちらです。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/grimrose/jjug-2015-reactive-streams&#34;&gt;https://github.com/grimrose/jjug-2015-reactive-streams&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;元々は、&lt;a href=&#34;http://vertx.io&#34;&gt;Vert.x3&lt;/a&gt;でやろうと思ってましたが、&lt;a href=&#34;http://projectreactor.io&#34;&gt;Reactor&lt;/a&gt;か&lt;a href=&#34;http://reactivex.io&#34;&gt;RxJava&lt;/a&gt;でと言われたので、使ったことがあるRxJavaを選びました。&lt;/p&gt;
+
+&lt;p&gt;確かに、当日のアンケートを見ると&lt;a href=&#34;http://vertx.io&#34;&gt;Vert.x3&lt;/a&gt;、&lt;a href=&#34;http://ratpack.io&#34;&gt;Ratpack&lt;/a&gt;の認知度が低すぎて、RxJavaを選択しておいてよかったと思いました。&lt;/p&gt;
+
+&lt;p&gt;ドキュメントの多さは、やはりRxJavaに分があるのですが、Reactorもかなり充実しています。&lt;/p&gt;
+
+&lt;p&gt;個人的には、&lt;a href=&#34;http://mongodb.github.io/mongo-java-driver-reactivestreams/&#34;&gt;MongoDB Reactive Streams Java Driver&lt;/a&gt;がチュートリアルとして、充実してると感じました。&lt;/p&gt;
+
+&lt;p&gt;初めてJavaでAkkaを使ってみたのですが、いろいろツライ印象しか受けませんでした。&lt;/p&gt;
+
+&lt;p&gt;あれなら、素直にScalaで使ったほうが分かりやすいと思います。&lt;/p&gt;
+
+&lt;h2 id=&#34;おわりに&#34;&gt;おわりに&lt;/h2&gt;
+
+&lt;p&gt;Reactive Streamsについては、それぞれのRuntimeの世界を繋ぐ為の仕様という認識が一番分かりやすいと思います。&lt;/p&gt;
+
+&lt;p&gt;実際の泥臭い部分は、Runtimeが頑張ってくれますが、何をやっているのか、どうやって実現しているのかを知っておくのは大切です。&lt;/p&gt;
+
+&lt;p&gt;どのRuntimeもReactive Streams向けに変換するライブラリがありますので、そのソースコードを読むのも勉強になると思います。&lt;/p&gt;
+
+&lt;p&gt;JDK9にどこまで採用されるか分かりませんが、データフロー制御についての共通インターフェースが採用されると、java.util.concurrentと併せて、非同期処理をもっと使いやすくなると思います。&lt;/p&gt;
+
+&lt;p&gt;JVMでデータフロー制御でお困りの方は、使ってみてはいかがでしょうか。&lt;/p&gt;
+
+&lt;p&gt;JJUGのスタッフ、参加者の皆様、&lt;a href=&#34;https://twitter.com/okapies&#34;&gt;@okapies&lt;/a&gt;さん、ありがとうございました。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>JJUG CCC 2015 Springに参加してきました。 #jjug_ccc</title>
+      <link>http://grimrose.github.io/blog/2015/04/jjug-ccc/</link>
+      <pubDate>Wed, 15 Apr 2015 23:02:31 +0900</pubDate>
+      
+      <guid>http://grimrose.github.io/blog/2015/04/jjug-ccc/</guid>
+      <description>
+
+&lt;p&gt;&lt;a href=&#34;http://www.java-users.jp/?page_id=1647&#34;&gt;http://www.java-users.jp/?page_id=1647&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;セッション&#34;&gt;セッション&lt;/h2&gt;
+
+&lt;p&gt;実は、転職して現場でJavaを書く機会がかなり減っています。&lt;/p&gt;
+
+&lt;p&gt;が、ツールやライブラリ等JVM上で動くプロダクトを使っているので、運用にまつわる事で勉強したいと思い参加しました。&lt;/p&gt;
+
+&lt;p&gt;午前は、途中から参加して、Raspberry Piのセッションから見始めました。&lt;/p&gt;
+
+&lt;p&gt;通訳まで用意するの大変だったと思います。内容もかなりリサーチされていてとても楽しい内容でした。&lt;/p&gt;
+
+&lt;p&gt;午後は、以下のセッションを選択しました。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.java-users.jp/?page_id=1661#CD-1&#34;&gt;CD-1 Javaにおけるnull。これまでとこれから&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.java-users.jp/?page_id=1661#AB-2&#34;&gt;AB-2 Web開発における最新テスト手法&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.java-users.jp/?page_id=1661#AB-3&#34;&gt;AB-3 大規模な負荷でもドキドキしない為のJava EE&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.java-users.jp/?page_id=1661#CD-4&#34;&gt;CD-4 『Embulk』に見るモダンJavaの実践的テクニック ～並列分散処理システムの実装手法～&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.java-users.jp/?page_id=1661#F-6&#34;&gt;F-6 いろんなデータをKibana4で見てみよう&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.java-users.jp/?page_id=1661#F-7&#34;&gt;F-7 JobStreamerではじめるJavaBatchクラウド分散実行&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;特に、Embulkについては、実際に利用できるか検証してることもあり、興味深く聴いていました。&lt;/p&gt;
+
+&lt;p&gt;負荷テストについても、大規模とはいかないまでもそこそこのデータ量を扱っているので、どう対応したら良いか参考になりました。&lt;/p&gt;
+
+&lt;p&gt;Kibana4も監視周りで使ってみたいと考えているので、ひとまずGitのログの監視からしてみたいと思いました。&lt;/p&gt;
+
+&lt;p&gt;その他のセッションも、登壇者のバックグラウンドが様々で、面白い内容でした。&lt;/p&gt;
+
+&lt;h2 id=&#34;おわりに&#34;&gt;おわりに&lt;/h2&gt;
+
+&lt;p&gt;Twitterでお世話になっている人が参加されていたので、探して挨拶したり、同じように休憩してる人達と雑談してました。&lt;/p&gt;
+
+&lt;p&gt;個人的には「&lt;strong&gt;Ask the Speaker&lt;/strong&gt;」みたいなコーナーが有ってもいいのではないかなと思いました。&lt;/p&gt;
+
+&lt;p&gt;初めてJJUG CCCに参加された方も多く、JJUGにも若い幹事の方が就任したりして、広がりを感じました。
+Java以外の分野から入ってきた文化や価値観もそれなりに知っておかないと、Javaだけの進化で手一杯になりそうな印象があります。&lt;/p&gt;
+
+&lt;p&gt;JJUG CCCやナイトセミナーでは、そういった題材を扱っている良い機会だと思いますので、
+まだ周りの人で参加してなくて興味がある人がいらっしゃったら、是非誘って参加してみてはいかがでしょうか。&lt;/p&gt;
+
+&lt;p&gt;JJUG、スポンサーの皆様、ありがとうございました。&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

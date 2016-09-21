@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ja" prefix="og: http://ogp.me/ns#">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://grimrose.github.io/blog/2015/12/retrospect-2015/" />
+<meta property="og:image" content="http://grimrose.github.io/blog/assets/images/logo.jpg" />
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:site" content="@grimrose">
+<meta name="twitter:card" content="summary">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/github.min.css">
+<link rel="stylesheet" href="http://grimrose.github.io/blog/css/normalize.css">
+<link rel="stylesheet" href="http://grimrose.github.io/blog/css/skeleton.css">
+<link rel="stylesheet" href="http://grimrose.github.io/blog/css/custom.css">
+<link rel="alternate" href="http://grimrose.github.io/blog/index.xml" type="application/rss+xml" title="open build/reports/life/index.html">
+
+<title>2015年の振り返り - open build/reports/life/index.html</title>
+<meta property="og:title"  content="2015年の振り返り - open build/reports/life/index.html" />
+<meta name="twitter:description" content="retrospect">
+</head>
+<body>
+
+<div class="container">
+
+	<header role="banner">
+		<div class="header-logo">
+			<a href="http://grimrose.github.io/blog/"><img src="http://grimrose.github.io/blog/assets/images/logo.jpg" width="60" height="60"></a>
+		</div>
+		
+	</header>
+
+
+<main role="main">
+    <article itemscope itemtype="http://schema.org/BlogPosting">
+        <h1 class="entry-title" itemprop="headline"><i class="fa fa-book"></i>&nbsp;2015年の振り返り</h1>
+        <span class="entry-meta">
+            <time itemprop="datePublished" datetime=" 2015-12-31">December 31, 2015</time>
+        </span>
+        <span class="entry-meta">
+          
+              
+              
+              <i class="fa fa-pencil"></i>
+              <a class="label" href="http://grimrose.github.io/blog/categories/blog">Blog</a>&nbsp;
+              
+              <i class="fa fa-pencil"></i>
+              <a class="label" href="http://grimrose.github.io/blog/categories/life">Life</a>&nbsp;
+              
+          
+        </span>
+        <section itemprop="entry-text">
+            
+
+<h2 id="2015年の振り返り">2015年の振り返り</h2>
+
+<p>今年も大晦日になったので、振り返りをしてみたいと思います。</p>
+
+<p>2014年の振り返りは、<a href="http://grimrose.blogspot.jp/2014/12/2014.html">こちら</a>でした。</p>
+
+<h3 id="keep">Keep</h3>
+
+<p>今年は、以下のイベントで登壇する機会をいただけました。</p>
+
+<ul>
+<li><a href="https://jjug.doorkeeper.jp/events/26547">【東京】JJUG ナイトセミナー 「Reactive Streams特集」</a></li>
+<li><a href="https://gbdaitokai.doorkeeper.jp/events/31149">合同勉強会 in 大都会岡山 -2015 Winter-</a></li>
+<li><a href="https://bonenkaigi.doorkeeper.jp/events/27273">忘年会議2015</a></li>
+</ul>
+
+<p>仕事で得た知見や個人で興味を持ったことについて話す機会は、今後も増やしていければと思います。</p>
+
+<p>アウトプットする為にも、まずコードやBlogで書き出すということをもっと積極的にやっていこうかと思います。
+特にBlogは書かなかった月が多かったので、短くても残さないとどんどん忘れていきそうなので、
+GitHubに草を生やす活動も兼ねてやっていこうかと思います。</p>
+
+<p>ミドルウェア、インフラ周りの基礎に関しては、引き続きDockerを中心に学んで行ければと思っています。</p>
+
+<p>特に<a href="http://shop.oreilly.com/product/0636920036791.do">Docker Cookbook</a>を購入して
+自分たちが使えるものが無いか探したり、どのようにDockerで構成していけば良いのかを学んだりしています。</p>
+
+<p>また、<a href="https://azure.microsoft.com/ja-jp/">Microsoft Azure</a>のアカウントを作って、<a href="https://www.tutum.co">Tutum</a>でデプロイしてみたりしてました。</p>
+
+<p>Dockerを使って試せるようなサービスが出てきたので、これまで非力なローカルマシンでは試せなかった構成や、既存のサービスと組み合わせる方法を検証できるようになったのは、大きな変化だったと思います。</p>
+
+<h3 id="problem">Problem</h3>
+
+<p>2014年のTryだったFuelPHPのプロジェクトは、2015年中にはやれませんでした。</p>
+
+<p>しかしながら、年明けから仕事でサプブロジェクトながらFuelPHPで始めることになりそうなので、
+front, api, batchをDockerで動かすような雛形を作ってみて検証してみたいと思います。</p>
+
+<p>Rubotyも結局触ってみました程度で終わってしまったので、Rubyのプロダクトにがっつり関わる機会が無い環境では、
+強制的にでも使う仕組みが無いと難しいものだと感じました。</p>
+
+<p>仕事では、チームでプロジェクトを動かしていくことの難しさを実感しました。
+特にプロダクトオーナーに現時点でリリース出来ないことを伝えることが、どれだけ不甲斐なくて悔しいことかを体験しました。</p>
+
+<h3 id="try">Try</h3>
+
+<p>仕事での今後やりたいことは、<a href="http://grimrose.github.io/blog/2015/12/career-change/">転職して１年が経ちました。</a>に書いてしまったので、
+privateでやってみたい事は、OSSを一つリリースする(ライブラリ、Webサービス問わず)です。</p>
+
+<p>仕事で使うようなライブラリを作るのが一番自分にとって勉強にもなるし、フィードバックも得やすいのではないかと思います。</p>
+
+<p>また、本格的にScrumに関する勉強を始めて、最終的には認定スクラムマスター(CSM)も取得してみようかと思います。</p>
+
+<p>CSMについては、横浜道場でいろいろな人が受けてたり取られたりした方の話をこれまで聴いてどんな感じなんだろと思っていました。
+Scrumのプラクティスを取り入れつつ開発を進めていましたが、行き詰まりを感じたり、他の人達はどうしているのか気になってきたので、本格的に始めます。</p>
+
+<h2 id="おわりに">おわりに</h2>
+
+<p>2015年は、仕事でやりたかった事が出来たのとそこで出てきた課題に取り組めた一年だったと思います。</p>
+
+<p>2016年は、引き続きコードを書くお仕事に加えて、チームを育てていく役割も担っていくことになると思います。</p>
+
+<p>また、いわゆる「プログラマー35年定年説」の節目の年となるので、今後の5年を見据えて伸ばすスキルを伸ばしていければと思います。</p>
+
+<p>2016年も引き続き、よろしくお願いします。</p>
+
+        </section>
+        <div class="hr"></div>
+        <div>
+            
+            <div>
+              <a class="previous" href="http://grimrose.github.io/blog/2016/02/scalamatsuri2016/"> ScalaMatsuri2016に参加してきました。 #ScalaMatsuri</a>
+              <i class="fa fa-arrow-left"></i>
+            </div>
+            
+            
+            <div>
+              <i class="fa fa-arrow-right"></i>
+              <a class="next" href="http://grimrose.github.io/blog/2015/12/gadvent-2015/"> Spock Frameworkに関する電子書籍たち</a>
+            </div>
+            
+        </div>
+        <div class="hr"></div>
+<div class="post-share-buttons">
+    
+    <a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard-balloon"
+       data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img
+            src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20"
+            height="20" style="border: none;"/></a>
+    <script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8"
+            async="async"></script>
+    
+    <a class="tumblr-share-button" data-color="blue" data-notes="right" data-locale="ja_JP"
+       href="https://embed.tumblr.com/share"></a>
+    <script>!function (d, s, id) {
+        var js, ajs = d.getElementsByTagName(s)[0];
+        if (!d.getElementById(id)) {
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "https://secure.assets.tumblr.com/share-button.js";
+            ajs.parentNode.insertBefore(js, ajs);
+        }
+    }(document, "script", "tumblr-js");</script>
+    
+    <a href="https://twitter.com/share" class="twitter-share-button" data-lang="ja">ツイート</a>
+    <script>!function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+        if (!d.getElementById(id)) {
+            js = d.createElement(s);
+            js.id = id;
+            js.src = p + '://platform.twitter.com/widgets.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }
+    }(document, 'script', 'twitter-wjs');</script>
+</div>
+
+    </article>
+</main>
+
+
+	<footer role="contentinfo">
+		<div class="hr"></div>
+		<div class="footer-link">
+			
+			<i class="fa fa-twitter-square">
+				<a href="https://twitter.com/grimrose" target="_blank">Twitter</a>
+			</i>
+			
+			
+			<i class="fa fa-github-alt">
+				<a href="https://github.com/grimrose/" target="_blank">GitHub</a>
+			</i>
+			
+		</div>
+		<div class="copyright">Copyright &copy; <a href="http://grimrose.github.io/">grimrose</a> All rights reserved.</div>
+	</footer>
+
+</div>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+</body>
+</html>
+
