@@ -1,6 +1,6 @@
 import * as m from "mithril";
 
-import * as conf from "config";
+import * as conf from "./config";
 
 class FooterViewModel {
     url: string;

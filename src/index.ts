@@ -6,11 +6,10 @@ require("highlight.js/styles/rainbow.css");
 require("!style!css!./index.scss");
 
 import * as m from "mithril";
-import * as hljs from "highlight.js";
 
-import {HeaderComponent} from "header";
-import {MainComponent} from "main";
-import {FooterComponent} from "footer";
+import {HeaderComponent} from "./header";
+import {MainComponent} from "./main";
+import {FooterComponent} from "./footer";
 
 const header = new HeaderComponent();
 const main = new MainComponent();
@@ -19,10 +18,6 @@ const footer = new FooterComponent();
 
 class AppController implements Mithril.Controller {
     constructor() {
-        hljs.configure({
-            useBR: false,
-        });
-        hljs.initHighlightingOnLoad();
     }
 }
 

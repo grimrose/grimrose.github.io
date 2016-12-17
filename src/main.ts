@@ -1,4 +1,8 @@
 import * as m from "mithril";
+import * as hljs from "highlight.js";
+
+
+import {GitHubRepositoryViewModel, GitHubModel} from "./github";
 
 class CodeViewModel {
     constructor(public title: string, public className: string, public text: string) {
@@ -14,6 +18,10 @@ class MainController implements Mithril.Controller {
     children: Array<ChildViewModel>;
 
     code: CodeViewModel;
+
+    github: GitHubModel;
+
+    repositories: Array<GitHubRepositoryViewModel>;
 
     constructor() {
         this.children = [
@@ -46,6 +54,20 @@ def pretty = json.toPrettyString()
 println StringEscapeUtils.unescapeJava(pretty)
 `
         );
+        this.github = new GitHubModel();
+
+        this.repositories = [];
+    }
+
+    public loadGitHubRepositories(): void {
+
+        m.startComputation();
+        this.github.fetchGitHubRepositories()
+            .then((list) => {
+
+                this.repositories = list;
+                m.endComputation();
+            });
     }
 }
 
@@ -57,29 +79,64 @@ export class MainComponent implements Mithril.Component<MainController> {
 
     constructor() {
         this.controller = () => {
-            return new MainController();
+            const ctrl = new MainController();
+
+            ctrl.loadGitHubRepositories();
+            return ctrl;
         };
 
         this.view = (ctrl) => {
             const children = ctrl.children;
             const code = ctrl.code;
+            const repositories = ctrl.repositories;
+
+            hljs.configure({
+                useBR: false,
+            });
+
+            const parsed = hljs.highlightAuto(code.text, [code.className]);
+
             return m(".hero-body",
                 m(".container.has-text-centered", [
                     m(".tile.is-ancestor", [
                         m(".tile.is-parent.is-2", []),
-                        m(".tile.is-parent.is-4", [
+                        m(".tile.is-parent.is-5", [
                             m(".tile.is-child", [
                                 m("h1.title",
                                     code.title
                                 ),
                                 m("pre", {className: "has-text-left"}, [
-                                    m("code", {className: code.className},
-                                        code.text
-                                    )
-                                ])
+                                    m("code.hljs.groovy", m.trust(parsed.value))
+                                ]),
                             ]),
                         ]),
-                        m(".tile.is-parent.is-4.is-vertical", children.map((child: ChildViewModel) => {
+                        m(".tile.is-parent.is-vertical.is-4", [
+                            m(".tile.is-child", [
+                                m("h2.title", "Repositories"),
+                            ]),
+                            repositories.map((repo) => {
+                                return m(".tile.is-child", [
+                                    m("article.media", [
+                                        m(".media-content", [
+                                            m("p", [
+                                                m("a", {
+                                                    href: repo.url,
+                                                    target: "_black"
+                                                }, [
+                                                    m("i.fa.fa-github", {"aria-hidden": true}),
+
+                                                ]),
+                                                " ",
+                                                repo.name
+                                            ])
+                                        ])
+                                    ]),
+                                ]);
+                            })
+                        ]),
+                    ]),
+                    m(".tile.is-ancestor", [
+                        m(".tile.is-parent", children.map((child: ChildViewModel) => {
                             return m(".tile.is-child", [
                                 m("h2.title", child.title),
                                 m("p", [

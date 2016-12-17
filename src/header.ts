@@ -1,6 +1,6 @@
 import * as m from "mithril";
 
-import * as conf from "config";
+import * as conf from "./config";
 
 
 class HeaderViewModel {
@@ -26,7 +26,6 @@ export class HeaderController implements Mithril.Controller {
 
     getToggleClassName(): string {
         const toggle = this.vm.activeToggle();
-        // console.log("toggle:" + toggle);
         if (toggle) {
             return "is-active";
         }
@@ -35,7 +34,6 @@ export class HeaderController implements Mithril.Controller {
 
     onClickToggle: Function = () => {
         const toggle = this.vm.activeToggle();
-        // console.log("onclick:" + toggle);
         if (toggle) {
             this.vm.activeToggle = m.prop(false);
         } else {
@@ -76,31 +74,31 @@ export class HeaderComponent implements Mithril.Component<HeaderController> {
                             ),
                             m(".nav-right.nav-menu", {className: ctrl.getToggleClassName()},
                                 [
-                                    m("a.nav-item.is-active", {href: "/"}, [
+                                    m("a.nav-item.is-tab", {href: "/"}, [
                                         m("span.icon",
                                             m("i.fa.fa-home")
                                         ),
                                         "Home"
                                     ]),
-                                    m("a.nav-item", {href: "/blog"}, [
+                                    m("a.nav-item.is-tab", {href: "/blog"}, [
                                         m("span.icon",
                                             m("i.fa.fa-pencil")
                                         ),
                                         "Blog"
                                     ]),
-                                    m("a.nav-item", {href: vm.twitterUrl}, [
+                                    m("a.nav-item.is-tab", {href: vm.twitterUrl}, [
                                         m("span.icon",
                                             m("i.fa.fa-twitter")
                                         ),
                                         "Twitter"
                                     ]),
-                                    m("a.nav-item", {href: vm.gitHubUrl}, [
+                                    m("a.nav-item.is-tab", {href: vm.gitHubUrl}, [
                                         m("span.icon",
                                             m("i.fa.fa-github")
                                         ),
                                         "GitHub"
                                     ]),
-                                    m("a.nav-item", {href: vm.bitBucketUrl}, [
+                                    m("a.nav-item.is-tab", {href: vm.bitBucketUrl}, [
                                         m("span.icon",
                                             m("i.fa.fa-bitbucket")
                                         ),
