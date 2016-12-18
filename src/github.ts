@@ -41,7 +41,7 @@ export class GitHubModel {
         const user = conf.ACCOUNT_NAME;
         const limit = 5;
 
-        const url = `${endpoint}/users/${user}/repos?sort=updated&per_page=${limit}`;
+        const url = `${endpoint}/users/${user}/repos?sort=pushed&per_page=${limit}`;
 
         const options = <XHROptions>{
             method: "GET",
