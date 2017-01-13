@@ -9,7 +9,7 @@
     "cp:robots": "cpx robots.txt dist/",
     "prestart": "npm run clean",
     "start": "webpack-dev-server",
-    "tslint": "tslint src/**/*.ts",
+    "tslint": "tslint \"src/**/*.ts\"",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prebuild:dev": "npm run clean",
     "build:dev": "webpack -d",
@@ -28,9 +28,9 @@
   },
   "homepage": "https://github.com/grimrose/grimrose.github.io#readme",
   "dependencies": {
-    "highlight.js": "^9.5.0",
-    "bulma": "^0.2.3",
+    "bulma": "^0.3.0",
     "font-awesome": "^4.7.0",
+    "highlight.js": "^9.5.0",
     "mithril": "^0.2.5"
   },
   "devDependencies": {
@@ -45,7 +45,7 @@
     "html-loader": "^0.4.3",
     "less": "^2.7.1",
     "node-sass": "^4.0.0",
-    "npm-run-all": "^3.1.2",
+    "npm-run-all": "^4.0.0",
     "sass-loader": "^4.0.0",
     "source-map-loader": "^0.1.5",
     "style-loader": "^0.13.1",
