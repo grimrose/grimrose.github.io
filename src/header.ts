@@ -39,7 +39,7 @@ export class HeaderController implements Mithril.Controller {
         } else {
             this.vm.activeToggle = m.prop(true);
         }
-    };
+    }
 
 }
 
