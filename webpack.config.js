@@ -16,10 +16,11 @@ module.exports = {
     },
     module: {
         preLoaders: [
-            // {
-            //     test: /\.ts$/,
-            //     loader: "tslint-loader"
-            // }
+            {
+                test: /\.ts$/,
+                loader: "tslint-loader",
+                exclude: /node_modules/
+            }
         ],
         loaders: [
             // all files with a '.ts' or '.tsx' extension will be handled by 'ts-loader'
