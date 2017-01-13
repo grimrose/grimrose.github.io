@@ -30,6 +30,9 @@ export class GitHubModel {
                 });
 
                 deferred.resolve(repos);
+            })
+            .catch((reason: Error) => {
+                deferred.reject(reason);
             });
 
         return deferred.promise;

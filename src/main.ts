@@ -64,8 +64,12 @@ println StringEscapeUtils.unescapeJava(pretty)
         m.startComputation();
         this.github.fetchGitHubRepositories()
             .then((list) => {
-
                 this.repositories = list;
+                m.endComputation();
+            })
+            .catch((reason: Error) => {
+                this.repositories = [];
+                console.error(reason);
                 m.endComputation();
             });
     }
@@ -88,7 +92,45 @@ export class MainComponent implements Mithril.Component<MainController> {
         this.view = (ctrl) => {
             const children = ctrl.children;
             const code = ctrl.code;
-            const repositories = ctrl.repositories;
+            let repositories = null;
+            if (ctrl.repositories.length === 0) {
+                repositories = m(".tile.is-child", [
+                    m("article.media", [
+                        m(".media-content", [
+                            m("p", [
+                                m("a", {
+                                    href: "https://status.github.com/",
+                                    target: "_blank"
+                                }, [
+                                    m("i.fa.fa-github", {"aria-hidden": true})
+                                ]),
+                                " ",
+                                "GitHub Status"
+                            ])
+                        ])
+                    ])
+                ]);
+            } else {
+                repositories = ctrl.repositories.map((repo) => {
+                    return m(".tile.is-child", [
+                        m("article.media", [
+                            m(".media-content", [
+                                m("p", [
+                                    m("a", {
+                                        href: repo.url,
+                                        target: "_blank"
+                                    }, [
+                                        m("i.fa.fa-github", {"aria-hidden": true}),
+                                    ]),
+                                    " ",
+                                    repo.name
+                                ])
+                            ])
+                        ]),
+                    ]);
+                });
+            }
+
 
             hljs.configure({
                 useBR: false,
@@ -114,25 +156,7 @@ export class MainComponent implements Mithril.Component<MainController> {
                             m(".tile.is-child", [
                                 m("h2.title", "Repositories"),
                             ]),
-                            repositories.map((repo) => {
-                                return m(".tile.is-child", [
-                                    m("article.media", [
-                                        m(".media-content", [
-                                            m("p", [
-                                                m("a", {
-                                                    href: repo.url,
-                                                    target: "_black"
-                                                }, [
-                                                    m("i.fa.fa-github", {"aria-hidden": true}),
-
-                                                ]),
-                                                " ",
-                                                repo.name
-                                            ])
-                                        ])
-                                    ]),
-                                ]);
-                            })
+                            repositories
                         ]),
                     ]),
                     m(".tile.is-ancestor", [
